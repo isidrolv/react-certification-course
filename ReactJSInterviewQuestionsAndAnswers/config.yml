@@ -1,0 +1,26 @@
+# Configuration for React Quiz apps
+# You can customize fonts, window, thresholds, and limits here.
+
+# Multiplier applied to all base font sizes below
+font_scale: 2.0  # doubles the font size by default
+
+# Base font family and sizes (before scale)
+fonts:
+  family: "Segoe UI"
+  title: 16         # top title label
+  question: 12      # question text
+  option: 12        # options (radio buttons)
+  explanation: 10   # explanation label/text
+  feedback: 10      # bottom feedback label
+
+# Window settings for the Windows GUI app
+window:
+  title: "React Quiz (Windows)"
+  width: 900
+  height: 600
+  min_width: 720
+  min_height: 520
+
+# Quiz logic
+max_questions: 60      # if more exist, pick a random subset of this many
+pass_threshold: 0.8     # 80% required to pass

@@ -12,9 +12,36 @@ try:
 except Exception:
     MATPLOTLIB_AVAILABLE = False
 
-QUESTIONS_FILE = os.path.join(os.path.dirname(__file__), 'react-questions.json')
+# Optional: YAML config support
+try:
+    import yaml  # type: ignore
+    YAML_AVAILABLE = True
+except Exception:
+    YAML_AVAILABLE = False
+
+BASE_DIR = os.path.dirname(__file__)
+QUESTIONS_FILE = os.path.join(BASE_DIR, 'react-questions.json')
+CONFIG_FILE = os.path.join(BASE_DIR, 'config.yml')
+
+# Defaults (will be overridden by config.yml if present)
 PASS_THRESHOLD = 0.8
 MAX_QUESTIONS = 60
+DEFAULT_FONTS = {
+    'family': 'Segoe UI',
+    'title': 16,
+    'question': 12,
+    'option': 12,
+    'explanation': 10,
+    'feedback': 10,
+}
+DEFAULT_FONT_SCALE = 2.0  # double by default
+DEFAULT_WINDOW = {
+    'title': 'React Quiz (Windows)',
+    'width': 900,
+    'height': 600,
+    'min_width': 720,
+    'min_height': 520,
+}
 
 
 def load_questions():
@@ -30,12 +57,90 @@ def load_questions():
     return questions
 
 
+def load_config():
+    """Load configuration from CONFIG_FILE if present.
+    Returns a dict with keys: fonts, font_scale, window, max_questions, pass_threshold.
+    """
+    cfg = {
+        'fonts': DEFAULT_FONTS.copy(),
+        'font_scale': DEFAULT_FONT_SCALE,
+        'window': DEFAULT_WINDOW.copy(),
+        'max_questions': MAX_QUESTIONS,
+        'pass_threshold': PASS_THRESHOLD,
+    }
+    if os.path.exists(CONFIG_FILE):
+        try:
+            if YAML_AVAILABLE:
+                with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
+                    data = yaml.safe_load(f) or {}
+            else:
+                # Very simple fallback parser: supports only top-level key: value numbers/strings
+                data = {}
+                with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        line = line.strip()
+                        if not line or line.startswith('#') or ':' not in line:
+                            continue
+                        key, val = line.split(':', 1)
+                        key = key.strip()
+                        val = val.strip().strip('"\'')
+                        # try to cast number
+                        try:
+                            if '.' in val:
+                                cast_val = float(val)
+                            else:
+                                cast_val = int(val)
+                            data[key] = cast_val
+                        except Exception:
+                            data[key] = val
+            # Merge
+            if isinstance(data, dict):
+                if 'fonts' in data and isinstance(data['fonts'], dict):
+                    cfg['fonts'].update({k: v for k, v in data['fonts'].items() if v is not None})
+                if 'window' in data and isinstance(data['window'], dict):
+                    cfg['window'].update({k: v for k, v in data['window'].items() if v is not None})
+                if 'font_scale' in data and data['font_scale'] is not None:
+                    cfg['font_scale'] = float(data['font_scale'])
+                if 'max_questions' in data and data['max_questions'] is not None:
+                    cfg['max_questions'] = int(data['max_questions'])
+                if 'pass_threshold' in data and data['pass_threshold'] is not None:
+                    cfg['pass_threshold'] = float(data['pass_threshold'])
+        except Exception:
+            # Ignore config errors; fall back to defaults
+            pass
+    return cfg
+
+
+def make_font_tuple(family, size, weight=None):
+    return (family, size, weight) if weight else (family, size)
+
+
 class ReactQuizApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title('React Quiz (Windows)')
-        self.geometry('900x600')
-        self.minsize(720, 520)
+
+        # Load config and compute runtime settings
+        cfg = load_config()
+        # Override globals for thresholds and max questions
+        global PASS_THRESHOLD, MAX_QUESTIONS
+        PASS_THRESHOLD = cfg.get('pass_threshold', PASS_THRESHOLD)
+        MAX_QUESTIONS = cfg.get('max_questions', MAX_QUESTIONS)
+
+        window = cfg.get('window', DEFAULT_WINDOW)
+        self.title(window.get('title', DEFAULT_WINDOW['title']))
+        self.geometry(f"{window.get('width', DEFAULT_WINDOW['width'])}x{window.get('height', DEFAULT_WINDOW['height'])}")
+        self.minsize(window.get('min_width', DEFAULT_WINDOW['min_width']), window.get('min_height', DEFAULT_WINDOW['min_height']))
+
+        # Fonts
+        fonts = cfg.get('fonts', DEFAULT_FONTS)
+        scale = float(cfg.get('font_scale', DEFAULT_FONT_SCALE))
+        family = fonts.get('family', 'Segoe UI')
+        self.font_title = make_font_tuple(family, int(round(fonts.get('title', 16) * scale)), 'bold')
+        self.font_question = make_font_tuple(family, int(round(fonts.get('question', 12) * scale)))
+        self.font_option = make_font_tuple(family, int(round(fonts.get('option', 12) * scale)))
+        self.font_expl_label = make_font_tuple(family, int(round(fonts.get('explanation', 10) * scale)), 'bold')
+        self.font_expl_text = make_font_tuple(family, int(round(fonts.get('explanation', 10) * scale)))
+        self.font_feedback = make_font_tuple(family, int(round(fonts.get('feedback', 10) * scale)))
 
         # Data
         self.questions = load_questions()
