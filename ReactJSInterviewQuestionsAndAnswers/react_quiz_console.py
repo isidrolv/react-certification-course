@@ -8,8 +8,16 @@ QUESTIONS_FILE = os.path.join(os.path.dirname(__file__), 'react-questions.json')
 PASS_THRESHOLD = 0.8
 
 def load_questions():
+    """Load questions from JSON and return a random subset of up to 60 questions.
+
+    - If the JSON contains more than 60 questions, pick 60 unique questions at random.
+    - If it contains 60 or fewer, return them all.
+    """
     with open(QUESTIONS_FILE, 'r', encoding='utf-8') as f:
         questions = json.load(f)
+    if len(questions) > 60:
+        # Select 60 unique questions randomly
+        questions = random.sample(questions, k=60)
     return questions
 
 def ask_question(q):
