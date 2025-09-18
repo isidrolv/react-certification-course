@@ -158,7 +158,7 @@ class ReactQuizApp(tk.Tk):
         top_frame = ttk.Frame(self, padding=10)
         top_frame.pack(side=tk.TOP, fill=tk.X)
 
-        self.title_label = ttk.Label(top_frame, text='Test de React', font=('Segoe UI', 16, 'bold'))
+        self.title_label = ttk.Label(top_frame, text='Test de React', font=self.font_title)
         self.title_label.pack(side=tk.LEFT)
 
         self.progress_label = ttk.Label(top_frame, text='')
@@ -168,7 +168,11 @@ class ReactQuizApp(tk.Tk):
         q_frame = ttk.Frame(self, padding=(10, 0, 10, 10))
         q_frame.pack(fill=tk.BOTH, expand=True)
 
-        self.question_text = tk.Text(q_frame, wrap='word', height=5, font=('Segoe UI', 12))
+        # Style for option radio buttons
+        self.style = ttk.Style(self)
+        self.style.configure('Option.TRadiobutton', font=self.font_option)
+
+        self.question_text = tk.Text(q_frame, wrap='word', height=5, font=self.font_question)
         self.question_text.configure(state='disabled', background=self.cget('background'), relief='flat')
         self.question_text.pack(fill=tk.X, padx=4, pady=(4, 8))
 
@@ -177,12 +181,13 @@ class ReactQuizApp(tk.Tk):
         self.option_buttons = []
         for i in range(4):
             rb = ttk.Radiobutton(q_frame, text='', value=chr(97 + i), variable=self.selected_var)
+            rb.configure(style=f'Option.TRadiobutton')
             rb.pack(anchor='w', pady=4)
             self.option_buttons.append(rb)
 
         # Explanation area
-        self.expl_label = ttk.Label(q_frame, text='Explicación:', font=('Segoe UI', 10, 'bold'))
-        self.expl_text = tk.Text(q_frame, wrap='word', height=5, font=('Segoe UI', 10))
+        self.expl_label = ttk.Label(q_frame, text='Explicación:', font=self.font_expl_label)
+        self.expl_text = tk.Text(q_frame, wrap='word', height=5, font=self.font_expl_text)
         self.expl_text.configure(state='disabled', background=self.cget('background'), relief='sunken')
         self.expl_label.pack(anchor='w', pady=(12, 0))
         self.expl_text.pack(fill=tk.BOTH, expand=True, padx=4, pady=(0, 8))
@@ -191,7 +196,7 @@ class ReactQuizApp(tk.Tk):
         bottom = ttk.Frame(self, padding=10)
         bottom.pack(side=tk.BOTTOM, fill=tk.X)
 
-        self.feedback_label = ttk.Label(bottom, text='', font=('Segoe UI', 10))
+        self.feedback_label = ttk.Label(bottom, text='', font=self.font_feedback)
         self.feedback_label.pack(side=tk.LEFT)
 
         self.check_button = ttk.Button(bottom, text='Responder', command=self.on_submit)
