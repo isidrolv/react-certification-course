@@ -5,6 +5,8 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
 
+from ReactJSInterviewQuestionsAndAnswers.react_quiz_console import QUESTIONS_FILE
+
 # Optional: matplotlib for bar chart at the end (same spirit as console version)
 try:
     import matplotlib.pyplot as plt
@@ -19,9 +21,20 @@ try:
 except Exception:
     YAML_AVAILABLE = False
 
+
+
+
+
+
+
+
+
+
 BASE_DIR = os.path.dirname(__file__)
-QUESTIONS_FILE = os.path.join(BASE_DIR, 'react-questions.json')
+QUESTIONS_FILE_NAME = os.environ.get('QUESTIONS_FILE_NAME')
+QUESTIONS_FILE = os.path.join(BASE_DIR, QUESTIONS_FILE_NAME or 'react-questions.json')
 CONFIG_FILE = os.path.join(BASE_DIR, 'config.yml')
+TEST_TITLE = 'React Quiz (Windows)'
 
 # Defaults (will be overridden by config.yml if present)
 PASS_THRESHOLD = 0.8
@@ -128,6 +141,7 @@ class ReactQuizApp(tk.Tk):
 
         window = cfg.get('window', DEFAULT_WINDOW)
         self.title(window.get('title', DEFAULT_WINDOW['title']))
+        TEST_TITLE = window.get('title', DEFAULT_WINDOW['title'])
         self.geometry(f"{window.get('width', DEFAULT_WINDOW['width'])}x{window.get('height', DEFAULT_WINDOW['height'])}")
         self.minsize(window.get('min_width', DEFAULT_WINDOW['min_width']), window.get('min_height', DEFAULT_WINDOW['min_height']))
 
@@ -158,7 +172,7 @@ class ReactQuizApp(tk.Tk):
         top_frame = ttk.Frame(self, padding=10)
         top_frame.pack(side=tk.TOP, fill=tk.X)
 
-        self.title_label = ttk.Label(top_frame, text='Test de React', font=self.font_title)
+        self.title_label = ttk.Label(top_frame, text=TEST_TITLE, font=self.font_title)
         self.title_label.pack(side=tk.LEFT)
 
         self.progress_label = ttk.Label(top_frame, text='')
