@@ -10,4 +10,4 @@ This folder contains all the course lessons and lecture materials for the ReactJ
 
 ## Coming Soon
 
-Lesson content will be added as the course development progresses.
+Lesson content will be added as the course development progresses. 

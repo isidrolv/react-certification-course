@@ -29,7 +29,6 @@ except Exception:
 
 
 
-
 BASE_DIR = os.path.dirname(__file__)
 QUESTIONS_FILE_NAME = os.environ.get('QUESTIONS_FILE_NAME')
 QUESTIONS_FILE = os.path.join(BASE_DIR, QUESTIONS_FILE_NAME or 'react-questions.json')
