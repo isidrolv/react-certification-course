@@ -149,6 +149,15 @@ func TestMD5Hasher(t *testing.T) {
 			t.Errorf("GenerateHash() = %v, expected %v", result, expected)
 		}
 	})
+
+	t.Run("GenerateHash con longitud mayor", func(t *testing.T) {
+		result := hasher.GenerateShortHash(64, "test12341324asdfafaf123413413413fdafafd3243424234", "asdasdasdasdasdasdasdasdasdasdasd", "asdasdasdasdasdasdasdasdasdasdasd")
+		expected := "62adc9759f1f4a604d271381221349cb"
+		if result != expected {
+			t.Errorf("GenerateHash() = %v, expected %v", result, expected)
+		}
+	})
+
 }
 
 // TestResourceNamer prueba la estructura ResourceNamer

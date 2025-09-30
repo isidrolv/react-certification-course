@@ -65,8 +65,8 @@ go test -v -bench=BenchmarkQuickMD5 -benchmem
 ### Generar reporte de cobertura
 ```bash
 go test -cover
-go test -coverprofile=coverage.out
-go tool cover -html=coverage.out
+go test -coverprofile=coverage.csv.out
+go tool cover -html=coverage.csv.out
 ```
 
 ## Casos de Prueba Destacados
