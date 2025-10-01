@@ -1,0 +1,2914 @@
+[
+  {
+    "id": 1,
+    "category": "Java Platform",
+    "question": "Why is Java so popular?",
+    "options": [
+      "        1. **Platform Independence**, **Object-Oriented**, **Robust and Secure**, **Rich API**, **Community Support**, **Performance**, **Enterprise Use**.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "1. **Platform Independence**: Java programs can run on any device that has the Java Virtual Machine (JVM),\n               making it highly portable.\n        2. **Object-Oriented**: Java's object-oriented nature allows for modular programs and reusable code.\n        3. **Robust and Secure**: Java has strong memory management, exception handling, and security features.\n        4. **Rich API**: Java provides a vast standard library that simplifies many programming tasks.\n        5. **Community Support**: Java has a large and active community, providing extensive resources and support.\n        6. **Performance**: Java's performance has improved significantly with Just-In-Time (JIT) compilers and other optimizations.\n        7. **Enterprise Use**: Java is widely used in enterprise environments, particularly for server-side applications."
+  },
+  {
+    "id": 2,
+    "category": "Java Platform",
+    "question": "What is platform independence?",
+    "options": [
+      "Platform independence refers to the ability of a programming language or software to run on various types of computer",
+      "Java requires recompilation for each system operating system.",
+      "Java compiles directly to a specific machine code of the platform.",
+      "Java cannot be executed on different operating systems."
+    ],
+    "answer": "a",
+    "explanation": "Platform independence refers to the ability of a programming language or software to run on various types of computer\n  systems without modification. In the context of Java, platform independence is achieved through the use of the Java\n  Virtual Machine (JVM). Java programs are compiled into bytecode, which can be executed on any device that has a JVM,\n  regardless of the underlying hardware and operating system. This allows Java applications to be written once and run\n  anywhere."
+  },
+  {
+    "id": 3,
+    "category": "Java Platform",
+    "question": "What is bytecode?",
+    "options": [
+      "Java requires recompilation for each system operating system.",
+      "Bytecode is an intermediate representation of a Java program. When a Java program is compiled, it is converted into bytecode, which is a set of instructions for the JVM. ",
+      "Java cannot be executed on different operating systems.",
+      "Java compiles directly to a specific machine code of the platform."
+    ],
+    "answer": "b",
+    "explanation": "  Bytecode is an intermediate representation of a Java program. When a Java program is compiled, it is converted into\n  bytecode, which is a set of instructions that can be executed by the Java Virtual Machine (JVM). Bytecode is\n  platform-independent, meaning it can run on any device that has a JVM, regardless of the underlying hardware and\n  operating system. This allows Java programs to be written once and run anywhere.\n"
+  },
+  {
+    "id": 4,
+    "category": "Java Platform",
+    "question": "Compare JDK vs JVM vs JRE",
+    "options": [
+      "Java cannot be executed on different operating systems.",
+      "an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), and",
+      "Java requires recompilation for each system operating system.",
+      "Java compiles directly to a specific machine code of the platform."
+    ],
+    "answer": "b",
+    "explanation": "an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), and other tools needed for Java development."
+  },
+  {
+    "id": 5,
+    "category": "Java Platform",
+    "question": "What are the important differences between C++ and Java?",
+    "options": [
+      "needs to be compiled for each platform.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "collection. needs to be compiled for each platform."
+  },
+  {
+    "id": 6,
+    "category": "Wrapper Classes",
+    "question": "What are Wrapper classes?",
+    "options": [
+      "Autoboxing only works with numeric types, not with boolean or char.",
+      "Wrapper types consume less memory than primitives.",
+      "Wrapper classes in Java are classes that encapsulate a primitive data type into an object. They provide a way to use",
+      "Java no soporta conversión automática entre primitivos y objetos."
+    ],
+    "answer": "c",
+    "explanation": "Wrapper classes in Java are classes that encapsulate a primitive data type into an object. They provide a way to use primitive data types (like `int`, `char`, etc.) as objects. Each primitive type has a corresponding wrapper class:"
+  },
+  {
+    "id": 7,
+    "category": "Wrapper Classes",
+    "question": "Why do we need Wrapper classes in Java?",
+    "options": [
+      "Java no soporta conversión automática entre primitivos y objetos.",
+      "Wrapper classes in Java are needed for the following reasons:",
+      "Autoboxing only works with numeric types, not with boolean or char.",
+      "Wrapper types consume less memory than primitives."
+    ],
+    "answer": "b",
+    "explanation": "Wrapper classes in Java are needed for the following reasons: enabling them to be used in object-oriented programming contexts."
+  },
+  {
+    "id": 8,
+    "category": "Wrapper Classes",
+    "question": "What are the different ways of creating Wrapper class instances?",
+    "options": [
+      "There are two main ways to create instances of Wrapper classes in Java:",
+      "Wrapper types consume less memory than primitives.",
+      "Autoboxing only works with numeric types, not with boolean or char.",
+      "Java no soporta conversión automática entre primitivos y objetos."
+    ],
+    "answer": "a",
+    "explanation": "There are two main ways to create instances of Wrapper classes in Java: Each wrapper class has a constructor that takes a primitive type or a String as an argument."
+  },
+  {
+    "id": 9,
+    "category": "Wrapper Classes",
+    "question": "What are differences in the two ways of creating Wrapper classes?",
+    "options": [
+      "Java no soporta conversión automática entre primitivos y objetos.",
+      "Wrapper types consume less memory than primitives.",
+      "Autoboxing only works with numeric types, not with boolean or char.",
+      "The two ways of creating Wrapper class instances in Java are using constructors and using static factory methods. Here"
+    ],
+    "answer": "d",
+    "explanation": "The two ways of creating Wrapper class instances in Java are using constructors and using static factory methods. Here are the differences:"
+  },
+  {
+    "id": 10,
+    "category": "Wrapper Classes",
+    "question": "What is auto boxing?",
+    "options": [
+      "Autoboxing in Java is the automatic conversion that the Java compiler makes between the primitive types and their",
+      "Wrapper types consume less memory than primitives.",
+      "Autoboxing only works with numeric types, not with boolean or char.",
+      "Java no soporta conversión automática entre primitivos y objetos."
+    ],
+    "answer": "a",
+    "explanation": "Autoboxing in Java is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes. For example, converting an `int` to an `Integer`, a `double` to a `Double`, and"
+  },
+  {
+    "id": 11,
+    "category": "Wrapper Classes",
+    "question": "What are the advantages of auto boxing?",
+    "options": [
+      "Autoboxing in Java provides several advantages:",
+      "Autoboxing only works with numeric types, not with boolean or char.",
+      "Java no soporta conversión automática entre primitivos y objetos.",
+      "Wrapper types consume less memory than primitives."
+    ],
+    "answer": "a",
+    "explanation": "Autoboxing in Java provides several advantages: such as collections."
+  },
+  {
+    "id": 12,
+    "category": "Wrapper Classes",
+    "question": "What is casting?",
+    "options": [
+      "Casting in Java is the process of converting a value of one data type to another. There are two types of casting:",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "Casting in Java is the process of converting a value of one data type to another. There are two types of casting: conversion. For example, converting an `int` to a `double`."
+  },
+  {
+    "id": 13,
+    "category": "Wrapper Classes",
+    "question": "What is implicit casting?",
+    "options": [
+      "Implicit casting in Java is the automatic conversion of a smaller data type to a larger data type. Java performs",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "Implicit casting in Java is the automatic conversion of a smaller data type to a larger data type. Java performs implicit casting when the target data type can accommodate the source data type without loss of precision. For"
+  },
+  {
+    "id": 14,
+    "category": "Wrapper Classes",
+    "question": "What is explicit casting?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "Explicit casting in Java is the manual conversion of a larger data type to a smaller data type, or when converting",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "Explicit casting in Java is the manual conversion of a larger data type to a smaller data type, or when converting between incompatible types. Java requires explicit casting when the target data type may lose precision or range"
+  },
+  {
+    "id": 15,
+    "category": "Strings",
+    "question": "Are all String",
+    "options": [
+      "String objects in Java are completely mutable.",
+      "StringBuffer y StringBuilder son inmutables en Java.",
+      "No, not all `String` objects are immutable. In Java, `String` objects are immutable, meaning once a `String`",
+      "Java does not have support for immutable text strings."
+    ],
+    "answer": "c",
+    "explanation": "’s immutable?\\ No, not all `String` objects are immutable. In Java, `String` objects are immutable, meaning once a `String`"
+  },
+  {
+    "id": 16,
+    "category": "Strings",
+    "question": "Where are String values stored in memory?",
+    "options": [
+      "Java does not have support for immutable text strings.",
+      "StringBuffer y StringBuilder son inmutables en Java.",
+      "In Java, `String` values are stored in a special memory area called the **String Pool**. The String Pool is part of",
+      "String objects in Java are completely mutable."
+    ],
+    "answer": "c",
+    "explanation": "In Java, `String` values are stored in a special memory area called the String Pool. The String Pool is part of the Java heap memory and is used to store unique `String` literals. When a `String` literal is created, the JVM checks"
+  },
+  {
+    "id": 17,
+    "category": "Strings",
+    "question": "Why should you be careful about String concatenation(+) operator in loops?",
+    "options": [
+      "String concatenation using the `+` operator in loops can be inefficient due to the immutability of `String` objects.",
+      "Java does not have support for immutable text strings.",
+      "StringBuffer y StringBuilder son inmutables en Java.",
+      "String objects in Java are completely mutable."
+    ],
+    "answer": "a",
+    "explanation": "String concatenation using the `+` operator in loops can be inefficient due to the immutability of `String` objects. Each time a `String` is concatenated using the `+` operator, a new `String` object is created, resulting in"
+  },
+  {
+    "id": 18,
+    "category": "Strings",
+    "question": "How do you solve above problem?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "To solve the problem of inefficient string concatenation using the `+` operator in loops, you should"
+    ],
+    "answer": "d",
+    "explanation": "To solve the problem of inefficient string concatenation using the `+` operator in loops, you should use `StringBuilder` or `StringBuffer`. These classes provide mutable alternatives to `String` and are more efficient"
+  },
+  {
+    "id": 19,
+    "category": "Strings",
+    "question": "What are the differences between `String` and `StringBuffer`?",
+    "options": [
+      "String objects in Java are completely mutable.",
+      "created. `StringBuffer` objects are mutable, allowing their values to be modified.",
+      "Java does not have support for immutable text strings.",
+      "StringBuffer y StringBuilder son inmutables en Java."
+    ],
+    "answer": "b",
+    "explanation": "created. `StringBuffer` objects are mutable, allowing their values to be modified. is faster for concatenation and modification operations."
+  },
+  {
+    "id": 20,
+    "category": "Strings",
+    "question": "Can you give examples of different utility methods in String class?",
+    "options": [
+      "The `String` class in Java provides various utility methods. Here are some examples:",
+      "String objects in Java are completely mutable.",
+      "Java does not have support for immutable text strings.",
+      "StringBuffer y StringBuilder son inmutables en Java."
+    ],
+    "answer": "a",
+    "explanation": "The `String` class in Java provides various utility methods. Here are some examples: // Example of length() method"
+  },
+  {
+    "id": 21,
+    "category": "Strings",
+    "question": "What is a class?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "A class in Java is a blueprint for creating objects. It defines a set of properties (fields) and methods that the"
+    ],
+    "answer": "d",
+    "explanation": "A class in Java is a blueprint for creating objects. It defines a set of properties (fields) and methods that the created objects will have. A class encapsulates data for the object and methods to manipulate that data. It serves as"
+  },
+  {
+    "id": 22,
+    "category": "Strings",
+    "question": "What is state of an object?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "The state of an object in Java refers to the data or values stored in its fields (instance variables) at any given",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "The state of an object in Java refers to the data or values stored in its fields (instance variables) at any given time. The state represents the current condition of the object, which can change over time as the values of its fields"
+  },
+  {
+    "id": 23,
+    "category": "Object-Oriented Programming",
+    "question": "What is behavior of an object?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "The behavior of an object in Java refers to the actions or operations that the object can perform. These behaviors are"
+    ],
+    "answer": "d",
+    "explanation": "The behavior of an object in Java refers to the actions or operations that the object can perform. These behaviors are defined by the methods in the object's class. The methods manipulate the object's state and can interact with other"
+  },
+  {
+    "id": 24,
+    "category": "Object-Oriented Programming",
+    "question": "Explain about toString method ?",
+    "options": [
+      "The `toString` method in Java is a method that returns a string representation of an object. It is defined in",
+      "Java does not have support for immutable text strings.",
+      "String objects in Java are completely mutable.",
+      "StringBuffer y StringBuilder son inmutables en Java."
+    ],
+    "answer": "a",
+    "explanation": "The `toString` method in Java is a method that returns a string representation of an object. It is defined in the `Object` class, which is the superclass of all Java classes. By default, the `toString` method returns a string"
+  },
+  {
+    "id": 25,
+    "category": "Object-Oriented Programming",
+    "question": "What is the use of equals method in Java?",
+    "options": [
+      "The `equals` method in Java is used to compare the equality of two objects. It is defined in the `Object` class and",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "The `equals` method in Java is used to compare the equality of two objects. It is defined in the `Object` class and can be overridden in subclasses to provide custom equality logic. By default, the `equals` method compares object"
+  },
+  {
+    "id": 26,
+    "category": "Object-Oriented Programming",
+    "question": "What are the important things to consider when implementing `equals` method?",
+    "options": [
+      "Esta es la respuesta correcta basada en el contenido de Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "return `true`."
+  },
+  {
+    "id": 27,
+    "category": "Object-Oriented Programming",
+    "question": "What is the Hashcode method used for in Java?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "The `hashCode` method in Java is used to generate a unique integer value for an object. It is defined in the `Object`",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "The `hashCode` method in Java is used to generate a unique integer value for an object. It is defined in the `Object` class and can be overridden in subclasses to provide a custom hash code calculation. The `hashCode` method is used"
+  },
+  {
+    "id": 28,
+    "category": "Object-Oriented Programming",
+    "question": "Explain inheritance with examples",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Inheritance in Java is a mechanism where one class (subclass) inherits the fields and methods of another class ("
+    ],
+    "answer": "d",
+    "explanation": "Inheritance in Java is a mechanism where one class (subclass) inherits the fields and methods of another class ( superclass). It allows for code reuse and establishes a relationship between classes."
+  },
+  {
+    "id": 29,
+    "category": "Object-Oriented Programming",
+    "question": "What is method overloading?",
+    "options": [
+      "Method overloading in Java is a feature that allows a class to have more than one method with the same name, provided",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "Method overloading in Java is a feature that allows a class to have more than one method with the same name, provided their parameter lists are different. This means that the methods must differ in the type, number, or order of their"
+  },
+  {
+    "id": 30,
+    "category": "Object-Oriented Programming",
+    "question": "What is method overriding?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Method overriding in Java is a feature that allows a subclass to provide a specific implementation of a method that is"
+    ],
+    "answer": "d",
+    "explanation": "Method overriding in Java is a feature that allows a subclass to provide a specific implementation of a method that is already provided by its superclass. When a method in a subclass has the same name, return type, and parameters as a"
+  },
+  {
+    "id": 31,
+    "category": "Object-Oriented Programming",
+    "question": "Can super class reference variable can hold an object of sub class?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Yes, a superclass reference variable can hold an object of a subclass in Java. This is known as polymorphism and is a",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "b",
+    "explanation": "Yes, a superclass reference variable can hold an object of a subclass in Java. This is known as polymorphism and is a key feature of object-oriented programming. When a superclass reference variable holds an object of a subclass, it can"
+  },
+  {
+    "id": 32,
+    "category": "Inheritance",
+    "question": "Is multiple inheritance allowed in Java?",
+    "options": [
+      "Java does not support multiple inheritance of classes, meaning a class cannot extend more than one class at a time.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "Java does not support multiple inheritance of classes, meaning a class cannot extend more than one class at a time. This is to avoid the \"diamond problem,\" where conflicts can arise if two superclasses have methods with the same"
+  },
+  {
+    "id": 33,
+    "category": "Inheritance",
+    "question": "What is an interface?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "An interface in Java is a reference type, similar to a class, that can contain only constants, method signatures,"
+    ],
+    "answer": "d",
+    "explanation": "An interface in Java is a reference type, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. Interfaces cannot contain instance fields or constructors. They are"
+  },
+  {
+    "id": 34,
+    "category": "Inheritance",
+    "question": "How do you define an interface?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "An interface in Java is defined using the `interface` keyword. It can contain abstract methods, default methods,",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "An interface in Java is defined using the `interface` keyword. It can contain abstract methods, default methods, static methods, and constants. Here is an example:"
+  },
+  {
+    "id": 35,
+    "category": "Inheritance",
+    "question": "How do you implement an interface?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "To implement an interface in Java, a class must use the `implements` keyword and provide concrete implementations for"
+    ],
+    "answer": "d",
+    "explanation": "To implement an interface in Java, a class must use the `implements` keyword and provide concrete implementations for all the methods declared in the interface. Here is an example:"
+  },
+  {
+    "id": 36,
+    "category": "Inheritance",
+    "question": "Can you explain a few tricky things about interfaces?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Here are a few tricky things about interfaces in Java:"
+    ],
+    "answer": "d",
+    "explanation": "Here are a few tricky things about interfaces in Java: 1. Default Methods: Interfaces can have default methods with a body. This allows adding new methods to"
+  },
+  {
+    "id": 37,
+    "category": "Inheritance",
+    "question": "Can you extend an interface?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Yes, in Java, an interface can extend another interface. This allows the extending interface to inherit the abstract",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "Yes, in Java, an interface can extend another interface. This allows the extending interface to inherit the abstract methods of the parent interface. Here is an example:"
+  },
+  {
+    "id": 38,
+    "category": "Inheritance",
+    "question": "Can a class extend multiple interfaces?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Yes, in Java, a class can implement multiple interfaces. This allows the class to inherit the abstract methods of all",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "Yes, in Java, a class can implement multiple interfaces. This allows the class to inherit the abstract methods of all the interfaces it implements. Here is an example:"
+  },
+  {
+    "id": 39,
+    "category": "Inheritance",
+    "question": "What is an abstract class?",
+    "options": [
+      "An abstract class in Java is a class that cannot be instantiated on its own and is meant to be subclassed by other",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "An abstract class in Java is a class that cannot be instantiated on its own and is meant to be subclassed by other classes. It can contain abstract methods, which are declared but not implemented, as well as concrete methods with"
+  },
+  {
+    "id": 40,
+    "category": "Inheritance",
+    "question": "When do you use an abstract class?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "You should use an abstract class in Java when you want to define a common interface for a group of subclasses and",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "You should use an abstract class in Java when you want to define a common interface for a group of subclasses and provide default behavior that can be overridden by the subclasses. Abstract classes are useful when you have a set of"
+  },
+  {
+    "id": 41,
+    "category": "Inheritance",
+    "question": "How do you define an abstract method?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "An abstract method in Java is a method that is declared but not implemented in an abstract class. Abstract methods do"
+    ],
+    "answer": "d",
+    "explanation": "An abstract method in Java is a method that is declared but not implemented in an abstract class. Abstract methods do not have a body and are meant to be implemented by subclasses. To define an abstract method, you use the `abstract`"
+  },
+  {
+    "id": 42,
+    "category": "Collections",
+    "question": "Compare abstract class vs interface?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Esta es la respuesta correcta basada en el contenido de Java."
+    ],
+    "answer": "d",
+    "explanation": "Esta es la respuesta correcta basada en las mejores prácticas y estándares de Java."
+  },
+  {
+    "id": 43,
+    "category": "Collections",
+    "question": "What is a constructor?",
+    "options": [
+      "A constructor in Java is a special type of method that is used to initialize objects. It is called when an object of a",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "A constructor in Java is a special type of method that is used to initialize objects. It is called when an object of a class is created using the `new` keyword. Constructors have the same name as the class and do not have a return type."
+  },
+  {
+    "id": 44,
+    "category": "Collections",
+    "question": "What is a default constructor?",
+    "options": [
+      "A default constructor in Java is a constructor that is automatically provided by the compiler if a class does not have",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "A default constructor in Java is a constructor that is automatically provided by the compiler if a class does not have any constructor defined. It is a no-argument constructor that initializes the object with default values. The default"
+  },
+  {
+    "id": 45,
+    "category": "Collections",
+    "question": "Will this code compile?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Here is an example of a Java code segment that will not compile due to a missing semicolon:",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "Here is an example of a Java code segment that will not compile due to a missing semicolon: public class Example {"
+  },
+  {
+    "id": 46,
+    "category": "Collections",
+    "question": "How do you call a super class constructor from a constructor?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "In Java, you can call a superclass constructor from a subclass constructor using the `super` keyword. This is useful",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "In Java, you can call a superclass constructor from a subclass constructor using the `super` keyword. This is useful when you want to initialize the superclass part of the object before initializing the subclass part. The `super`"
+  },
+  {
+    "id": 47,
+    "category": "Collections",
+    "question": "Will this code compile?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "public class Example {",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "public class Example { public static void main(String[] args) {"
+  },
+  {
+    "id": 48,
+    "category": "Collections",
+    "question": "What is the use of this() keyword in Java?",
+    "options": [
+      "The `this` keyword in Java is a reference to the current object within a method or constructor. It can be used to",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "The `this` keyword in Java is a reference to the current object within a method or constructor. It can be used to access instance variables, call other constructors, or pass the current object as a parameter to other methods. The"
+  },
+  {
+    "id": 49,
+    "category": "Collections",
+    "question": "Can a constructor be called directly from a method?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "No, a constructor cannot be called directly from a method. Constructors are special methods that are called only when"
+    ],
+    "answer": "d",
+    "explanation": "No, a constructor cannot be called directly from a method. Constructors are special methods that are called only when an object is created. However, you can call another constructor from a constructor using `this()` or `super()`. If you"
+  },
+  {
+    "id": 50,
+    "category": "Collections",
+    "question": "Is a super class constructor called even when there is no explicit call from a sub class constructor?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Yes, a superclass constructor is always called, even if there is no explicit call from a subclass constructor. If a",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "b",
+    "explanation": "Yes, a superclass constructor is always called, even if there is no explicit call from a subclass constructor. If a subclass constructor does not explicitly call a superclass constructor using `super()`, the Java compiler"
+  },
+  {
+    "id": 51,
+    "category": "Collections",
+    "question": "What is polymorphism?",
+    "options": [
+      "Polymorphism in Java is the ability of an object to take on many forms. It allows one interface to be used for a",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "Polymorphism in Java is the ability of an object to take on many forms. It allows one interface to be used for a general class of actions. The specific action is determined by the exact nature of the situation. Polymorphism is"
+  },
+  {
+    "id": 52,
+    "category": "Exception Handling",
+    "question": "What is the use of instanceof operator in Java?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "The `instanceof` operator in Java is used to test whether an object is an instance of a specific class or implements a"
+    ],
+    "answer": "d",
+    "explanation": "The `instanceof` operator in Java is used to test whether an object is an instance of a specific class or implements a specific interface. It returns `true` if the object is an instance of the specified class or interface, and `false`"
+  },
+  {
+    "id": 53,
+    "category": "Exception Handling",
+    "question": "What is coupling?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "Coupling in software engineering refers to the degree of direct knowledge that one module has about another. It"
+    ],
+    "answer": "d",
+    "explanation": "Coupling in software engineering refers to the degree of direct knowledge that one module has about another. It measures how closely connected two routines or modules are. High coupling means that modules are highly dependent on"
+  },
+  {
+    "id": 54,
+    "category": "Exception Handling",
+    "question": "What is cohesion?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Cohesion in software engineering refers to the degree to which the elements inside a module belong together. It",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "Cohesion in software engineering refers to the degree to which the elements inside a module belong together. It measures how closely related the responsibilities of a single module are. High cohesion means that the elements within"
+  },
+  {
+    "id": 55,
+    "category": "Exception Handling",
+    "question": "What is encapsulation?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Encapsulation in Java is a fundamental object-oriented programming concept that involves bundling the data (fields)",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "Encapsulation in Java is a fundamental object-oriented programming concept that involves bundling the data (fields) and the methods (functions) that operate on the data into a single unit, called a class. It restricts direct access to"
+  },
+  {
+    "id": 56,
+    "category": "Exception Handling",
+    "question": "What is an inner class?",
+    "options": [
+      "An inner class in Java is a class that is defined within another class. Inner classes can access the members (",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "An inner class in Java is a class that is defined within another class. Inner classes can access the members ( including private members) of the outer class. There are four types of inner classes in Java:"
+  },
+  {
+    "id": 57,
+    "category": "Exception Handling",
+    "question": "What is a static inner class?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "A static inner class in Java is a nested class that is defined as a static member of the outer class. It does not have"
+    ],
+    "answer": "d",
+    "explanation": "A static inner class in Java is a nested class that is defined as a static member of the outer class. It does not have access to the instance variables and methods of the outer class, but it can access static members of the outer class."
+  },
+  {
+    "id": 58,
+    "category": "Exception Handling",
+    "question": "Can you create an inner class inside a method?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Yes, you can create an inner class inside a method in Java. This type of inner class is called a local inner class.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "Yes, you can create an inner class inside a method in Java. This type of inner class is called a local inner class. Local inner classes are defined within a method and can only be accessed within that method. They have access to the"
+  },
+  {
+    "id": 59,
+    "category": "Exception Handling",
+    "question": "What is an anonymous class?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "An anonymous class in Java is a class without a name that is defined and instantiated in a single statement. It is",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "An anonymous class in Java is a class without a name that is defined and instantiated in a single statement. It is typically used for one-time use cases where a class needs to be defined and instantiated without creating a separate"
+  },
+  {
+    "id": 60,
+    "category": "Exception Handling",
+    "question": "What is default class modifier?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "The default class modifier in Java is package-private, which means that the class is only accessible within the same",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "The default class modifier in Java is package-private, which means that the class is only accessible within the same package. If no access modifier is specified for a class, it is considered to have default access. This means that the"
+  },
+  {
+    "id": 61,
+    "category": "Exception Handling",
+    "question": "What is private access modifier?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "The `private` access modifier in Java is the most restrictive access level. It is used to restrict access to members",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "The `private` access modifier in Java is the most restrictive access level. It is used to restrict access to members (fields, methods, constructors) of a class to only within the same class. This means that private members cannot be"
+  },
+  {
+    "id": 62,
+    "category": "Multithreading",
+    "question": "What is default or package access modifier?",
+    "options": [
+      "The default or package access modifier in Java is the absence of an access modifier. It is also known as",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "The default or package access modifier in Java is the absence of an access modifier. It is also known as package-private"
+  },
+  {
+    "id": 63,
+    "category": "Multithreading",
+    "question": "What is protected access modifier?",
+    "options": [
+      "The `protected` access modifier in Java is used to restrict access to members (fields, methods, constructors) of a",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "The `protected` access modifier in Java is used to restrict access to members (fields, methods, constructors) of a class to only within the same package or subclasses of the class. This means that protected members can be accessed by"
+  },
+  {
+    "id": 64,
+    "category": "Multithreading",
+    "question": "What is public access modifier?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "The `public` access modifier in Java is the least restrictive access level. It allows a class, method, or field to be"
+    ],
+    "answer": "d",
+    "explanation": "The `public` access modifier in Java is the least restrictive access level. It allows a class, method, or field to be accessed by any other class in the same project or in other projects. Public members are accessible from any other"
+  },
+  {
+    "id": 65,
+    "category": "Multithreading",
+    "question": "What access types of variables can be accessed from a class in same package?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "In Java, a class in the same package can access the following types of variables:"
+    ],
+    "answer": "d",
+    "explanation": "In Java, a class in the same package can access the following types of variables: other packages."
+  },
+  {
+    "id": 66,
+    "category": "Multithreading",
+    "question": "What access types of variables can be accessed from a class in different package?",
+    "options": [
+      "In Java, a class in a different package can access the following types of variables:",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "In Java, a class in a different package can access the following types of variables: non-subclasses"
+  },
+  {
+    "id": 67,
+    "category": "Multithreading",
+    "question": "What access types of variables can be accessed from a sub class in same package?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "In Java, a subclass in the same package can access the following types of variables:",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "In Java, a subclass in the same package can access the following types of variables: other packages."
+  },
+  {
+    "id": 68,
+    "category": "Multithreading",
+    "question": "What access types of variables can be accessed from a sub class in different package?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "In Java, a subclass in a different package can access the following types of variables:",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "In Java, a subclass in a different package can access the following types of variables: non-subclasses"
+  },
+  {
+    "id": 69,
+    "category": "Multithreading",
+    "question": "What is the use of a final modifier on a class?",
+    "options": [
+      "The `final` modifier on a class in Java is used to prevent the class from being subclassed. This means that no other",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "The `final` modifier on a class in Java is used to prevent the class from being subclassed. This means that no other class can extend a `final` class. It is often used to create immutable classes or to ensure that the implementation of"
+  },
+  {
+    "id": 70,
+    "category": "Multithreading",
+    "question": "What is the use of a final modifier on a method?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "The `final` modifier on a method in Java is used to prevent the method from being overridden by subclasses. This",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "The `final` modifier on a method in Java is used to prevent the method from being overridden by subclasses. This ensures that the implementation of the method remains unchanged in any subclass."
+  },
+  {
+    "id": 71,
+    "category": "Multithreading",
+    "question": "What is a final variable?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "A final variable in Java is a variable that cannot be reassigned once it has been initialized. The `final` keyword is"
+    ],
+    "answer": "d",
+    "explanation": "A final variable in Java is a variable that cannot be reassigned once it has been initialized. The `final` keyword is used to declare a variable as final. This means that the value of the variable remains constant throughout the"
+  },
+  {
+    "id": 72,
+    "category": "Generics",
+    "question": "What is a final argument?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "A final argument in Java is a method parameter that is declared with the `final` keyword. This means that once the"
+    ],
+    "answer": "d",
+    "explanation": "A final argument in Java is a method parameter that is declared with the `final` keyword. This means that once the parameter is assigned a value, it cannot be changed within the method. This is useful for ensuring that the parameter"
+  },
+  {
+    "id": 73,
+    "category": "Generics",
+    "question": "What happens when a variable is marked as volatile?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "When a variable is marked as `volatile` in Java, it ensures that the value of the variable is always read from and"
+    ],
+    "answer": "d",
+    "explanation": "When a variable is marked as `volatile` in Java, it ensures that the value of the variable is always read from and written to the main memory, rather than being cached in a thread's local memory. This guarantees visibility of changes"
+  },
+  {
+    "id": 74,
+    "category": "Generics",
+    "question": "What is a static variable?",
+    "options": [
+      "A static variable in Java is a variable that is shared among all instances of a class. It is declared using the",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "A static variable in Java is a variable that is shared among all instances of a class. It is declared using the `static` keyword and belongs to the class rather than any specific instance. This means that there is only one copy of"
+  },
+  {
+    "id": 75,
+    "category": "Generics",
+    "question": "Why should you always use blocks around if statement?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "It is a good practice to always use blocks around `if` statements in Java to improve code readability and avoid",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "It is a good practice to always use blocks around `if` statements in Java to improve code readability and avoid potential bugs. When an `if` statement is not enclosed in a block, only the next statement is considered part of the"
+  },
+  {
+    "id": 76,
+    "category": "Generics",
+    "question": "Guess the output",
+    "options": [
+      "Here is an example to guess the output:",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "Here is an example to guess the output: public class GuessOutput {"
+  },
+  {
+    "id": 77,
+    "category": "Generics",
+    "question": "Guess the output",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Here is an example to guess the output:"
+    ],
+    "answer": "d",
+    "explanation": "Here is an example to guess the output: public class GuessOutput {"
+  },
+  {
+    "id": 78,
+    "category": "Generics",
+    "question": "Guess the output of this switch block",
+    "options": [
+      "Here is an example to guess the output:",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "Here is an example to guess the output: public class GuessOutput {"
+  },
+  {
+    "id": 79,
+    "category": "Generics",
+    "question": "Guess the output of this switch block?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "Here is an example to guess the output:",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "Here is an example to guess the output: public class GuessOutput {"
+  },
+  {
+    "id": 80,
+    "category": "Generics",
+    "question": "Should default be the last case in a switch statement?",
+    "options": [
+      "No, the `default` case does not have to be the last case in a `switch` statement in Java. The `default` case is",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "No, the `default` case does not have to be the last case in a `switch` statement in Java. The `default` case is optional and can be placed anywhere within the `switch` statement. It is typically used as a catch-all case for values"
+  },
+  {
+    "id": 81,
+    "category": "Generics",
+    "question": "Can a switch statement be used around a String",
+    "options": [
+      "String objects in Java are completely mutable.",
+      "Yes, a `switch` statement can be used with a `String` in Java starting from Java 7. Prior to Java 7, `switch`",
+      "StringBuffer y StringBuilder son inmutables en Java.",
+      "Java does not have support for immutable text strings."
+    ],
+    "answer": "b",
+    "explanation": "Yes, a `switch` statement can be used with a `String` in Java starting from Java 7. Prior to Java 7, `switch` statements only supported `int`, `byte`, `short`, `char`, and `enum` types. With the introduction of the `String`"
+  },
+  {
+    "id": 82,
+    "category": "Java 8 Features",
+    "question": "Guess the output of this for loop",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Here is an example to guess the output:"
+    ],
+    "answer": "d",
+    "explanation": "Here is an example to guess the output: public class GuessOutput {"
+  },
+  {
+    "id": 83,
+    "category": "Java 8 Features",
+    "question": "What is an enhanced for loop?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "An enhanced for loop, also known as a for-each loop, is a simplified way to iterate over elements in an array or a",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "b",
+    "explanation": "An enhanced for loop, also known as a for-each loop, is a simplified way to iterate over elements in an array or a collection in Java. It provides a more concise syntax for iterating over elements without the need for explicit"
+  },
+  {
+    "id": 84,
+    "category": "Java 8 Features",
+    "question": "What is the output of the for loop below?",
+    "options": [
+      "Here is an example to guess the output:",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "Here is an example to guess the output: public class GuessOutput {"
+  },
+  {
+    "id": 85,
+    "category": "Java 8 Features",
+    "question": "What is the output of the program below?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Here is an example to guess the output:"
+    ],
+    "answer": "d",
+    "explanation": "Here is an example to guess the output: public class GuessOutput {"
+  },
+  {
+    "id": 86,
+    "category": "Java 8 Features",
+    "question": "What is the output of the program below?",
+    "options": [
+      "Here is an example to guess the output:",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "Here is an example to guess the output: public class GuessOutput {"
+  },
+  {
+    "id": 87,
+    "category": "Java 8 Features",
+    "question": "Why is exception handling important?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "Exception handling is important in Java for the following reasons:"
+    ],
+    "answer": "d",
+    "explanation": "Exception handling is important in Java for the following reasons: program execution. This helps prevent the program from crashing and provides a way to recover from unexpected"
+  },
+  {
+    "id": 88,
+    "category": "Java 8 Features",
+    "question": "What design pattern is used to implement exception handling features in most languages?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "The most common design pattern used to implement exception handling features in most programming languages, including"
+    ],
+    "answer": "d",
+    "explanation": "The most common design pattern used to implement exception handling features in most programming languages, including Java, is the `try-catch-finally` pattern. This pattern consists of three main components:"
+  },
+  {
+    "id": 89,
+    "category": "Java 8 Features",
+    "question": "What is the need for finally block?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "The `finally` block in Java is used to execute code that should always run, regardless of whether an exception occurs.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "The `finally` block in Java is used to execute code that should always run, regardless of whether an exception occurs. It is typically used to release resources, close connections, or perform cleanup operations that need to be done"
+  },
+  {
+    "id": 90,
+    "category": "Java 8 Features",
+    "question": "In what scenarios is code in finally not executed?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "The code in a `finally` block is not executed in the following scenarios:",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "b",
+    "explanation": "The code in a `finally` block is not executed in the following scenarios: terminate immediately, and the code in the `finally` block will not be executed."
+  },
+  {
+    "id": 91,
+    "category": "Java 8 Features",
+    "question": "Will finally be executed in the program below?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Here is an example to determine if the `finally` block will be executed:",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "Here is an example to determine if the `finally` block will be executed: public class Example {"
+  },
+  {
+    "id": 92,
+    "category": "Spring Framework",
+    "question": "Is try without a catch is allowed?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Yes, a `try` block without a `catch` block is allowed in Java. This is known as a try-with-resources statement and is",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "Yes, a `try` block without a `catch` block is allowed in Java. This is known as a try-with-resources statement and is used to automatically close resources that implement the `AutoCloseable` interface. The `try` block can be followed by"
+  },
+  {
+    "id": 93,
+    "category": "Spring Framework",
+    "question": "Is try without catch and finally allowed?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Yes, a `try` block without a `catch` or `finally` block is allowed in Java. This is known as a try-with-resources",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "Yes, a `try` block without a `catch` or `finally` block is allowed in Java. This is known as a try-with-resources statement and is used to automatically close resources that implement the `AutoCloseable` interface. The `try` block"
+  },
+  {
+    "id": 94,
+    "category": "Spring Framework",
+    "question": "Can you explain the hierarchy of exception handling classes?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "In Java, exception handling is based on a hierarchy of classes that extend the `Throwable` class. The main classes in",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "In Java, exception handling is based on a hierarchy of classes that extend the `Throwable` class. The main classes in the exception handling hierarchy are:"
+  },
+  {
+    "id": 95,
+    "category": "Spring Framework",
+    "question": "What is the difference between error and exception?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Errors and exceptions are both types of problems that can occur during the execution of a program, but they are",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "Errors and exceptions are both types of problems that can occur during the execution of a program, but they are handled differently in Java:"
+  },
+  {
+    "id": 96,
+    "category": "Spring Framework",
+    "question": "How do you throw an exception from a method?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "To throw an exception from a method in Java, you use the `throw` keyword followed by an instance of the exception",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "To throw an exception from a method in Java, you use the `throw` keyword followed by an instance of the exception This allows you to create and throw custom exceptions or to re-throw exceptions that were caught earlier. Here is an"
+  },
+  {
+    "id": 97,
+    "category": "Spring Framework",
+    "question": "What happens when you throw a checked exception from a method?",
+    "options": [
+      "When you throw a checked exception from a method in Java, you must either catch the exception using a `try-catch`",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "When you throw a checked exception from a method in Java, you must either catch the exception using a `try-catch` block or declare the exception using the `throws` keyword in the method signature. If you throw a checked exception"
+  },
+  {
+    "id": 98,
+    "category": "Spring Framework",
+    "question": "What are the options you have to eliminate compilation errors when handling checked exceptions?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "When handling checked exceptions in Java, you have several options to eliminate compilation errors:",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "When handling checked exceptions in Java, you have several options to eliminate compilation errors: 1. Catch the Exception: Use a `try-catch` block to catch the exception and handle it within the method."
+  },
+  {
+    "id": 99,
+    "category": "Spring Framework",
+    "question": "How do you create a custom exception?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "To create a custom exception in Java, you need to define a new class that extends the `Exception` class or one of its",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "To create a custom exception in Java, you need to define a new class that extends the `Exception` class or one of its subclasses. You can add custom fields, constructors, and methods to the custom exception class to provide additional"
+  },
+  {
+    "id": 100,
+    "category": "Spring Framework",
+    "question": "How do you handle multiple exception types with same exception handling block?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "In Java, you can handle multiple exception types with the same exception handling block by using a multi-catch block."
+    ],
+    "answer": "d",
+    "explanation": "In Java, you can handle multiple exception types with the same exception handling block by using a multi-catch block. This allows you to catch multiple exceptions in a single `catch` block and handle them in a common way. The syntax for"
+  },
+  {
+    "id": 101,
+    "category": "Database Connectivity",
+    "question": "Can you explain about try with resources?",
+    "options": [
+      "Try-with-resources is a feature introduced in Java 7 that simplifies resource management by automatically closing",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "Try-with-resources is a feature introduced in Java 7 that simplifies resource management by automatically closing resources that implement the `AutoCloseable` interface. It eliminates the need for explicit `finally` blocks to close"
+  },
+  {
+    "id": 102,
+    "category": "Database Connectivity",
+    "question": "How does try with resources work?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "Try-with-resources in Java works by automatically closing resources that implement the `AutoCloseable` interface when"
+    ],
+    "answer": "d",
+    "explanation": "Try-with-resources in Java works by automatically closing resources that implement the `AutoCloseable` interface when the `try` block exits. It simplifies resource management by eliminating the need for explicit `finally` blocks to"
+  },
+  {
+    "id": 103,
+    "category": "Database Connectivity",
+    "question": "Can you explain a few exception handling best practices?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "Some exception handling best practices in Java include:",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "Some exception handling best practices in Java include: allows you to handle different types of exceptions in a more targeted way."
+  },
+  {
+    "id": 104,
+    "category": "Database Connectivity",
+    "question": "What are the default values in an array?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "In Java, when an array is created, the elements are initialized to default values based on the type of the array. The",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "In Java, when an array is created, the elements are initialized to default values based on the type of the array. The default values for primitive types are as follows:"
+  },
+  {
+    "id": 105,
+    "category": "Database Connectivity",
+    "question": "How do you loop around an array using enhanced for loop?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "You can loop around an array using an enhanced for loop in Java. The enhanced for loop, also known as the for-each"
+    ],
+    "answer": "d",
+    "explanation": "You can loop around an array using an enhanced for loop in Java. The enhanced for loop, also known as the for-each loop, provides a more concise syntax for iterating over elements in an array or a collection. It eliminates the need"
+  },
+  {
+    "id": 106,
+    "category": "Database Connectivity",
+    "question": "How do you print the content of an array?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "You can print the content of an array in Java by iterating over the elements of the array and printing each element to",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "You can print the content of an array in Java by iterating over the elements of the array and printing each element to the console. There are several ways to print the content of an array, including using a `for` loop, an enhanced `for`"
+  },
+  {
+    "id": 107,
+    "category": "Database Connectivity",
+    "question": "How do you compare two arrays?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "In Java, you can compare two arrays using the `Arrays.equals` method from the `java.util` package. This method",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "In Java, you can compare two arrays using the `Arrays.equals` method from the `java.util` package. This method compares the contents of two arrays to determine if they are equal. It takes two arrays as arguments and returns"
+  },
+  {
+    "id": 108,
+    "category": "Database Connectivity",
+    "question": "What is an enum?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "An enum in Java is a special data type that represents a group of constants (unchangeable variables). It is used to",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "b",
+    "explanation": "An enum in Java is a special data type that represents a group of constants (unchangeable variables). It is used to define a set of named constants that can be used in place of integer values. Enumerations are defined using the"
+  },
+  {
+    "id": 109,
+    "category": "Database Connectivity",
+    "question": "Can you use a switch statement around an enum?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Yes, you can use a switch statement around an enum in Java. Enumerations are often used with switch statements to"
+    ],
+    "answer": "d",
+    "explanation": "Yes, you can use a switch statement around an enum in Java. Enumerations are often used with switch statements to provide a more readable and type-safe alternative to using integer values. Each constant in the enum can be used as a"
+  },
+  {
+    "id": 110,
+    "category": "Database Connectivity",
+    "question": "What are variable arguments or varargs?",
+    "options": [
+      "Variable arguments, also known as varargs, allow you to pass a variable number of arguments to a method. This",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "Variable arguments, also known as varargs, allow you to pass a variable number of arguments to a method. This feature was introduced in Java 5 and is denoted by an ellipsis (`...`) after the type of the last parameter in the"
+  },
+  {
+    "id": 111,
+    "category": "Web Services",
+    "question": "What are asserts used for?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Asserts in Java are used to test assumptions in the code and validate conditions that should be true during program"
+    ],
+    "answer": "d",
+    "explanation": "Asserts in Java are used to test assumptions in the code and validate conditions that should be true during program execution. They are typically used for debugging and testing purposes to catch errors and inconsistencies in the code."
+  },
+  {
+    "id": 112,
+    "category": "Web Services",
+    "question": "When should asserts be used?",
+    "options": [
+      "Asserts in Java should be used in the following scenarios:",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "Asserts in Java should be used in the following scenarios:"
+  },
+  {
+    "id": 113,
+    "category": "Web Services",
+    "question": "What is garbage collection?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "Garbage collection in Java is the process of automatically reclaiming memory that is no longer in use by the program.",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Set allows duplicate elements in Java."
+    ],
+    "answer": "b",
+    "explanation": "Garbage collection in Java is the process of automatically reclaiming memory that is no longer in use by the program. It is a key feature of the Java Virtual Machine (JVM) that manages memory allocation and deallocation for objects"
+  },
+  {
+    "id": 114,
+    "category": "Web Services",
+    "question": "Can you explain garbage collection with an example?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "Garbage collection in Java is the process of automatically reclaiming memory that is no longer in use by the program.",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Set allows duplicate elements in Java."
+    ],
+    "answer": "b",
+    "explanation": "Garbage collection in Java is the process of automatically reclaiming memory that is no longer in use by the program. It helps prevent memory leaks and ensures that memory is used efficiently by reclaiming unused memory and making it"
+  },
+  {
+    "id": 115,
+    "category": "Web Services",
+    "question": "When is garbage collection run?",
+    "options": [
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Set allows duplicate elements in Java.",
+      "Garbage collection in Java is run by the JVM's garbage collector at specific intervals or when certain conditions are",
+      "Collections in Java can only store primitive types."
+    ],
+    "answer": "c",
+    "explanation": "Garbage collection in Java is run by the JVM's garbage collector at specific intervals or when certain conditions are met. The garbage collector runs in the background and periodically checks for unused objects to reclaim memory. The"
+  },
+  {
+    "id": 116,
+    "category": "Web Services",
+    "question": "What are best practices on garbage collection?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java.",
+      "Some best practices for garbage collection in Java include:",
+      "ArrayList and LinkedList have the same performance in all operations."
+    ],
+    "answer": "c",
+    "explanation": "Some best practices for garbage collection in Java include: JVM's garbage collector manage memory automatically and optimize memory usage based on the application's"
+  },
+  {
+    "id": 117,
+    "category": "Web Services",
+    "question": "What are initialization blocks?",
+    "options": [
+      "Initialization blocks in Java are used to initialize instance variables of a class. There are two types of",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "Initialization blocks in Java are used to initialize instance variables of a class. There are two types of initialization blocks in Java: instance initializer blocks and static initializer blocks."
+  },
+  {
+    "id": 118,
+    "category": "Web Services",
+    "question": "What is a static initializer?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "A static initializer in Java is used to initialize static variables of a class. It is executed when the class is",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "A static initializer in Java is used to initialize static variables of a class. It is executed when the class is by the JVM and can be used to perform one-time initialization tasks. Static initializer blocks are defined with the"
+  },
+  {
+    "id": 119,
+    "category": "Web Services",
+    "question": "What is an instance initializer block?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "An instance initializer block in Java is used to initialize instance variables of a class. It is executed when an",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "An instance initializer block in Java is used to initialize instance variables of a class. It is executed when an instance of the class is created and can be used to perform complex initialization logic. Instance initializer blocks"
+  },
+  {
+    "id": 120,
+    "category": "Web Services",
+    "question": "What is tokenizing?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "Tokenizing in Java refers to the process of breaking a string into smaller parts, called tokens. This is often done",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "Tokenizing in Java refers to the process of breaking a string into smaller parts, called tokens. This is often done to extract individual words, numbers, or other elements from a larger string. Tokenizing is commonly used in parsing"
+  },
+  {
+    "id": 121,
+    "category": "Design Patterns",
+    "question": "Can you give an example of tokenizing?",
+    "options": [
+      "Tokenizing in Java refers to the process of breaking a string into smaller parts, called tokens. This is often done",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "Tokenizing in Java refers to the process of breaking a string into smaller parts, called tokens. This is often done to extract individual words, numbers, or other elements from a larger string. Tokenizing is commonly used in parsing"
+  },
+  {
+    "id": 122,
+    "category": "Design Patterns",
+    "question": "What is serialization?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "Serialization in Java is the process of converting an object into a stream of bytes that can be saved to a file,",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "Serialization in Java is the process of converting an object into a stream of bytes that can be saved to a file, sent over a network, or stored in a database. Serialization allows objects to be persisted and transferred between"
+  },
+  {
+    "id": 123,
+    "category": "Design Patterns",
+    "question": "How do you serialize an object using serializable interface?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "To serialize an object in Java using the `Serializable` interface, follow these steps:",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "To serialize an object in Java using the `Serializable` interface, follow these steps: 1. Implement the `Serializable` interface in the class that you want to serialize. The `Serializable` interface is a"
+  },
+  {
+    "id": 124,
+    "category": "Design Patterns",
+    "question": "How do you de-serialize in Java?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "To deserialize an object in Java, follow these steps:",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "b",
+    "explanation": "To deserialize an object in Java, follow these steps: 1. Create an instance of the `ObjectInputStream` class and pass it a `FileInputStream` or other input stream to read"
+  },
+  {
+    "id": 125,
+    "category": "Design Patterns",
+    "question": "What do you do if only parts of the object have to be serialized?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "If only parts of an object need to be serialized in Java, you can use the `transient` keyword to mark fields that"
+    ],
+    "answer": "d",
+    "explanation": "If only parts of an object need to be serialized in Java, you can use the `transient` keyword to mark fields that should not be serialized. The `transient` keyword tells the JVM to skip the serialization of the marked field and"
+  },
+  {
+    "id": 126,
+    "category": "Design Patterns",
+    "question": "How do you serialize a hierarchy of objects?",
+    "options": [
+      "To serialize a hierarchy of objects in Java, follow these steps:",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "To serialize a hierarchy of objects in Java, follow these steps: 1. Implement the `Serializable` interface in all classes in the hierarchy that need to be serialized. The"
+  },
+  {
+    "id": 127,
+    "category": "Design Patterns",
+    "question": "Are the constructors in an object invoked when it is de-serialized?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "When an object is deserialized in Java, the constructors of the object are not invoked. Instead, the object is"
+    ],
+    "answer": "d",
+    "explanation": "When an object is deserialized in Java, the constructors of the object are not invoked. Instead, the object is restored from the serialized form, and its state and properties are reconstructed based on the serialized data. The"
+  },
+  {
+    "id": 128,
+    "category": "Design Patterns",
+    "question": "Are the values of static variables stored when an object is serialized?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "When an object is serialized in Java, the values of static variables are not stored as part of the serialized object.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "When an object is serialized in Java, the values of static variables are not stored as part of the serialized object. Static variables are associated with the class itself rather than individual instances of the class, so they are not"
+  },
+  {
+    "id": 129,
+    "category": "Design Patterns",
+    "question": "Why do we need collections in Java?",
+    "options": [
+      "Collections in Java are used to store, retrieve, manipulate, and process groups of objects. They provide a way to",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java."
+    ],
+    "answer": "a",
+    "explanation": "Collections in Java are used to store, retrieve, manipulate, and process groups of objects. They provide a way to organize and manage data in a structured and efficient manner. Collections offer a wide range of data structures and"
+  },
+  {
+    "id": 130,
+    "category": "Design Patterns",
+    "question": "What are the important interfaces in the collection hierarchy?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "The Java Collections Framework provides a set of interfaces that define the core functionality of collections in",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Set allows duplicate elements in Java."
+    ],
+    "answer": "b",
+    "explanation": "The Java Collections Framework provides a set of interfaces that define the core functionality of collections in Java. Some of the important interfaces in the collection hierarchy include:"
+  },
+  {
+    "id": 131,
+    "category": "JVM and Memory Management",
+    "question": "What are the important methods that are declared in the collection interface?",
+    "options": [
+      "Set allows duplicate elements in Java.",
+      "The `Collection` interface in Java defines a set of common methods that are shared by all classes that implement the",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types."
+    ],
+    "answer": "b",
+    "explanation": "The `Collection` interface in Java defines a set of common methods that are shared by all classes that implement the interface. Some of the important methods declared in the `Collection` interface include:"
+  },
+  {
+    "id": 132,
+    "category": "JVM and Memory Management",
+    "question": "Can you explain briefly about the List interface?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java.",
+      "The `List` interface in Java extends the `Collection` interface and represents an ordered collection of elements",
+      "ArrayList and LinkedList have the same performance in all operations."
+    ],
+    "answer": "c",
+    "explanation": "The `List` interface in Java extends the `Collection` interface and represents an ordered collection of elements that allows duplicates. Lists maintain the insertion order of elements and provide methods for accessing, adding,"
+  },
+  {
+    "id": 133,
+    "category": "JVM and Memory Management",
+    "question": "Explain about ArrayList with an example?",
+    "options": [
+      "The `ArrayList` class in Java is a resizable array implementation of the `List` interface. It provides dynamic",
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java.",
+      "ArrayList and LinkedList have the same performance in all operations."
+    ],
+    "answer": "a",
+    "explanation": "The `ArrayList` class in Java is a resizable array implementation of the `List` interface. It provides dynamic resizing, fast random access, and efficient insertion and deletion of elements. `ArrayList` is part of the Java"
+  },
+  {
+    "id": 134,
+    "category": "JVM and Memory Management",
+    "question": "Can an ArrayList have duplicate elements?",
+    "options": [
+      "Set allows duplicate elements in Java.",
+      "Collections in Java can only store primitive types.",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Yes, an `ArrayList` in Java can have duplicate elements. Unlike a `Set`, which does not allow duplicates, an"
+    ],
+    "answer": "d",
+    "explanation": "Yes, an `ArrayList` in Java can have duplicate elements. Unlike a `Set`, which does not allow duplicates, an `ArrayList` allows elements to be added multiple times. This means that an `ArrayList` can contain duplicate elements"
+  },
+  {
+    "id": 135,
+    "category": "JVM and Memory Management",
+    "question": "How do you iterate around an ArrayList using iterator?",
+    "options": [
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "To iterate over an `ArrayList` using an iterator in Java, you can use the `iterator` method provided by the",
+      "Set allows duplicate elements in Java.",
+      "Collections in Java can only store primitive types."
+    ],
+    "answer": "b",
+    "explanation": "To iterate over an `ArrayList` using an iterator in Java, you can use the `iterator` method provided by the `ArrayList` class. The `iterator` method returns an `Iterator` object that can be used to traverse the elements in the"
+  },
+  {
+    "id": 136,
+    "category": "JVM and Memory Management",
+    "question": "How do you sort an ArrayList?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "To sort an `ArrayList` in Java, you can use the `Collections.sort` method provided by the `java.util.Collections`",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Set allows duplicate elements in Java."
+    ],
+    "answer": "b",
+    "explanation": "To sort an `ArrayList` in Java, you can use the `Collections.sort` method provided by the `java.util.Collections` class. The `Collections.sort` method sorts the elements in the list in ascending order based on their natural order or"
+  },
+  {
+    "id": 137,
+    "category": "JVM and Memory Management",
+    "question": "How do you sort elements in an ArrayList using comparable interface?",
+    "options": [
+      "To sort elements in an `ArrayList` using the `Comparable` interface in Java, you need to implement the `Comparable`",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Set allows duplicate elements in Java.",
+      "Collections in Java can only store primitive types."
+    ],
+    "answer": "a",
+    "explanation": "To sort elements in an `ArrayList` using the `Comparable` interface in Java, you need to implement the `Comparable` interface in the class of the elements you want to sort. The `Comparable` interface defines a `compareTo` method that"
+  },
+  {
+    "id": 138,
+    "category": "JVM and Memory Management",
+    "question": "How do you sort elements in an ArrayList using comparator interface?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java.",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "To sort elements in an `ArrayList` using the `Comparator` interface in Java, you need to create a custom comparator"
+    ],
+    "answer": "d",
+    "explanation": "To sort elements in an `ArrayList` using the `Comparator` interface in Java, you need to create a custom comparator class that implements the `Comparator` interface. The `Comparator` interface defines a `compare` method that compares"
+  },
+  {
+    "id": 139,
+    "category": "JVM and Memory Management",
+    "question": "What is vector class? How is it different from an ArrayList?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java.",
+      "The `Vector` class in Java is a legacy collection class that is similar to an `ArrayList` but is synchronized. This",
+      "ArrayList and LinkedList have the same performance in all operations."
+    ],
+    "answer": "c",
+    "explanation": "The `Vector` class in Java is a legacy collection class that is similar to an `ArrayList` but is synchronized. This means that access to a `Vector` is thread-safe, making it suitable for use in multi-threaded environments. The"
+  },
+  {
+    "id": 140,
+    "category": "JVM and Memory Management",
+    "question": "What is linkedList? What interfaces does it implement? How is it different from an ArrayList?",
+    "options": [
+      "Set allows duplicate elements in Java.",
+      "The `LinkedList` class in Java is a doubly-linked list implementation of the `List` interface. It provides efficient",
+      "Collections in Java can only store primitive types.",
+      "ArrayList and LinkedList have the same performance in all operations."
+    ],
+    "answer": "b",
+    "explanation": "The `LinkedList` class in Java is a doubly-linked list implementation of the `List` interface. It provides efficient insertion and deletion of elements at the beginning, middle, and end of the list. `LinkedList` implements the `List`,"
+  },
+  {
+    "id": 141,
+    "category": "Testing",
+    "question": "Can you briefly explain about the Set interface?",
+    "options": [
+      "Set allows duplicate elements in Java.",
+      "The `Set` interface in Java extends the `Collection` interface and represents a collection of unique elements with no",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types."
+    ],
+    "answer": "b",
+    "explanation": "The `Set` interface in Java extends the `Collection` interface and represents a collection of unique elements with no duplicates. Sets do not allow duplicate elements, and they maintain no specific order of elements. The `Set`"
+  },
+  {
+    "id": 142,
+    "category": "Testing",
+    "question": "What are the important interfaces related to the Set interface?",
+    "options": [
+      "Set allows duplicate elements in Java.",
+      "The `Set` interface in Java is related to several other interfaces in the Java Collections Framework that provide",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types."
+    ],
+    "answer": "b",
+    "explanation": "The `Set` interface in Java is related to several other interfaces in the Java Collections Framework that provide additional functionality for working with sets of elements. Some of the important interfaces related to the `Set`"
+  },
+  {
+    "id": 143,
+    "category": "Testing",
+    "question": "What is the difference between Set and sortedSet interfaces?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Set allows duplicate elements in Java.",
+      "The `Set` and `SortedSet` interfaces in Java are related interfaces in the Java Collections Framework that represent"
+    ],
+    "answer": "d",
+    "explanation": "The `Set` and `SortedSet` interfaces in Java are related interfaces in the Java Collections Framework that represent collections of unique elements with no duplicates. The main difference between `Set` and `SortedSet` is the ordering"
+  },
+  {
+    "id": 144,
+    "category": "Testing",
+    "question": "Can you give examples of classes that implement the Set interface?",
+    "options": [
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Set allows duplicate elements in Java.",
+      "The `Set` interface in Java is implemented by several classes in the Java Collections Framework that provide",
+      "Collections in Java can only store primitive types."
+    ],
+    "answer": "c",
+    "explanation": "The `Set` interface in Java is implemented by several classes in the Java Collections Framework that provide different implementations of sets. Some of the common classes that implement the `Set` interface include:"
+  },
+  {
+    "id": 145,
+    "category": "Testing",
+    "question": "What is a HashSet? How is it different from a TreeSet?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java.",
+      "`HashSet` and `TreeSet` are two common implementations of the `Set` interface in Java that provide different",
+      "ArrayList and LinkedList have the same performance in all operations."
+    ],
+    "answer": "c",
+    "explanation": "`HashSet` and `TreeSet` are two common implementations of the `Set` interface in Java that provide different characteristics for working with sets of elements. The main differences between `HashSet` and `TreeSet` include:"
+  },
+  {
+    "id": 146,
+    "category": "Testing",
+    "question": "What is a linkedHashSet? How is different from a HashSet?",
+    "options": [
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java.",
+      "`LinkedHashSet` is a class in Java that extends `HashSet` and maintains the order of elements based on their insertion"
+    ],
+    "answer": "d",
+    "explanation": "`LinkedHashSet` is a class in Java that extends `HashSet` and maintains the order of elements based on their insertion order. Unlike `HashSet`, which does not maintain the order of elements, `LinkedHashSet` provides predictable iteration"
+  },
+  {
+    "id": 147,
+    "category": "Testing",
+    "question": "What is a TreeSet? How is different from a HashSet?",
+    "options": [
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types.",
+      "`TreeSet` is a class in Java that implements the `SortedSet` interface using a red-black tree data structure.",
+      "Set allows duplicate elements in Java."
+    ],
+    "answer": "c",
+    "explanation": "`TreeSet` is a class in Java that implements the `SortedSet` interface using a red-black tree data structure. maintains the order of elements based on their natural ordering or a custom comparator, allowing elements to be sorted"
+  },
+  {
+    "id": 148,
+    "category": "Testing",
+    "question": "Can you give examples of implementations of navigableSet?",
+    "options": [
+      "The `NavigableSet` interface in Java is implemented by the `TreeSet` and `ConcurrentSkipListSet` classes in the Java",
+      "Set allows duplicate elements in Java.",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types."
+    ],
+    "answer": "a",
+    "explanation": "The `NavigableSet` interface in Java is implemented by the `TreeSet` and `ConcurrentSkipListSet` classes in the Java Collections Framework. These classes provide implementations of navigable sets that support navigation methods for"
+  },
+  {
+    "id": 149,
+    "category": "Testing",
+    "question": "Explain briefly about Queue interface?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "The `Queue` interface in Java represents a collection of elements in a specific order for processing. Queues follow",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "The `Queue` interface in Java represents a collection of elements in a specific order for processing. Queues follow the First-In-First-Out (FIFO) order, meaning that elements are added to the end of the queue and removed from the"
+  },
+  {
+    "id": 150,
+    "category": "Testing",
+    "question": "What are the important interfaces related to the Queue interface?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "The `Queue` interface in Java is related to several other interfaces in the Java Collections Framework that provide"
+    ],
+    "answer": "d",
+    "explanation": "The `Queue` interface in Java is related to several other interfaces in the Java Collections Framework that provide additional functionality for working with queues of elements. Some of the important interfaces related to the `Queue`"
+  },
+  {
+    "id": 151,
+    "category": "Best Practices",
+    "question": "Explain about the Deque interface?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "The `Deque` interface in Java represents a double-ended queue that allows elements to be added or removed from both"
+    ],
+    "answer": "d",
+    "explanation": "The `Deque` interface in Java represents a double-ended queue that allows elements to be added or removed from both ends. Deques provide methods for adding, removing, and accessing elements at the front and back of the queue, making"
+  },
+  {
+    "id": 152,
+    "category": "Best Practices",
+    "question": "Explain the BlockingQueue interface?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "The `BlockingQueue` interface in Java represents a queue that supports blocking operations for adding and removing",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "The `BlockingQueue` interface in Java represents a queue that supports blocking operations for adding and removing elements. Blocking queues provide methods for waiting for elements to become available or space to become available in"
+  },
+  {
+    "id": 153,
+    "category": "Best Practices",
+    "question": "What is a priorityQueue? How is it different from a normal queue?",
+    "options": [
+      "`PriorityQueue` is a class in Java that implements the `Queue` interface using a priority heap data structure. Unlike",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "`PriorityQueue` is a class in Java that implements the `Queue` interface using a priority heap data structure. Unlike a normal queue, which follows the First-In-First-Out (FIFO) order, a `PriorityQueue` maintains elements in a priority"
+  },
+  {
+    "id": 154,
+    "category": "Best Practices",
+    "question": "Can you give example implementations of the BlockingQueue interface?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "The `BlockingQueue` interface in Java is implemented by several classes in the Java Collections Framework that provide"
+    ],
+    "answer": "d",
+    "explanation": "The `BlockingQueue` interface in Java is implemented by several classes in the Java Collections Framework that provide different implementations of blocking queues. Some examples of implementations of `BlockingQueue` include:"
+  },
+  {
+    "id": 155,
+    "category": "Best Practices",
+    "question": "Can you briefly explain about the Map interface?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "The `Map` interface in Java represents a collection of key-value pairs where each key is unique and maps to a single",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "The `Map` interface in Java represents a collection of key-value pairs where each key is unique and maps to a single value. Maps provide methods for adding, removing, and accessing key-value pairs, as well as for checking the presence"
+  },
+  {
+    "id": 156,
+    "category": "Best Practices",
+    "question": "What is difference between Map and SortedMap?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "The `Map` and `SortedMap` interfaces in Java are related interfaces in the Java Collections Framework that represent",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "The `Map` and `SortedMap` interfaces in Java are related interfaces in the Java Collections Framework that represent collections of key-value pairs. The main difference between `Map` and `SortedMap` is the ordering of keys:"
+  },
+  {
+    "id": 157,
+    "category": "Best Practices",
+    "question": "What is a HashMap? How is it different from a TreeMap?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "`HashMap` and `TreeMap` are two common implementations of the `Map` interface in Java that provide different",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "`HashMap` and `TreeMap` are two common implementations of the `Map` interface in Java that provide different characteristics for working with key-value pairs. The main differences between `HashMap` and `TreeMap` include:"
+  },
+  {
+    "id": 158,
+    "category": "Best Practices",
+    "question": "What are the different methods in a Hash Map?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "The `HashMap` class in Java provides a variety of methods for working with key-value pairs stored in a hash table"
+    ],
+    "answer": "d",
+    "explanation": "The `HashMap` class in Java provides a variety of methods for working with key-value pairs stored in a hash table\n data structure. Some of the common methods provided by the `HashMap` class include:\n\n    - **`put(key, value)`**: Adds a key-value pair to the map, replacing the existing value if the key is already\n      present.\n    - **`get(key)`**: Retrieves the value associated with the specified key, or `null` if the key is not present.\n    - **`containsKey(key)`**: Checks if the map contains the specified key.\n    - **`containsValue(value)`**: Checks if the map contains the specified value.\n    - **`remove(key)`**: Removes the key-value pair associated with the specified key from the map.\n    - **`size()`**: Returns the number of key-value pairs in the map.\n    - **`isEmpty()`**: Checks if the map is empty.\n    - **`keySet()`**: Returns a set of all keys in the map.\n    - **`values()`**: Returns a collection of all values in the map.\n    - **`entrySet()`**: Returns a set of key-value pairs in the map.\n\n  These methods provide a flexible and efficient way to work with key-value pairs stored in a `HashMap` in Java.\n"
+  },
+  {
+    "id": 159,
+    "category": "Best Practices",
+    "question": "What is a TreeMap? How is different from a HashMap?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "`TreeMap` is a class in Java that implements the `SortedMap` interface using a red-black tree data structure."
+    ],
+    "answer": "d",
+    "explanation": "`TreeMap` is a class in Java that implements the `SortedMap` interface using a red-black tree data structure. maintains the order of keys based on their natural ordering or a custom comparator, allowing keys to be sorted in"
+  },
+  {
+    "id": 160,
+    "category": "Best Practices",
+    "question": "Can you give an example of implementation of NavigableMap interface?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "The `NavigableMap` interface in Java is implemented by the `TreeMap` class in the Java Collections Framework."
+    ],
+    "answer": "d",
+    "explanation": "The `NavigableMap` interface in Java is implemented by the `TreeMap` class in the Java Collections Framework. provides a navigable map of key-value pairs sorted in a specific order, allowing elements to be accessed, added, and"
+  },
+  {
+    "id": 161,
+    "category": "Performance Optimization",
+    "question": "What are the static methods present in the collections class?",
+    "options": [
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java.",
+      "The `Collections` class in Java provides a variety of static methods for working with collections in the Java",
+      "ArrayList and LinkedList have the same performance in all operations."
+    ],
+    "answer": "c",
+    "explanation": "The `Collections` class in Java provides a variety of static methods for working with collections in the Java Collections Framework. Some of the common static methods provided by the `Collections` class include:"
+  },
+  {
+    "id": 162,
+    "category": "Performance Optimization",
+    "question": "What is the difference between synchronized and concurrent collections in Java?",
+    "options": [
+      "Synchronized collections and concurrent collections in Java are two approaches to handling thread safety in",
+      "Set allows duplicate elements in Java.",
+      "Collections in Java can only store primitive types.",
+      "ArrayList and LinkedList have the same performance in all operations."
+    ],
+    "answer": "a",
+    "explanation": "Synchronized collections and concurrent collections in Java are two approaches to handling thread safety in multi-threaded applications. The main difference between synchronized and concurrent collections is how they achieve"
+  },
+  {
+    "id": 163,
+    "category": "Performance Optimization",
+    "question": "Explain about the new concurrent collections in Java?",
+    "options": [
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types.",
+      "Set allows duplicate elements in Java.",
+      "Java provides a set of concurrent collections in the `java.util.concurrent` package that are designed for high"
+    ],
+    "answer": "d",
+    "explanation": "Java provides a set of concurrent collections in the `java.util.concurrent` package that are designed for high concurrency and thread safety in multi-threaded applications. Some of the new concurrent collections introduced in"
+  },
+  {
+    "id": 164,
+    "category": "Performance Optimization",
+    "question": "Explain about copyOnWrite concurrent collections approach?",
+    "options": [
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types.",
+      "The copy-on-write (COW) approach is a concurrency control technique used in Java to provide thread-safe access to",
+      "Set allows duplicate elements in Java."
+    ],
+    "answer": "c",
+    "explanation": "The copy-on-write (COW) approach is a concurrency control technique used in Java to provide thread-safe access to collections. In the copy-on-write approach, a new copy of the collection is created whenever a modification is made,"
+  },
+  {
+    "id": 165,
+    "category": "Performance Optimization",
+    "question": "What is compareAndSwap approach?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "The compare-and-swap (CAS) operation is an atomic operation used in concurrent programming to implement lock-free",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "The compare-and-swap (CAS) operation is an atomic operation used in concurrent programming to implement lock-free algorithms and data structures. The CAS operation allows a thread to update a value in memory if it matches an"
+  },
+  {
+    "id": 166,
+    "category": "Performance Optimization",
+    "question": "What is a lock? How is it different from using synchronized approach?",
+    "options": [
+      "Synchronized solo funciona con métodos estáticos.",
+      "Threads in Java cannot share memory.",
+      "A lock is a synchronization mechanism used in Java to control access to shared resources in multi-threaded",
+      "Java no soporta programación concurrente nativa."
+    ],
+    "answer": "c",
+    "explanation": "A lock is a synchronization mechanism used in Java to control access to shared resources in multi-threaded applications. Locks provide a way to coordinate the execution of threads and ensure that only one thread can access a"
+  },
+  {
+    "id": 167,
+    "category": "Performance Optimization",
+    "question": "What is initial capacity of a Java collection?",
+    "options": [
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Set allows duplicate elements in Java.",
+      "Collections in Java can only store primitive types.",
+      "The initial capacity of a Java collection refers to the number of elements that the collection can initially store"
+    ],
+    "answer": "d",
+    "explanation": "The initial capacity of a Java collection refers to the number of elements that the collection can initially store before resizing is required. When a collection is created, an initial capacity is specified to allocate memory for"
+  },
+  {
+    "id": 168,
+    "category": "Performance Optimization",
+    "question": "What is load factor?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "The load factor of a Java collection is a value that determines when the collection should be resized to accommodate",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "The load factor of a Java collection is a value that determines when the collection should be resized to accommodate additional elements. The load factor is used in hash-based collections like `HashMap` and `HashSet` to control the"
+  },
+  {
+    "id": 169,
+    "category": "Performance Optimization",
+    "question": "When does a Java collection throw `UnsupportedOperationException`?",
+    "options": [
+      "Set allows duplicate elements in Java.",
+      "A Java collection throws an `UnsupportedOperationException` when an operation is not supported by the collection. This",
+      "ArrayList and LinkedList have the same performance in all operations.",
+      "Collections in Java can only store primitive types."
+    ],
+    "answer": "b",
+    "explanation": "A Java collection throws an `UnsupportedOperationException` when an operation is not supported by the collection. This exception is typically thrown when an attempt is made to modify an immutable or read-only collection, or when an"
+  },
+  {
+    "id": 170,
+    "category": "Performance Optimization",
+    "question": "What is difference between fail-safe and fail-fast iterators?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "Fail-safe and fail-fast iterators are two different approaches to handling concurrent modifications to collections in",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "b",
+    "explanation": "Fail-safe and fail-fast iterators are two different approaches to handling concurrent modifications to collections in Java. The main difference between fail-safe and fail-fast iterators is how they respond to modifications made to a"
+  },
+  {
+    "id": 171,
+    "category": "Security",
+    "question": "What are atomic operations in Java?",
+    "options": [
+      "Atomic operations in Java are operations that are performed atomically, meaning that they are indivisible and",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "Atomic operations in Java are operations that are performed atomically, meaning that they are indivisible and uninterruptible. Atomic operations are used in concurrent programming to ensure that shared data is accessed and"
+  },
+  {
+    "id": 172,
+    "category": "Security",
+    "question": "What is BlockingQueue in Java?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "A `BlockingQueue` in Java is a type of queue that supports blocking operations for adding and removing elements. A",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "A `BlockingQueue` in Java is a type of queue that supports blocking operations for adding and removing elements. A blocking queue provides methods for waiting for elements to become available or space to become available in the"
+  },
+  {
+    "id": 173,
+    "category": "Security",
+    "question": "What are Generics? Why do we need Generics?",
+    "options": [
+      "Generics in Java are a feature that allows classes and methods to be parameterized by one or more types. Generics",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "Generics in Java are a feature that allows classes and methods to be parameterized by one or more types. Generics provide a way to create reusable and type-safe code by allowing classes and methods to work with generic types that"
+  },
+  {
+    "id": 174,
+    "category": "Security",
+    "question": "Why do we need Generics? Can you give an example of how Generics make a program more flexible?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Generics in Java are a feature that allows classes and methods to be parameterized by one or more types. Generics"
+    ],
+    "answer": "d",
+    "explanation": "Generics in Java are a feature that allows classes and methods to be parameterized by one or more types. Generics provide a way to create reusable and type-safe code by allowing classes and methods to work with generic types that"
+  },
+  {
+    "id": 175,
+    "category": "Security",
+    "question": "How do you declare a generic class?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "A generic class in Java is declared by specifying one or more type parameters in angle brackets (`<>`) after the class",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "A generic class in Java is declared by specifying one or more type parameters in angle brackets (`<>`) after the class name. The type parameters are used to represent generic types that can be specified at compile time when creating"
+  },
+  {
+    "id": 176,
+    "category": "Security",
+    "question": "What are the restrictions in using generic type that is declared in a class declaration?",
+    "options": [
+      "When using a generic type that is declared in a class declaration, there are some restrictions and limitations that",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "When using a generic type that is declared in a class declaration, there are some restrictions and limitations that must be considered:"
+  },
+  {
+    "id": 177,
+    "category": "Security",
+    "question": "How can we restrict Generics to a subclass of particular class?",
+    "options": [
+      "In Java, it is possible to restrict generics to a subclass of a particular class by using bounded type parameters. By",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "In Java, it is possible to restrict generics to a subclass of a particular class by using bounded type parameters. By specifying an upper bound for the generic type parameter, you can restrict the types that can be used with the generic"
+  },
+  {
+    "id": 178,
+    "category": "Security",
+    "question": "How can we restrict Generics to a super class of particular class?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "In Java, it is possible to restrict generics to a super class of a particular class by using bounded type parameters.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "b",
+    "explanation": "In Java, it is possible to restrict generics to a super class of a particular class by using bounded type parameters. By specifying a lower bound for the generic type parameter, you can restrict the types that can be used with the"
+  },
+  {
+    "id": 179,
+    "category": "Security",
+    "question": "Can you give an example of a generic method?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "A generic method in Java is a method that is parameterized by one or more types. Generic methods provide a way to",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "A generic method in Java is a method that is parameterized by one or more types. Generic methods provide a way to create methods that can work with different types of arguments without sacrificing type safety. Here is an example of"
+  },
+  {
+    "id": 180,
+    "category": "Security",
+    "question": "What is the need for threads in Java?",
+    "options": [
+      "Synchronized solo funciona con métodos estáticos.",
+      "Threads in Java are used to achieve concurrent execution of tasks within a single process. Threads allow multiple",
+      "Java no soporta programación concurrente nativa.",
+      "Threads in Java cannot share memory."
+    ],
+    "answer": "b",
+    "explanation": "Threads in Java are used to achieve concurrent execution of tasks within a single process. Threads allow multiple operations to be performed simultaneously, enabling applications to take advantage of multi-core processors and"
+  },
+  {
+    "id": 181,
+    "category": "Frameworks",
+    "question": "How do you create a thread?",
+    "options": [
+      "Threads in Java cannot share memory.",
+      "There are two main ways to create a thread in Java:",
+      "Synchronized solo funciona con métodos estáticos.",
+      "Java no soporta programación concurrente nativa."
+    ],
+    "answer": "b",
+    "explanation": "There are two main ways to create a thread in Java: `run` method. This approach allows you to define the behavior of the thread by implementing the `run` method."
+  },
+  {
+    "id": 182,
+    "category": "Frameworks",
+    "question": "How do you create a thread by extending thread class?",
+    "options": [
+      "Threads in Java cannot share memory.",
+      "Java no soporta programación concurrente nativa.",
+      "You can create a thread in Java by extending the `Thread` class and overriding the `run` method. This approach allows",
+      "Synchronized solo funciona con métodos estáticos."
+    ],
+    "answer": "c",
+    "explanation": "You can create a thread in Java by extending the `Thread` class and overriding the `run` method. This approach allows you to define the behavior of the thread by implementing the `run` method. Here is an example:"
+  },
+  {
+    "id": 183,
+    "category": "Frameworks",
+    "question": "How do you create a thread by implementing runnable interface?",
+    "options": [
+      "Java no soporta programación concurrente nativa.",
+      "Threads in Java cannot share memory.",
+      "You can create a thread in Java by implementing the `Runnable` interface and passing an instance of the class to the",
+      "Synchronized solo funciona con métodos estáticos."
+    ],
+    "answer": "c",
+    "explanation": "You can create a thread in Java by implementing the `Runnable` interface and passing an instance of the class to the `Thread` constructor. This approach separates the thread logic from the class definition and allows for better code"
+  },
+  {
+    "id": 184,
+    "category": "Frameworks",
+    "question": "How do you run a thread in Java?",
+    "options": [
+      "Java no soporta programación concurrente nativa.",
+      "There are two main ways to run a thread in Java:",
+      "Synchronized solo funciona con métodos estáticos.",
+      "Threads in Java cannot share memory."
+    ],
+    "answer": "b",
+    "explanation": "There are two main ways to run a thread in Java: method. This approach allows you to define the behavior of the thread by implementing the `run` method. You can"
+  },
+  {
+    "id": 185,
+    "category": "Frameworks",
+    "question": "What are the different states of a thread?",
+    "options": [
+      "Threads in Java can be in different states during their lifecycle. The main states of a thread in Java are:",
+      "Synchronized solo funciona con métodos estáticos.",
+      "Java no soporta programación concurrente nativa.",
+      "Threads in Java cannot share memory."
+    ],
+    "answer": "a",
+    "explanation": "Threads in Java can be in different states during their lifecycle. The main states of a thread in Java are:"
+  },
+  {
+    "id": 186,
+    "category": "Frameworks",
+    "question": "What is priority of a thread? How do you change the priority of a thread?",
+    "options": [
+      "Synchronized solo funciona con métodos estáticos.",
+      "Threads in Java cannot share memory.",
+      "The priority of a thread in Java is an integer value that determines the scheduling priority of the thread.",
+      "Java no soporta programación concurrente nativa."
+    ],
+    "answer": "c",
+    "explanation": "The priority of a thread in Java is an integer value that determines the scheduling priority of the thread. with higher priority values are given preference by the thread scheduler and are more likely."
+  },
+  {
+    "id": 187,
+    "category": "Frameworks",
+    "question": "What is ExecutorService?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "`ExecutorService` is an interface in the Java Concurrency API that provides a higher-level abstraction for managing"
+    ],
+    "answer": "d",
+    "explanation": "`ExecutorService` is an interface in the Java Concurrency API that provides a higher-level abstraction for managing and executing tasks asynchronously using a pool of threads. `ExecutorService` extends the `Executor` interface and"
+  },
+  {
+    "id": 188,
+    "category": "Frameworks",
+    "question": "Can you give an example for ExecutorService?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Here is an example of using `ExecutorService` to execute tasks asynchronously in Java:"
+    ],
+    "answer": "d",
+    "explanation": "Here is an example of using `ExecutorService` to execute tasks asynchronously in Java: import java.util.concurrent.ExecutorService;"
+  },
+  {
+    "id": 189,
+    "category": "Frameworks",
+    "question": "Explain different ways of creating executor services",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "There are several ways to create `ExecutorService` instances in Java using the `Executors` utility class. Some of the"
+    ],
+    "answer": "d",
+    "explanation": "There are several ways to create `ExecutorService` instances in Java using the `Executors` utility class. Some of the common ways to create `ExecutorService` instances include:"
+  },
+  {
+    "id": 190,
+    "category": "Frameworks",
+    "question": "How do you check whether an ExecutionService task executed successfully?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "The `Future` interface in the Java Concurrency API provides a way to check whether an `ExecutorService` task executed",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "The `Future` interface in the Java Concurrency API provides a way to check whether an `ExecutorService` task executed successfully and retrieve the result of the task. The `Future` interface represents the result of an asynchronous"
+  },
+  {
+    "id": 191,
+    "category": "Advanced Topics",
+    "question": "What is callable? How do you execute a callable from executionservice?",
+    "options": [
+      "`Callable` is a functional interface in the Java Concurrency API that represents a task that can be executed",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "`Callable` is a functional interface in the Java Concurrency API that represents a task that can be executed asynchronously and return a result. `Callable` is similar to `Runnable`, but it can return a result or throw an"
+  },
+  {
+    "id": 192,
+    "category": "Advanced Topics",
+    "question": "What is synchronization of threads?",
+    "options": [
+      "Synchronization in Java is a mechanism that allows multiple threads to coordinate access to shared resources.",
+      "Java no soporta programación concurrente nativa.",
+      "Threads in Java cannot share memory.",
+      "Synchronized solo funciona con métodos estáticos."
+    ],
+    "answer": "a",
+    "explanation": "Synchronization in Java is a mechanism that allows multiple threads to coordinate access to shared resources."
+  },
+  {
+    "id": 193,
+    "category": "Advanced Topics",
+    "question": "Can you give an example of a synchronized block?",
+    "options": [
+      "Synchronized solo funciona con métodos estáticos.",
+      "Java no soporta programación concurrente nativa.",
+      "Here is an example of using a synchronized block in Java to synchronize access to a shared resource:",
+      "Threads in Java cannot share memory."
+    ],
+    "answer": "c",
+    "explanation": "Here is an example of using a synchronized block in Java to synchronize access to a shared resource: public class Counter {"
+  },
+  {
+    "id": 194,
+    "category": "Advanced Topics",
+    "question": "Can a static method be synchronized?",
+    "options": [
+      "Threads in Java cannot share memory.",
+      "Java no soporta programación concurrente nativa.",
+      "Synchronized solo funciona con métodos estáticos.",
+      "Yes, a static method can be synchronized in Java. When a static method is synchronized, the lock acquired is on the"
+    ],
+    "answer": "d",
+    "explanation": "Yes, a static method can be synchronized in Java. When a static method is synchronized, the lock acquired is on the class object associated with the method's class. This means that only one thread can execute the synchronized static"
+  },
+  {
+    "id": 195,
+    "category": "Advanced Topics",
+    "question": "What is the use of join method in threads?",
+    "options": [
+      "Synchronized solo funciona con métodos estáticos.",
+      "The `join` method in Java is used to wait for a thread to complete its execution before continuing with the current",
+      "Threads in Java cannot share memory.",
+      "Java no soporta programación concurrente nativa."
+    ],
+    "answer": "b",
+    "explanation": "The `join` method in Java is used to wait for a thread to complete its execution before continuing with the current thread. When the `join` method is called on a thread, the current thread will block and wait for the specified thread"
+  },
+  {
+    "id": 196,
+    "category": "Advanced Topics",
+    "question": "Describe a few other important methods in threads?",
+    "options": [
+      "Synchronized solo funciona con métodos estáticos.",
+      "Some other important methods in Java threads include:",
+      "Threads in Java cannot share memory.",
+      "Java no soporta programación concurrente nativa."
+    ],
+    "answer": "b",
+    "explanation": "Some other important methods in Java threads include:"
+  },
+  {
+    "id": 197,
+    "category": "Advanced Topics",
+    "question": "What is a deadlock? How can you avoid a deadlock?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "A deadlock is a situation in multi-threaded programming where two or more threads are blocked forever, waiting for"
+    ],
+    "answer": "d",
+    "explanation": "A deadlock is a situation in multi-threaded programming where two or more threads are blocked forever, waiting for other to release resources that they need to continue execution. Deadlocks can occur when multiple threads acquire"
+  },
+  {
+    "id": 198,
+    "category": "Advanced Topics",
+    "question": "What are the important methods in Java for inter",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java provides several methods for inter-thread communication, including:",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "Java provides several methods for inter-thread communication, including: threads to wait for a condition to be met and notify other threads when the condition is satisfied."
+  },
+  {
+    "id": 199,
+    "category": "Advanced Topics",
+    "question": "What is the use of wait method?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "The `wait` method in Java is used to make a thread wait until a condition is met. When a thread calls the `wait`"
+    ],
+    "answer": "d",
+    "explanation": "The `wait` method in Java is used to make a thread wait until a condition is met. When a thread calls the `wait` it releases the lock it holds and enters a waiting state until another thread calls the `notify` or `notifyAll` method"
+  },
+  {
+    "id": 200,
+    "category": "Advanced Topics",
+    "question": "What is the use of notify method?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "The `notify` method in Java is used to wake up a single thread that is waiting on the same object. When a thread calls"
+    ],
+    "answer": "d",
+    "explanation": "The `notify` method in Java is used to wake up a single thread that is waiting on the same object. When a thread calls the `notify` method, it notifies a single waiting thread to wake up and continue execution. The `notify` method is"
+  },
+  {
+    "id": 201,
+    "category": "Enterprise Development",
+    "question": "What is the use of notifyall method?",
+    "options": [
+      "The `notifyAll` method in Java is used to wake up all threads that are waiting on the same object. When a thread calls",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "The `notifyAll` method in Java is used to wake up all threads that are waiting on the same object. When a thread calls the `notifyAll` method, it notifies all waiting threads to wake up and"
+  },
+  {
+    "id": 202,
+    "category": "Enterprise Development",
+    "question": "Can you write a synchronized program with wait and notify methods?",
+    "options": [
+      "Threads in Java cannot share memory.",
+      "Here is an example of a synchronized program using the `wait` and `notify` methods for inter-thread communication in",
+      "Java no soporta programación concurrente nativa.",
+      "Synchronized solo funciona con métodos estáticos."
+    ],
+    "answer": "b",
+    "explanation": "Here is an example of a synchronized program using the `wait` and `notify` methods for inter-thread communication in"
+  },
+  {
+    "id": 203,
+    "category": "Enterprise Development",
+    "question": "What is functional programming? How is it different from object",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data. Functional programming focuses on the use of pure functions, higher-order"
+  },
+  {
+    "id": 204,
+    "category": "Enterprise Development",
+    "question": "Can you give an example of functional programming?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions"
+    ],
+    "answer": "d",
+    "explanation": "Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing state and mutable data. Functional programming focuses on the use of pure functions, higher-order"
+  },
+  {
+    "id": 205,
+    "category": "Enterprise Development",
+    "question": "Explain about streams with an example? what are intermediate operations in streams?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Streams in Java provide a way to process collections of elements in a functional and declarative manner. Streams"
+    ],
+    "answer": "d",
+    "explanation": "Streams in Java provide a way to process collections of elements in a functional and declarative manner. Streams enable you to perform operations like filtering, mapping, sorting, and reducing on collections using a fluent and"
+  },
+  {
+    "id": 206,
+    "category": "Enterprise Development",
+    "question": "What are terminal operations in streams?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Terminal operations in streams are operations that produce a result or a side effect and terminate the stream"
+    ],
+    "answer": "d",
+    "explanation": "Terminal operations in streams are operations that produce a result or a side effect and terminate the stream processing. Terminal operations are the final step in a stream pipeline and trigger the execution of intermediate"
+  },
+  {
+    "id": 207,
+    "category": "Enterprise Development",
+    "question": "What are method references? How are they used in streams?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "Method references in Java provide a way to refer to methods or constructors without invoking them. Method references"
+    ],
+    "answer": "d",
+    "explanation": "Method references in Java provide a way to refer to methods or constructors without invoking them. Method references are shorthand syntax for lambda expressions that call a single method or constructor. Method references can be used in"
+  },
+  {
+    "id": 208,
+    "category": "Enterprise Development",
+    "question": "What are lambda expressions? How are they used in streams?",
+    "options": [
+      "Lambda expressions in Java provide a way to define anonymous functions or blocks of code that can be passed as",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "a",
+    "explanation": "Lambda expressions in Java provide a way to define anonymous functions or blocks of code that can be passed as arguments to methods or stored in variables. Lambda expressions are a concise and expressive way to represent"
+  },
+  {
+    "id": 209,
+    "category": "Enterprise Development",
+    "question": "Can you give an example of lambda expression?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Lambda expressions in Java provide a way to define anonymous functions or blocks of code that can be passed as",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "b",
+    "explanation": "Lambda expressions in Java provide a way to define anonymous functions or blocks of code that can be passed as arguments to methods or stored in variables. Lambda expressions are a concise and expressive way to represent"
+  },
+  {
+    "id": 210,
+    "category": "Modern Java Features",
+    "question": "Can you explain the relationship between lambda expression and functional interfaces?",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "Lambda expressions in Java are closely related to functional interfaces, which are interfaces that have exactly one",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "Lambda expressions in Java are closely related to functional interfaces, which are interfaces that have exactly one abstract method. Lambda expressions can be used to provide an implementation for the abstract method of a functional"
+  },
+  {
+    "id": 211,
+    "category": "Modern Java Features",
+    "question": "What is a predicate?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "A predicate in Java is a functional interface that represents a boolean-valued function of one argument. Predicates",
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "b",
+    "explanation": "A predicate in Java is a functional interface that represents a boolean-valued function of one argument. Predicates commonly used in functional programming to define conditions or filters that can be applied to elements in a"
+  },
+  {
+    "id": 212,
+    "category": "Modern Java Features",
+    "question": "What is the functional interface",
+    "options": [
+      "This functionality does not exist in Java.",
+      "The `Function` interface in Java is a functional interface that represents a function that accepts one argument and",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "The `Function` interface in Java is a functional interface that represents a function that accepts one argument and produces a result. The `Function` interface is commonly used in functional programming to define transformations or"
+  },
+  {
+    "id": 213,
+    "category": "Modern Java Features",
+    "question": "What is a consumer?",
+    "options": [
+      "A consumer in Java is a functional interface that represents an operation that accepts a single input argument and",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "A consumer in Java is a functional interface that represents an operation that accepts a single input argument and returns no result. Consumers are commonly used in functional programming to perform side effects or actions on"
+  },
+  {
+    "id": 214,
+    "category": "Modern Java Features",
+    "question": "Can you give examples of functional interfaces with multiple arguments?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Functional interfaces in Java can have multiple arguments by defining methods with multiple parameters. You can create",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "Functional interfaces in Java can have multiple arguments by defining methods with multiple parameters. You can create functional interfaces with multiple arguments by specifying the number of input arguments in the method signature and"
+  },
+  {
+    "id": 215,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java 5?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "Java 5 introduced several new features and enhancements to the Java programming language, including:",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "Java 5 introduced several new features and enhancements to the Java programming language, including: casting of objects. Generics allow you to define classes, interfaces, and methods with type parameters that can be"
+  },
+  {
+    "id": 216,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java 6?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions.",
+      "Java 6 introduced several new features and enhancements to the Java programming language, including:",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "c",
+    "explanation": "Java 6 introduced several new features and enhancements to the Java programming language, including: execute scripts written in languages like JavaScript, Groovy, and Ruby within Java applications. Scripting support"
+  },
+  {
+    "id": 217,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java 7?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "Java 7 introduced several new features and enhancements to the Java programming language, including:"
+    ],
+    "answer": "d",
+    "explanation": "Java 7 introduced several new features and enhancements to the Java programming language, including: type arguments from the context. The diamond operator allows you to create instances of generic classes without"
+  },
+  {
+    "id": 218,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java",
+    "options": [
+      "Java has not supported this feature until very recent versions.",
+      "This functionality does not exist in Java.",
+      "Java 8 introduced several new features and enhancements to the Java programming language, including:",
+      "This is a feature exclusive to other programming languages."
+    ],
+    "answer": "c",
+    "explanation": "Java 8 introduced several new features and enhancements to the Java programming language, including: anonymous functions or blocks of code. Lambda expressions enable functional programming paradigms in Java and"
+  },
+  {
+    "id": 219,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java 9?",
+    "options": [
+      "This is a feature exclusive to other programming languages.",
+      "Java 9 introduced several new features and enhancements to the Java programming language, including:",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "Java 9 introduced several new features and enhancements to the Java programming language, including: encapsulate"
+  },
+  {
+    "id": 220,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java 11?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java 11 introduced several new features and enhancements to the Java programming language, including:",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "Java 11 introduced several new features and enhancements to the Java programming language, including: lambda parameters in lambda expressions. This feature allows you to use `var` to declare the type of lambda"
+  },
+  {
+    "id": 221,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java 13?",
+    "options": [
+      "Java 13 introduced several new features and enhancements to the Java programming language, including:",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "a",
+    "explanation": "Java 13 introduced several new features and enhancements to the Java programming language, including: and maintainable way to write multi-line strings in Java. Text blocks allow you to define multi-line strings with"
+  },
+  {
+    "id": 222,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java 17?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "This is a feature exclusive to other programming languages.",
+      "Java 17 introduced several new features and enhancements to the Java programming language, including:",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "c",
+    "explanation": "Java 17 introduced several new features and enhancements to the Java programming language, including: restrict the subclasses of a class. Sealed classes allow you to define a limited set of subclasses that can extend"
+  },
+  {
+    "id": 223,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java 21?",
+    "options": [
+      "This functionality does not exist in Java.",
+      "Java 21 introduced several new features and enhancements to the Java programming language, including:",
+      "This is a feature exclusive to other programming languages.",
+      "Java has not supported this feature until very recent versions."
+    ],
+    "answer": "b",
+    "explanation": "Java 21 introduced several new features and enhancements to the Java programming language, including: standard feature to provide a more concise and expressive way to write switch statements. Pattern matching for"
+  },
+  {
+    "id": 224,
+    "category": "Modern Java Features",
+    "question": "What are the new features in Java 23?",
+    "options": [
+      "Java 23 introduced several upgrades and features in comparison with the version 21. In order to",
+      "Java has not supported this feature until very recent versions.",
+      "This is a feature exclusive to other programming languages.",
+      "This functionality does not exist in Java."
+    ],
+    "answer": "a",
+    "explanation": "Java 23 introduced several upgrades and features in comparison with the version 21. In order to ### What you can do next?"
+  }
+]

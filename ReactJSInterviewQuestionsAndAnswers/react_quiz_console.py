@@ -3,13 +3,71 @@ import random
 import os
 import matplotlib.pyplot as plt
 
-QUESTIONS_FILE = os.path.join(os.path.dirname(__file__), 'react-questions.json')
+# Optional: YAML config support
+try:
+    import yaml  # type: ignore
+    YAML_AVAILABLE = True
+except Exception:
+    YAML_AVAILABLE = False
+
+BASE_DIR = os.path.dirname(__file__)
+QUESTIONS_FILE = os.path.join(BASE_DIR, 'react-questions.json')
+CONFIG_FILE = os.path.join(BASE_DIR, 'config.yml')
+BASE_DIR = os.path.dirname(__file__)
+QUESTIONS_FILE_NAME = os.environ.get('QUESTIONS_FILE_NAME')
+QUESTIONS_FILE = os.path.join(BASE_DIR, QUESTIONS_FILE_NAME or 'react-questions.json')
+CONFIG_FILE = os.path.join(BASE_DIR, 'config.yml')
+TEST_TITLE = 'React Quiz (Windows)'
 
 PASS_THRESHOLD = 0.8
+MAX_QUESTIONS = 60
+
+
+def load_config():
+    global PASS_THRESHOLD, MAX_QUESTIONS
+    if not os.path.exists(CONFIG_FILE):
+        return
+    try:
+        if YAML_AVAILABLE:
+            with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
+                data = yaml.safe_load(f) or {}
+        else:
+            data = {}
+            with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith('#') or ':' not in line:
+                        continue
+                    key, val = line.split(':', 1)
+                    key = key.strip()
+                    val = val.strip().strip('"\'')
+                    try:
+                        if '.' in val:
+                            cast_val = float(val)
+                        else:
+                            cast_val = int(val)
+                        data[key] = cast_val
+                    except Exception:
+                        data[key] = val
+        if isinstance(data, dict):
+            if 'pass_threshold' in data and data['pass_threshold'] is not None:
+                PASS_THRESHOLD = float(data['pass_threshold'])
+            if 'max_questions' in data and data['max_questions'] is not None:
+                MAX_QUESTIONS = int(data['max_questions'])
+    except Exception:
+        pass
 
 def load_questions():
+    """Load questions from JSON and return a random subset up to the configured maximum.
+
+    - If the JSON contains more than MAX_QUESTIONS, pick MAX_QUESTIONS unique questions at random.
+    - If it contains MAX_QUESTIONS or fewer, return them all.
+    """
     with open(QUESTIONS_FILE, 'r', encoding='utf-8') as f:
         questions = json.load(f)
+    if len(questions) > MAX_QUESTIONS:
+        # Select MAX_QUESTIONS unique questions randomly
+        questions = random.sample(questions, k=MAX_QUESTIONS)
     return questions
 
 def ask_question(q):
@@ -45,6 +103,9 @@ def show_results(correct_count, total):
         print("\n❌ No aprobaste. ¡Sigue practicando!")
 
 def main():
+    # Load configuration (if available) before proceeding
+    load_config()
+
     questions = load_questions()
     random.shuffle(questions)
     correct = 0
@@ -55,3 +116,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
