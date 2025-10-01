@@ -11,7 +11,7 @@ import os
 
 def read_java_readme():
     """Lee el archivo readme.md con las preguntas de Java"""
-    readme_path = r"C:\Users\ILeos\projects\JavaInterviewQuestionsAndAnswers\readme.md"
+    readme_path = os.environ.get('README_PATH', os.path.join(os.getcwd(), 'readme.md'))
     try:
         with open(readme_path, 'r', encoding='utf-8') as file:
             content = file.read()
@@ -285,8 +285,14 @@ def main():
     print(f"Procesadas {len(java_questions)} preguntas exitosamente")
     
     # Guardar en archivo JSON
-    output_path = r"C:\Users\ILeos\projects\react-certification-course\ReactJSInterviewQuestionsAndAnswers\java-questions.json"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    output_dir = os.path.join(script_dir, "ReactJSInterviewQuestionsAndAnswers")
+    output_path = os.path.join(output_dir, "java-questions.json")
     
+    # Ensure output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+    print(f"Guardando preguntas en {output_path}...")
+        
     try:
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(java_questions, f, ensure_ascii=False, indent=2)
