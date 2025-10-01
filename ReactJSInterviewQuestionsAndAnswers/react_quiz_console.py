@@ -13,6 +13,11 @@ except Exception:
 BASE_DIR = os.path.dirname(__file__)
 QUESTIONS_FILE = os.path.join(BASE_DIR, 'react-questions.json')
 CONFIG_FILE = os.path.join(BASE_DIR, 'config.yml')
+BASE_DIR = os.path.dirname(__file__)
+QUESTIONS_FILE_NAME = os.environ.get('QUESTIONS_FILE_NAME')
+QUESTIONS_FILE = os.path.join(BASE_DIR, QUESTIONS_FILE_NAME or 'react-questions.json')
+CONFIG_FILE = os.path.join(BASE_DIR, 'config.yml')
+TEST_TITLE = 'React Quiz (Windows)'
 
 PASS_THRESHOLD = 0.8
 MAX_QUESTIONS = 60

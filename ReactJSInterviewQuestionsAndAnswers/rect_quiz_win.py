@@ -5,7 +5,8 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
 
-from ReactJSInterviewQuestionsAndAnswers.react_quiz_console import QUESTIONS_FILE
+from react_quiz_console import CONFIG_FILE, QUESTIONS_FILE, MAX_QUESTIONS, PASS_THRESHOLD, TEST_TITLE
+
 
 # Optional: matplotlib for bar chart at the end (same spirit as console version)
 try:
@@ -23,21 +24,6 @@ except Exception:
 
 
 
-
-
-
-
-
-
-BASE_DIR = os.path.dirname(__file__)
-QUESTIONS_FILE_NAME = os.environ.get('QUESTIONS_FILE_NAME')
-QUESTIONS_FILE = os.path.join(BASE_DIR, QUESTIONS_FILE_NAME or 'react-questions.json')
-CONFIG_FILE = os.path.join(BASE_DIR, 'config.yml')
-TEST_TITLE = 'React Quiz (Windows)'
-
-# Defaults (will be overridden by config.yml if present)
-PASS_THRESHOLD = 0.8
-MAX_QUESTIONS = 60
 DEFAULT_FONTS = {
     'family': 'Segoe UI',
     'title': 16,
@@ -308,7 +294,8 @@ class ReactQuizApp(tk.Tk):
             ("🎉 ¡Aprobaste el test de React!" if aprobado else "❌ No aprobaste. ¡Sigue practicando!")
         )
         messagebox.showinfo('Resultado', msg)
-        self.destroy()
+        if self.winfo_exists():
+            self.destroy()
 
 
 if __name__ == '__main__':
