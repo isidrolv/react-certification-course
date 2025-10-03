@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "category": "React Expert",
+    "question": "What is the difference between React's Context API and Redux in terms of state management and scalability?",
+    "options": [
+      "Context API is designed for global state and is more scalable than Redux.",
+      "Redux is better for large-scale applications with complex state logic, while Context API is best for simple, infrequently changing global state.",
+      "Both are equally scalable and interchangeable.",
+      "Redux cannot be used with React Hooks."
+    ],
+    "answer": "b",
+    "explanation": "Redux is more suitable for large, complex applications due to middleware, devtools, and predictable state, while Context API is best for simple global state sharing."
+  },
+  {
+    "id": 2,
+    "category": "React Expert",
+    "question": "How does React's useCallback hook help optimize performance in components with expensive child renders?",
+    "options": [
+      "It memoizes the return value of a function.",
+      "It memoizes the function reference, preventing unnecessary re-creations and re-renders of child components that receive the function as a prop.",
+      "It prevents all re-renders in the component.",
+      "It is only useful for class components."
+    ],
+    "answer": "b",
+    "explanation": "useCallback memoizes the function reference, which is important when passing callbacks to memoized children to avoid unnecessary renders."
+  },
+  {
+    "id": 3,
+    "category": "React Expert",
+    "question": "What is the purpose of the useReducer hook and when should it be preferred over useState?",
+    "options": [
+      "useReducer is for managing simple state only.",
+      "useReducer is preferred for complex state logic involving multiple sub-values or when the next state depends on the previous one.",
+      "useReducer is only for Redux integration.",
+      "useReducer cannot be used in functional components."
+    ],
+    "answer": "b",
+    "explanation": "useReducer is ideal for complex state transitions, similar to Redux reducers, and is more scalable than useState for such cases."
+  },
+  {
+    "id": 4,
+    "category": "React Expert",
+    "question": "How does React.memo work and what are its limitations?",
+    "options": [
+      "It memoizes the entire component tree.",
+      "It memoizes a functional component, re-rendering only if its props change, but does a shallow comparison and may not prevent re-renders for nested objects.",
+      "It works only with class components.",
+      "It prevents all re-renders regardless of prop changes."
+    ],
+    "answer": "b",
+    "explanation": "React.memo does a shallow comparison of props, so nested objects/arrays/functions may still cause re-renders unless memoized."
+  },
+  {
+    "id": 5,
+    "category": "React Expert",
+    "question": "What is the main advantage of using Redux middleware such as redux-thunk or redux-saga?",
+    "options": [
+      "They allow for asynchronous logic and side effects in Redux actions.",
+      "They make Redux slower.",
+      "They are required for all Redux applications.",
+      "They replace reducers."
+    ],
+    "answer": "a",
+    "explanation": "Middleware like redux-thunk and redux-saga enable async logic and side effects in Redux, which is not possible with plain reducers."
+  },
+  {
+    "id": 6,
+    "category": "React Expert",
+    "question": "How does the useRef hook differ from useState in terms of re-rendering and value persistence?",
+    "options": [
+      "useRef triggers a re-render when its value changes, useState does not.",
+      "useRef persists values across renders without causing re-renders, while useState triggers a re-render on value change.",
+      "Both behave identically.",
+      "useRef is only for DOM elements."
+    ],
+    "answer": "b",
+    "explanation": "useRef is for mutable values that persist across renders but do not trigger re-renders, unlike useState."
+  },
+  {
+    "id": 7,
+    "category": "React Expert",
+    "question": "What is the role of the Provider component in both Context API and Redux?",
+    "options": [
+      "It provides CSS styling.",
+      "It makes the context or Redux store available to all child components via React's context mechanism.",
+      "It is only used for routing.",
+      "It is required for useEffect to work."
+    ],
+    "answer": "b",
+    "explanation": "Provider wraps the app and makes the context/store available to all descendants."
+  },
+  {
+    "id": 8,
+    "category": "React Expert",
+    "question": "How can you prevent unnecessary re-renders in a deeply nested component tree when using Redux?",
+    "options": [
+      "By using useSelector with shallowEqual or custom equality functions, and splitting state into smaller slices.",
+      "By using only useContext.",
+      "By using useEffect everywhere.",
+      "By avoiding Redux entirely."
+    ],
+    "answer": "a",
+    "explanation": "useSelector with shallowEqual and good state design minimizes re-renders in Redux apps."
+  },
+  {
+    "id": 9,
+    "category": "React Expert",
+    "question": "What is the difference between controlled and uncontrolled components in React forms?",
+    "options": [
+      "Controlled components have their value managed by React state, while uncontrolled components use the DOM directly via refs.",
+      "Uncontrolled components are always better.",
+      "Controlled components use refs only.",
+      "There is no difference."
+    ],
+    "answer": "a",
+    "explanation": "Controlled components use state, uncontrolled use refs and the DOM for value management."
+  },
+  {
+    "id": 10,
+    "category": "React Expert",
+    "question": "How does useLayoutEffect differ from useEffect, and when should you use it?",
+    "options": [
+      "useLayoutEffect runs after painting, useEffect runs before.",
+      "useLayoutEffect runs synchronously after all DOM mutations but before painting, useEffect runs asynchronously after painting. Use useLayoutEffect for DOM measurements or synchronizing layout.",
+      "They are identical.",
+      "useLayoutEffect is only for server-side rendering."
+    ],
+    "answer": "b",
+    "explanation": "useLayoutEffect is for layout reads/writes before the browser paints, useEffect is for side effects after painting."
+  },
+  {
+    "id": 11,
+    "category": "React Expert",
+    "question": "What is the purpose of the React.StrictMode component?",
+    "options": [
+      "It enforces strict JavaScript syntax.",
+      "It activates additional checks and warnings for its descendants, helping to identify unsafe lifecycles and side effects.",
+      "It is required for Redux.",
+      "It disables hooks."
+    ],
+    "answer": "b",
+    "explanation": "StrictMode helps catch potential problems in an app during development."
+  },
+  {
+    "id": 12,
+    "category": "React Expert",
+    "question": "How can you memoize expensive calculations in a functional component?",
+    "options": [
+      "Using useMemo hook.",
+      "Using useRef hook.",
+      "Using useEffect hook.",
+      "Using useReducer hook."
+    ],
+    "answer": "a",
+    "explanation": "useMemo memoizes the result of a calculation, recomputing only when dependencies change."
+  },
+  {
+    "id": 13,
+    "category": "React Expert",
+    "question": "What is the main benefit of using Redux Toolkit over plain Redux?",
+    "options": [
+      "It makes Redux setup and code more concise, less error-prone, and includes best practices by default.",
+      "It is slower.",
+      "It removes middleware support.",
+      "It is not compatible with React."
+    ],
+    "answer": "a",
+    "explanation": "Redux Toolkit simplifies Redux setup and encourages best practices."
+  },
+  {
+    "id": 14,
+    "category": "React Expert",
+    "question": "How does the useImperativeHandle hook work with forwardRef?",
+    "options": [
+      "It allows a parent to access a child’s DOM node directly.",
+      "It customizes the instance value exposed to parent components when using refs with forwardRef.",
+      "It is only for class components.",
+      "It disables refs."
+    ],
+    "answer": "b",
+    "explanation": "useImperativeHandle customizes the ref value exposed to parent components."
+  },
+  {
+    "id": 15,
+    "category": "React Expert",
+    "question": "What is the effect of passing an empty dependency array to useEffect?",
+    "options": [
+      "The effect runs on every render.",
+      "The effect runs only once after the initial render (componentDidMount behavior).",
+      "The effect never runs.",
+      "It causes an error."
+    ],
+    "answer": "b",
+    "explanation": "An empty dependency array means the effect runs only once after mount."
+  },
+  {
+    "id": 16,
+    "category": "React Expert",
+    "question": "How can you share logic between multiple React components without using inheritance?",
+    "options": [
+      "By using custom hooks or higher-order components (HOCs).",
+      "By using class inheritance.",
+      "By using Redux only.",
+      "By using refs."
+    ],
+    "answer": "a",
+    "explanation": "Custom hooks and HOCs are the main patterns for logic reuse in React."
+  },
+  {
+    "id": 17,
+    "category": "React Expert",
+    "question": "What is the main difference between useSelector and useStore in react-redux?",
+    "options": [
+      "useSelector returns the entire store, useStore returns a selected value.",
+      "useSelector selects a value from the store and subscribes to updates, useStore returns the store instance itself.",
+      "They are identical.",
+      "useStore is only for class components."
+    ],
+    "answer": "b",
+    "explanation": "useSelector subscribes to store updates for a selected value, useStore gives direct access to the store instance."
+  },
+  {
+    "id": 18,
+    "category": "React Expert",
+    "question": "How can you implement optimistic UI updates in a React + Redux application?",
+    "options": [
+      "By updating the UI state before the server confirms the change, then rolling back if the server fails.",
+      "By waiting for the server response before updating the UI.",
+      "By using only useEffect.",
+      "By disabling Redux middleware."
+    ],
+    "answer": "a",
+    "explanation": "Optimistic updates improve UX by updating UI immediately, then handling errors if needed."
+  },
+  {
+    "id": 19,
+    "category": "React Expert",
+    "question": "What is the main purpose of the React Profiler API?",
+    "options": [
+      "To profile and measure the performance of React components during rendering.",
+      "To style components.",
+      "To manage state.",
+      "To test components."
+    ],
+    "answer": "a",
+    "explanation": "The Profiler API helps developers find performance bottlenecks in React apps."
+  },
+  {
+    "id": 20,
+    "category": "React Expert",
+    "question": "How does the useContext hook work with dynamic context values and what is a common pitfall?",
+    "options": [
+      "useContext always returns the initial value.",
+      "useContext returns the current value from the nearest Provider, but if the Provider value changes frequently, it can cause unnecessary re-renders in all consumers.",
+      "useContext cannot be used with Providers.",
+      "useContext is only for Redux."
+    ],
+    "answer": "b",
+    "explanation": "Frequent context value changes can cause all consumers to re-render; memoization or splitting context can help."
+  }
+]
