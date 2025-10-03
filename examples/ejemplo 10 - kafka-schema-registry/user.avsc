@@ -1,0 +1,28 @@
+{
+  "type": "record",
+  "name": "User",
+  "namespace": "com.kafka.examples",
+  "doc": "Schema Avro para representar un usuario",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "doc": "Identificador único del usuario"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "doc": "Nombre completo del usuario"
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "doc": "Correo electrónico del usuario"
+    },
+    {
+      "name": "age",
+      "type": "int",
+      "doc": "Edad del usuario en años"
+    }
+  ]
+}
