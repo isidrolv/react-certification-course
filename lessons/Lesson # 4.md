@@ -1,9 +1,11 @@
 # Lesson #4: Hooks en React
 
 ## Objetivo
+
 Comprender qué son los hooks, su propósito y cómo utilizar los hooks más comunes en componentes funcionales.
 
 ## Teoría
+
 - **¿Qué son los hooks?**
   - Son funciones que permiten a los componentes funcionales usar estado y otras características de React.
   - Introducidos en React 16.8.
@@ -18,6 +20,7 @@ Comprender qué son los hooks, su propósito y cómo utilizar los hooks más com
 
 
 ## Práctica
+
 1. Crea un componente que use `useEffect` para mostrar un mensaje en consola cada vez que cambie el estado:
 
 ```jsx
@@ -69,6 +72,7 @@ function App() {
 ---
 
 ## Preguntas para Auto Estudio
+
 Esta lección cubre preguntas como:
 - ¿Qué son los hooks?
 - ¿Cuándo se introdujeron?
