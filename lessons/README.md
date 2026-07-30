@@ -11,12 +11,15 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 ## 🗂️ Índice de Categorías
 
 ### 1. **Fundamentos de React** (Basics of React)
+
 **Preguntas del cuestionario:** 1-10
 
 #### Lesson #1: ReactJS Fundamentals
+
 **Archivo:** `Lesson # 1.md`
 
 **Temas cubiertos:**
+
 - ¿Qué es ReactJS y quién lo desarrolló?
 - React como librería vs framework
 - Características principales de React
@@ -26,6 +29,7 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 - Programación declarativa
 
 **Correlación con preguntas:**
+
 - Q1: ¿Qué es ReactJS?
 - Q2: ¿Quién desarrolló ReactJS?
 - Q3: ¿Es React un framework o una librería?
@@ -38,12 +42,15 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 ---
 
 ### 2. **Componentes** (Components)
+
 **Preguntas del cuestionario:** 11-20
 
 #### Lesson #2: Componentes en React
+
 **Archivo:** `Lesson # 2.md`
 
 **Temas cubiertos:**
+
 - ¿Qué son los componentes?
 - Tipos de componentes (Funcionales y de Clase)
 - Props (propiedades)
@@ -52,6 +59,7 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 - Composición de componentes
 
 **Correlación con preguntas:**
+
 - Q11: ¿Qué son los componentes React?
 - Q12: Tipos de componentes (Functional vs Class)
 - Q13: Componentes funcionales
@@ -66,12 +74,15 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 ---
 
 ### 3. **Estado y Ciclo de Vida** (State & Lifecycle)
+
 **Preguntas del cuestionario:** 21-30
 
 #### Lesson #3: Estado y Ciclo de Vida en React
+
 **Archivo:** `Lesson # 3.md`
 
 **Temas cubiertos:**
+
 - ¿Qué es el estado (state)?
 - Inicialización de state en componentes de clase
 - Actualización de state con setState()
@@ -81,6 +92,7 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 - useEffect como reemplazo de lifecycle methods
 
 **Correlación con preguntas:**
+
 - Q21: ¿Qué es el state?
 - Q22: Inicializar state en clase (constructor)
 - Q23: Actualizar state con this.setState()
@@ -95,12 +107,15 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 ---
 
 ### 4. **Hooks** (React Hooks)
+
 **Preguntas del cuestionario:** 31-40
 
 #### Lesson #4: Hooks en React
+
 **Archivo:** `Lesson # 4.md`
 
 **Temas cubiertos:**
+
 - ¿Qué son los hooks?
 - Introducción en React 16.8
 - useState para manejo de estado
@@ -113,6 +128,7 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 - Custom hooks
 
 **Correlación con preguntas:**
+
 - Q31: ¿Qué son los React hooks?
 - Q32: ¿Cuándo se introdujeron? (React 16.8)
 - Q33: useState para estado
@@ -127,27 +143,33 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 ---
 
 ### 5. **React Avanzado** (Advanced React)
+
 **Preguntas del cuestionario:** 41-50
 
 #### Lesson #5: React Avanzado (Context, Redux, Fragments, HOCs)
+
 **Archivo:** `Lesson # 5.md`
 
 **Temas cubiertos:**
+
 - React Context API
 - Redux para manejo de estado global
 - React Fragments
 - Higher-Order Components (HOCs)
 
 **Correlación con preguntas:**
+
 - Q41: React Context
 - Q42: Redux
 - Q43: React Fragments
 - Q44: Higher-Order Components (HOCs)
 
 #### Lesson #6: Routing, Formularios y Componentes Controlados
+
 **Archivo:** `Lesson # 6.md`
 
 **Temas cubiertos:**
+
 - React Router para navegación
 - Componentes controlados
 - Componentes no controlados
@@ -157,6 +179,7 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 - Code Splitting
 
 **Correlación con preguntas:**
+
 - Q45: React Router para navegación
 - Q46: Componentes controlados
 - Q47: Componentes no controlados
@@ -167,12 +190,15 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 ---
 
 ### 6. **Testing y Performance** (Testing & Performance)
+
 **Preguntas del cuestionario:** 51-60
 
 #### Lesson #7: Testing y Performance en React
+
 **Archivo:** `Lesson # 7.md`
 
 **Temas cubiertos:**
+
 - Testing de componentes con Jest y React Testing Library
 - Shallow rendering
 - React.StrictMode
@@ -183,6 +209,7 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 - Hidratación (Hydration)
 
 **Correlación con preguntas:**
+
 - Q51: Testing con Jest y React Testing Library
 - Q52: Shallow rendering
 - Q53: React.StrictMode
@@ -199,18 +226,21 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 ## 📖 Ruta de Aprendizaje Recomendada
 
 ### Nivel Básico (Semanas 1-2)
+
 1. **Lesson #1:** ReactJS Fundamentals
    - Introducción a React, JSX, Virtual DOM
 2. **Lesson #2:** Componentes en React
    - Tipos de componentes, Props, PropTypes
 
 ### Nivel Intermedio (Semanas 3-4)
+
 3. **Lesson #3:** Estado y Ciclo de Vida
    - State, lifecycle methods, useEffect
 4. **Lesson #4:** Hooks en React
    - useState, useEffect, useContext, useReducer, reglas de hooks
 
 ### Nivel Avanzado (Semanas 5-7)
+
 5. **Lesson #5:** React Avanzado
    - Context API, Redux, Fragments, HOCs
 6. **Lesson #6:** Routing, Formularios y Componentes Controlados
@@ -239,30 +269,35 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 ## 🎯 Objetivos de Aprendizaje por Categoría
 
 ### 1. Fundamentos de React
+
 - Comprender qué es React y su ecosistema
 - Entender el concepto de Virtual DOM
 - Dominar la sintaxis JSX
 - Conocer las características principales de React
 
 ### 2. Componentes
+
 - Crear componentes funcionales y de clase
 - Usar props para pasar datos
 - Validar props con PropTypes
 - Componer componentes reutilizables
 
 ### 3. Estado y Ciclo de Vida
+
 - Manejar estado local en componentes
 - Entender los métodos del ciclo de vida
 - Usar hooks para efectos secundarios
 - Actualizar el estado correctamente
 
 ### 4. Hooks
+
 - Dominar los hooks principales (useState, useEffect, useContext)
 - Entender las reglas de los hooks
 - Crear custom hooks
 - Optimizar con useMemo y useCallback
 
 ### 5. React Avanzado
+
 - Implementar Context API para estado global
 - Integrar Redux para aplicaciones complejas
 - Usar HOCs para reutilización de lógica
@@ -270,6 +305,7 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 - Entender reconciliación y Fiber
 
 ### 6. Testing y Performance
+
 - Escribir tests unitarios para componentes
 - Optimizar performance con lazy loading
 - Usar memoización efectivamente
@@ -333,6 +369,7 @@ Las lecciones están organizadas por categorías que cubren los temas más impor
 ## 📞 Soporte
 
 Para preguntas o dudas sobre el contenido de las lecciones, por favor consulta:
+
 - El cuestionario de preguntas y respuestas en `ReactJSInterviewQuestionsAndAnswers/`
 - Los ejemplos de código en `source-code/`
 - La documentación oficial de React
