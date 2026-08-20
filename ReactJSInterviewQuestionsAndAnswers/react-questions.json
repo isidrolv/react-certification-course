@@ -1243,5 +1243,265 @@
     ],
     "answer": "b",
     "explanation": "Dependencies determine when React should re-run an effect, recompute a memoized value, or recreate a callback."
+  },
+  {
+    "id": 101,
+    "category": "Hooks",
+    "question": "What happens if you omit the dependency array entirely in useEffect?",
+    "options": [
+      "The effect runs only once after mount.",
+      "The effect runs after every render.",
+      "The effect never runs.",
+      "React throws a compile-time error."
+    ],
+    "answer": "b",
+    "explanation": "Without a dependency array, useEffect runs after every paint/render. An empty array [] runs once after mount; a list of deps re-runs when those values change."
+  },
+  {
+    "id": 102,
+    "category": "Hooks",
+    "question": "When should you prefer useLayoutEffect over useEffect?",
+    "options": [
+      "For all data fetching to block the UI intentionally.",
+      "When you must measure or mutate the DOM before the browser paints to avoid visual flicker.",
+      "Only in class components.",
+      "Never; useLayoutEffect is deprecated."
+    ],
+    "answer": "b",
+    "explanation": "useLayoutEffect fires synchronously after DOM mutations but before paint, which is useful for layout measurements and DOM adjustments that would otherwise flash."
+  },
+  {
+    "id": 103,
+    "category": "Hooks",
+    "question": "What is a common stale-closure pitfall with useEffect and setInterval?",
+    "options": [
+      "The interval callback always sees the latest state automatically.",
+      "The callback may capture outdated state/props unless deps, functional updates, or refs keep values fresh.",
+      "setInterval cannot be used inside hooks at all.",
+      "Stale closures only occur with useMemo."
+    ],
+    "answer": "b",
+    "explanation": "Closures capture values from the render that created them. For intervals/subscriptions, use functional setState, include correct dependencies, or store latest values in a ref."
+  },
+  {
+    "id": 104,
+    "category": "Hooks",
+    "question": "How does useReducer compare to useState for complex state logic?",
+    "options": [
+      "useReducer is only for Redux Toolkit apps.",
+      "useReducer centralizes transitions via a reducer (action → next state), which scales better for multi-step or interdependent updates.",
+      "useState cannot hold objects or arrays.",
+      "useReducer bypasses re-renders entirely."
+    ],
+    "answer": "b",
+    "explanation": "useReducer is ideal when next state depends on previous state in non-trivial ways, or when many related updates should be expressed as discrete actions."
+  },
+  {
+    "id": 105,
+    "category": "Hooks",
+    "question": "What does useImperativeHandle typically solve when combined with forwardRef?",
+    "options": [
+      "It replaces all props with imperative APIs.",
+      "It customizes the instance value exposed to a parent via ref (e.g. focus(), scrollTo()) instead of the raw DOM node.",
+      "It disables React's virtual DOM.",
+      "It is required for every custom hook."
+    ],
+    "answer": "b",
+    "explanation": "useImperativeHandle lets a child define a limited imperative API on a forwarded ref, encapsulating internal DOM details while still allowing parent control when needed."
+  },
+  {
+    "id": 106,
+    "category": "Redux",
+    "question": "In classic Redux, what must a pure reducer never do?",
+    "options": [
+      "Return a new state object based on the action.",
+      "Mutate the existing state, perform side effects, or call non-deterministic APIs.",
+      "Handle unknown action types by returning the previous state.",
+      "Be a plain JavaScript function."
+    ],
+    "answer": "b",
+    "explanation": "Reducers must be pure: given the same state and action they return the same next state, without mutating arguments or triggering side effects (those belong in middleware/thunks/sagas)."
+  },
+  {
+    "id": 107,
+    "category": "Redux",
+    "question": "What is the main role of Redux middleware such as redux-thunk?",
+    "options": [
+      "To replace reducers with class components.",
+      "To intercept dispatched actions so you can run async logic, logging, or other side effects before they reach reducers.",
+      "To style connected components.",
+      "To automatically generate React hooks."
+    ],
+    "answer": "b",
+    "explanation": "Middleware sits between dispatch and the reducer. Thunk middleware lets you dispatch functions that can perform async work and then dispatch plain actions."
+  },
+  {
+    "id": 108,
+    "category": "Redux",
+    "question": "In React-Redux, why should you prefer useSelector with careful equality over reading the entire store?",
+    "options": [
+      "Because components must re-render on every store change anyway.",
+      "Selecting only needed slices minimizes re-renders; returning new object references every time can cause unnecessary updates.",
+      "useSelector cannot subscribe to the store.",
+      "The entire store is always frozen and unreadable."
+    ],
+    "answer": "b",
+    "explanation": "useSelector re-renders when the selected value changes by reference (or custom equality). Narrow selectors and memoized derived data keep connected UIs efficient."
+  },
+  {
+    "id": 109,
+    "category": "Redux",
+    "question": "What problem does Redux Toolkit's createSlice primarily address?",
+    "options": [
+      "It removes the need for a single store.",
+      "It reduces boilerplate by generating action creators and reducers together, and allows 'mutable' updates via Immer under the hood.",
+      "It replaces React with a Redux-only UI layer.",
+      "It forces all state to live in local component state."
+    ],
+    "answer": "b",
+    "explanation": "createSlice defines name, initial state, and reducers in one place; RTK uses Immer so you can write simpler update logic while still producing immutable state."
+  },
+  {
+    "id": 110,
+    "category": "Redux",
+    "question": "When is it better to keep state in React local state/Context instead of Redux?",
+    "options": [
+      "Never; all UI state must live in Redux.",
+      "For local UI concerns (form inputs, open/closed toggles) that are not shared widely or needed across many distant components.",
+      "Only when using class components.",
+      "Only during server-side rendering."
+    ],
+    "answer": "b",
+    "explanation": "Redux shines for shared, cross-cutting application state. Ephemeral or component-scoped UI state is often simpler and more performant as local state or limited Context."
+  },
+  {
+    "id": 111,
+    "category": "Hooks",
+    "question": "What is the primary difference between useLayoutEffect and useEffect regarding render and paint phases?",
+    "options": [
+      "useEffect blocks the visual paint of the browser, whereas useLayoutEffect runs asynchronously after the paint.",
+      "useLayoutEffect fires synchronously after all DOM mutations but before the browser paints, while useEffect fires asynchronously after the paint.",
+      "useLayoutEffect can only be used in class components.",
+      "There is no functional difference; they are aliases of each other."
+    ],
+    "answer": "b",
+    "explanation": "useLayoutEffect runs synchronously before the browser paints the screen, making it suitable for reading DOM layout and making synchronous adjustments to prevent visual flickers. useEffect is deferred to run after paint to keep the app responsive."
+  },
+  {
+    "id": 112,
+    "category": "Hooks",
+    "question": "If you pass an empty dependency array [] to a useEffect hook, but reference a prop inside it without including it in the dependencies, what is this issue called?",
+    "options": [
+      "Infinite re-render loop",
+      "Memory leak",
+      "Stale closure (or stale prop/state)",
+      "Deadlock"
+    ],
+    "answer": "c",
+    "explanation": "When you omit a dependency from the dependency array, the effect closure only captures the value of that prop from the initial render. Any subsequent updates to that prop will not be visible inside the effect, causing stale closure issues."
+  },
+  {
+    "id": 113,
+    "category": "Hooks",
+    "question": "How does React's useTransition hook handle rendering updates?",
+    "options": [
+      "It forces the entire app to re-render synchronously.",
+      "It allows you to mark updates as transitions, which are non-blocking and can be interrupted by more urgent updates (like typing).",
+      "It is a hook used solely for animating CSS transitions.",
+      "It suspends the rendering of all background components permanently."
+    ],
+    "answer": "b",
+    "explanation": "useTransition is a concurrent feature that lets you mark state updates as non-blocking transition updates. Urgent updates (like keyboard input) can interrupt them, keeping the user interface highly responsive."
+  },
+  {
+    "id": 114,
+    "category": "Hooks",
+    "question": "Why should you avoid calling Hooks inside conditional statements, loops, or nested functions?",
+    "options": [
+      "Because Hooks are async functions that return promises.",
+      "Because React relies on the call order of Hooks across renders to correctly map state to each Hook instance.",
+      "Because it violates JavaScript's strict mode.",
+      "Because loops in React are deprecated."
+    ],
+    "answer": "b",
+    "explanation": "React matches hook state to its call order. If a hook is called conditionally, the sequence of hooks changes on subsequent renders, leading to state misalignment and runtime errors."
+  },
+  {
+    "id": 115,
+    "category": "Hooks",
+    "question": "What is the primary use case of the useSyncExternalStore hook introduced in React 18?",
+    "options": [
+      "To run external fetch requests in a synchronized sequence.",
+      "To subscribe to external stores (like Redux or custom global state) in a way that is compatible with React's concurrent rendering features and avoids 'tearing'.",
+      "To synchronize local storage across different browser tabs automatically.",
+      "To replace the standard useState and useReducer hooks completely."
+    ],
+    "answer": "b",
+    "explanation": "useSyncExternalStore is recommended for subscribing to external state stores. It guarantees synchronous updates and prevents 'tearing' (where different parts of the UI show different values for the same state) during concurrent rendering."
+  },
+  {
+    "id": 116,
+    "category": "Redux",
+    "question": "What is the role of 'selectors' in a Redux architecture, and why are they recommended?",
+    "options": [
+      "They are used to select which reducers are combined into the root reducer.",
+      "They encapsulate the state structure and compute derived data from the store, allowing components to remain independent of the exact state shape.",
+      "They are HTML elements used to render dropdown menus based on Redux state.",
+      "They are middleware functions that filter actions before they reach the reducer."
+    ],
+    "answer": "b",
+    "explanation": "Selectors act as a query interface to the Redux store. They abstract the state shape, can perform performance-optimizing memoization (e.g., using Reselect), and prevent duplicate state calculations in multiple components."
+  },
+  {
+    "id": 117,
+    "category": "Redux",
+    "question": "How does Redux Toolkit's createAsyncThunk handle actions and state transitions during asynchronous operations?",
+    "options": [
+      "It automatically mutates the store state without invoking any reducers.",
+      "It generates a single action that handles the entire API request synchronously.",
+      "It generates action creators that dispatch 'pending', 'fulfilled', and 'rejected' actions based on the lifecycle of the returned promise.",
+      "It replaces the Redux store with an external WebSocket subscription."
+    ],
+    "answer": "c",
+    "explanation": "createAsyncThunk accepts an action type string and a payload creator function returning a promise. It automatically dispatches pending/fulfilled/rejected action types which can be handled in extraReducers."
+  },
+  {
+    "id": 118,
+    "category": "Redux",
+    "question": "What is the purpose of the middleware chain in Redux, and what happens when next(action) is called within a custom middleware?",
+    "options": [
+      "It stops the action from being processed any further.",
+      "It passes the action to the next middleware in the pipeline, or eventually to the reducer if there are no more middlewares.",
+      "It triggers a complete page reload to synchronize state.",
+      "It resets the Redux store to its initial state."
+    ],
+    "answer": "b",
+    "explanation": "In Redux middleware, calling next(action) passes the action along to the next step in the middleware chain. If it is the last middleware, it dispatches the action directly to the store's reducers."
+  },
+  {
+    "id": 119,
+    "category": "Redux",
+    "question": "In a React-Redux application, what is the default behavior of a component connected via useSelector when an action is dispatched?",
+    "options": [
+      "The component always re-renders, regardless of whether the selected state changed.",
+      "The component re-renders only if the reference of the selected state slice changes (using strict === equality by default).",
+      "The component re-renders only if the entire Redux store is completely emptied.",
+      "The component never re-renders unless manually triggered by useForceUpdate."
+    ],
+    "answer": "b",
+    "explanation": "useSelector subscribes to the Redux store and runs your selector function whenever an action is dispatched. It triggers a re-render only if the returned value differs from the previous one (using standard === reference equality check)."
+  },
+  {
+    "id": 120,
+    "category": "Redux",
+    "question": "What is the key difference between Redux Thunk and Redux Saga when handling side effects?",
+    "options": [
+      "Thunk only supports synchronous state updates, while Saga only supports asynchronous WebSockets.",
+      "Thunk uses plain functions that can perform async work and dispatch actions, whereas Saga uses ES6 Generator functions to express complex async workflows in a highly testable and declarative way.",
+      "Thunk requires a backend database to run, whereas Saga runs entirely in the browser storage.",
+      "Thunk is built into React, while Saga is a Python library."
+    ],
+    "answer": "b",
+    "explanation": "Redux Thunk lets you write action creators that return functions (thunks) for simple async control. Redux Saga uses Generators and 'effects' (like call, put, takeEvery) to manage complex, concurrent side effects declaratively and make testing async logic much easier."
   }
 ]
