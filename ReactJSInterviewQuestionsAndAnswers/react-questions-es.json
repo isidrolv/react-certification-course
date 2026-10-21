@@ -1,0 +1,1562 @@
+[
+  {
+    "id": 1,
+    "category": "Fundamentos de React",
+    "question": "¿Qué es ReactJS?",
+    "options": [
+      "Es un framework para desarrollar componentes de backend.",
+      "Es una biblioteca de componentes de JavaScript y TypeScript creada para ayudar a los desarrolladores a construir interfaces de usuario rápidas, con una arquitectura consistente y flexible, y ofrece mecanismos sólidos para embellecer la interfaz con facilidad.",
+      "Es un conjunto de componentes basado en Java, con funciones de interfaz potentes, desarrollado en el backend para el frontend.",
+      "Es una base de datos NoSQL moderna."
+    ],
+    "answer": "b",
+    "explanation": "ReactJS es una biblioteca de JavaScript para el frontend desarrollada por Facebook, diseñada para construir interfaces de usuario dinámicas e interactivas de forma eficiente, especialmente en aplicaciones de una sola página."
+  },
+  {
+    "id": 2,
+    "category": "Fundamentos de React",
+    "question": "¿Quién desarrolló ReactJS?",
+    "options": [
+      "Google",
+      "Microsoft",
+      "Facebook (ahora Meta)",
+      "Twitter"
+    ],
+    "answer": "c",
+    "explanation": "ReactJS fue creado por Jordan Walke, ingeniero de software en Facebook, y se publicó en 2013."
+  },
+  {
+    "id": 3,
+    "category": "Fundamentos de React",
+    "question": "¿ReactJS es un framework o una biblioteca?",
+    "options": [
+      "Un framework full-stack",
+      "Un framework de frontend",
+      "Una biblioteca para construir interfaces de usuario",
+      "Un controlador de base de datos"
+    ],
+    "answer": "c",
+    "explanation": "ReactJS es, técnicamente, una biblioteca y no un framework completo. Se centra sobre todo en la capa de vista (UI) de la arquitectura MVC."
+  },
+  {
+    "id": 4,
+    "category": "Fundamentos de React",
+    "question": "¿Cuáles son las características principales de React?",
+    "options": [
+      "DOM virtual, basado en componentes, UI declarativa",
+      "Enrutamiento, base de datos, ORM",
+      "Seguridad, autenticación, sesiones",
+      "Sistema de archivos, CLI, depuración"
+    ],
+    "answer": "a",
+    "explanation": "ReactJS usa un DOM virtual para mejorar el rendimiento, tiene una arquitectura basada en componentes y promueve la programación declarativa."
+  },
+  {
+    "id": 5,
+    "category": "Fundamentos de React",
+    "question": "¿Qué es JSX?",
+    "options": [
+      "Una extensión de sintaxis especial que permite escribir código similar a HTML en JavaScript.",
+      "Un motor de plantillas de backend para NodeJS.",
+      "Un analizador de JSON para React.",
+      "Un lenguaje de estilos para componentes de interfaz."
+    ],
+    "answer": "a",
+    "explanation": "JSX (JavaScript XML) permite a los desarrolladores escribir elementos HTML directamente en JavaScript, lo que hace el código de la interfaz más legible y expresivo."
+  },
+  {
+    "id": 6,
+    "category": "Fundamentos de React",
+    "question": "¿Por qué usar JSX?",
+    "options": [
+      "Mejora la depuración y la legibilidad de la interfaz.",
+      "Se ejecuta más rápido que JavaScript puro.",
+      "Permite llamadas a APIs de backend.",
+      "Se compila directamente a C++."
+    ],
+    "answer": "a",
+    "explanation": "JSX mejora la productividad del desarrollador al hacer el código más intuitivo y más cercano a HTML. JSX se compila en llamadas a React.createElement()."
+  },
+  {
+    "id": 7,
+    "category": "Fundamentos de React",
+    "question": "¿Qué empresa mantiene ReactJS?",
+    "options": [
+      "Microsoft",
+      "Facebook (Meta)",
+      "Oracle",
+      "IBM"
+    ],
+    "answer": "b",
+    "explanation": "ReactJS lo mantiene Meta junto con una amplia comunidad de código abierto."
+  },
+  {
+    "id": 8,
+    "category": "Fundamentos de React",
+    "question": "¿Qué significa DOM virtual?",
+    "options": [
+      "Un DOM real almacenado en la nube.",
+      "Una copia ligera del DOM real que se usa para optimizar las actualizaciones.",
+      "Una base de datos relacional para la interfaz.",
+      "Una API para estilos."
+    ],
+    "answer": "b",
+    "explanation": "El DOM virtual es una representación ligera del DOM real. React actualiza primero el DOM virtual y después actualiza de forma eficiente solo las partes que cambiaron en el DOM real."
+  },
+  {
+    "id": 9,
+    "category": "Fundamentos de React",
+    "question": "¿Cuál es la diferencia entre el DOM real y el DOM virtual?",
+    "options": [
+      "El DOM real es más rápido que el DOM virtual.",
+      "El DOM virtual actualiza toda la página cada vez.",
+      "El DOM virtual es una copia ligera del DOM real, lo que permite actualizaciones optimizadas.",
+      "Son la misma cosa."
+    ],
+    "answer": "c",
+    "explanation": "Actualizar el DOM real es lento, pero el DOM virtual optimiza los re-renderizados calculando diferencias y actualizando solo los nodos que cambiaron."
+  },
+  {
+    "id": 10,
+    "category": "Fundamentos de React",
+    "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre ReactJS?",
+    "options": [
+      "React es solo para aplicaciones móviles.",
+      "En React el flujo de datos es unidireccional.",
+      "React es solo para aplicaciones de escritorio.",
+      "React requiere un backend en Java."
+    ],
+    "answer": "b",
+    "explanation": "React impone un enlace de datos en un solo sentido: los datos fluyen de los componentes padre a los hijos, lo que hace la interfaz predecible."
+  },
+  {
+    "id": 11,
+    "category": "Componentes",
+    "question": "¿Qué son los componentes de React?",
+    "options": [
+      "Consultas a la base de datos.",
+      "Piezas de interfaz independientes y reutilizables.",
+      "Servicios de backend.",
+      "Peticiones de red."
+    ],
+    "answer": "b",
+    "explanation": "Los componentes de React son bloques de interfaz reutilizables que definen cómo debe verse y comportarse una parte de la interfaz."
+  },
+  {
+    "id": 12,
+    "category": "Componentes",
+    "question": "¿Cuáles son los dos tipos de componentes en React?",
+    "options": [
+      "Componentes funcionales y de clase.",
+      "Componentes estáticos y dinámicos.",
+      "Componentes locales y globales.",
+      "Componentes síncronos y asíncronos."
+    ],
+    "answer": "a",
+    "explanation": "React admite componentes funcionales (más simples, usan hooks) y componentes de clase (más antiguos, usan métodos del ciclo de vida)."
+  },
+  {
+    "id": 13,
+    "category": "Componentes",
+    "question": "¿Qué es un componente funcional?",
+    "options": [
+      "Una estructura de interfaz basada en clases.",
+      "Una función que devuelve JSX.",
+      "Una función de middleware en Node.js.",
+      "Un método de estilos."
+    ],
+    "answer": "b",
+    "explanation": "Los componentes funcionales son funciones de JavaScript que devuelven JSX y representan la interfaz."
+  },
+  {
+    "id": 14,
+    "category": "Componentes",
+    "question": "¿Qué es un componente de clase?",
+    "options": [
+      "Un componente definido como una clase que extiende React.Component.",
+      "Un esquema de base de datos.",
+      "Una clase de CSS.",
+      "Un formulario HTML."
+    ],
+    "answer": "a",
+    "explanation": "Los componentes de clase extienden React.Component y usan métodos como render() para devolver JSX."
+  },
+  {
+    "id": 15,
+    "category": "Componentes",
+    "question": "¿Qué tipo de componente se prefiere en React moderno?",
+    "options": [
+      "Componentes de clase",
+      "Componentes funcionales con hooks",
+      "Componentes de base de datos",
+      "Componentes XML"
+    ],
+    "answer": "b",
+    "explanation": "Los componentes funcionales con hooks son ahora la forma preferida, porque son más simples y más eficientes."
+  },
+  {
+    "id": 16,
+    "category": "Componentes",
+    "question": "¿Cómo se crea un componente funcional?",
+    "options": [
+      "function MyComponent() { return <h1>Hello</h1>; }",
+      "class MyComponent {}",
+      "def MyComponent():",
+      "component MyComponent()"
+    ],
+    "answer": "a",
+    "explanation": "Los componentes funcionales son funciones simples que devuelven JSX."
+  },
+  {
+    "id": 17,
+    "category": "Componentes",
+    "question": "¿Cómo se crea un componente de clase?",
+    "options": [
+      "class MyComponent extends React.Component { render() { return <h1>Hello</h1>; } }",
+      "def MyComponent():",
+      "component MyComponent()",
+      "React.create(MyComponent)"
+    ],
+    "answer": "a",
+    "explanation": "Los componentes de clase extienden React.Component e implementan el método render()."
+  },
+  {
+    "id": 18,
+    "category": "Componentes",
+    "question": "¿Qué son las props en React?",
+    "options": [
+      "Propiedades que se pasan a los componentes.",
+      "Una API de backend.",
+      "Un tipo de hook.",
+      "Una clase de CSS."
+    ],
+    "answer": "a",
+    "explanation": "Las props son entradas que un componente padre pasa a un hijo, lo que hace que los componentes sean reutilizables."
+  },
+  {
+    "id": 19,
+    "category": "Componentes",
+    "question": "¿Qué son las default props?",
+    "options": [
+      "Ajustes globales para todas las aplicaciones.",
+      "Valores de respaldo para las props si no se proporcionan.",
+      "Props almacenadas en Redux.",
+      "Props que vienen del backend."
+    ],
+    "answer": "b",
+    "explanation": "Las default props definen valores de respaldo cuando no se pasa una prop."
+  },
+  {
+    "id": 20,
+    "category": "Componentes",
+    "question": "¿Qué son los propTypes en React?",
+    "options": [
+      "Un esquema de base de datos para las props.",
+      "Una función de comprobación de tipos para las props de un componente.",
+      "Una propiedad de CSS.",
+      "Un sistema de tipos de backend."
+    ],
+    "answer": "b",
+    "explanation": "Los propTypes se usan para forzar la comprobación de tipos de las props y ayudan a los desarrolladores a detectar errores."
+  },
+  {
+    "id": 21,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Qué es el state en React?",
+    "options": [
+      "Una base de datos.",
+      "Un objeto que guarda datos dinámicos dentro de un componente.",
+      "Un estilo CSS.",
+      "Una sesión del servidor."
+    ],
+    "answer": "b",
+    "explanation": "El state es un almacén de datos local y mutable dentro de un componente."
+  },
+  {
+    "id": 22,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Cómo se inicializa el state en un componente de clase?",
+    "options": [
+      "this.state = { count: 0 } dentro del constructor.",
+      "this.setState = {}",
+      "useState(0)",
+      "state.init()"
+    ],
+    "answer": "a",
+    "explanation": "Los componentes de clase inicializan el state en el constructor con this.state = {}."
+  },
+  {
+    "id": 23,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Cómo se actualiza el state en un componente de clase?",
+    "options": [
+      "this.state.count = 1",
+      "this.setState({ count: 1 })",
+      "setState.count(1)",
+      "update.state(1)"
+    ],
+    "answer": "b",
+    "explanation": "El state debe actualizarse con this.setState() para provocar un nuevo renderizado."
+  },
+  {
+    "id": 24,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Cómo se crea el state en un componente funcional?",
+    "options": [
+      "this.state = {}",
+      "useState(initialValue)",
+      "setState()",
+      "state.init()"
+    ],
+    "answer": "b",
+    "explanation": "Los componentes funcionales usan el hook useState para gestionar el state."
+  },
+  {
+    "id": 25,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Qué son los métodos del ciclo de vida de React?",
+    "options": [
+      "Métodos para llamadas a APIs.",
+      "Métodos que definen las distintas fases de la vida de un componente.",
+      "Reglas de ciclo de vida de CSS.",
+      "Acciones de Redux."
+    ],
+    "answer": "b",
+    "explanation": "Los métodos del ciclo de vida son métodos especiales de los componentes de clase que se ejecutan en fases concretas (montaje, actualización y desmontaje)."
+  },
+  {
+    "id": 26,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Qué método del ciclo de vida se usa para obtener datos después de que el componente se monta?",
+    "options": [
+      "componentDidMount()",
+      "render()",
+      "componentWillUnmount()",
+      "shouldComponentUpdate()"
+    ],
+    "answer": "a",
+    "explanation": "componentDidMount() se llama una vez después de que el componente se monta, y es el lugar adecuado para llamadas a APIs."
+  },
+  {
+    "id": 27,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Qué método del ciclo de vida se usa antes de que se elimine un componente?",
+    "options": [
+      "componentWillUnmount()",
+      "componentDidMount()",
+      "render()",
+      "shouldComponentUpdate()"
+    ],
+    "answer": "a",
+    "explanation": "componentWillUnmount() se llama antes de que el componente se destruya y suele usarse para la limpieza."
+  },
+  {
+    "id": 28,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Qué método es obligatorio en un componente de clase?",
+    "options": [
+      "render()",
+      "componentDidMount()",
+      "constructor()",
+      "setState()"
+    ],
+    "answer": "a",
+    "explanation": "Todo componente de clase debe implementar el método render()."
+  },
+  {
+    "id": 29,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Cómo se relacionan los hooks con los métodos del ciclo de vida?",
+    "options": [
+      "Sustituyen a los métodos del ciclo de vida en los componentes funcionales.",
+      "Sirven solo para Redux.",
+      "Funcionan solo en componentes de clase.",
+      "No tienen relación."
+    ],
+    "answer": "a",
+    "explanation": "Hooks como useEffect reproducen el comportamiento del ciclo de vida (montaje, actualización y desmontaje) en los componentes funcionales."
+  },
+  {
+    "id": 30,
+    "category": "Estado y ciclo de vida",
+    "question": "¿Qué hook sustituye a componentDidMount en los componentes funcionales?",
+    "options": [
+      "useEffect con un array de dependencias vacío",
+      "useState",
+      "useReducer",
+      "useRef"
+    ],
+    "answer": "a",
+    "explanation": "useEffect(() => {...}, []) se ejecuta solo una vez y reproduce el comportamiento de componentDidMount."
+  },
+  {
+    "id": 31,
+    "category": "Hooks",
+    "question": "¿Qué son los hooks de React?",
+    "options": [
+      "Funciones que permiten a los componentes funcionales usar el state y las funciones del ciclo de vida.",
+      "Funciones de CSS.",
+      "Acciones de Redux.",
+      "Llamadas a la base de datos."
+    ],
+    "answer": "a",
+    "explanation": "Los hooks permiten que los componentes funcionales usen funciones que antes solo estaban disponibles en los componentes de clase."
+  },
+  {
+    "id": 32,
+    "category": "Hooks",
+    "question": "¿Cuándo se introdujeron los hooks?",
+    "options": [
+      "React 12",
+      "React 16.8",
+      "React 15",
+      "El lanzamiento de React Native"
+    ],
+    "answer": "b",
+    "explanation": "Los hooks se introdujeron en React 16.8."
+  },
+  {
+    "id": 33,
+    "category": "Hooks",
+    "question": "¿Qué hook se usa para gestionar el state?",
+    "options": [
+      "useState",
+      "useEffect",
+      "useRef",
+      "useReducer"
+    ],
+    "answer": "a",
+    "explanation": "useState proporciona variables de state en los componentes funcionales."
+  },
+  {
+    "id": 34,
+    "category": "Hooks",
+    "question": "¿Qué hook se usa para los efectos secundarios?",
+    "options": [
+      "useState",
+      "useEffect",
+      "useRef",
+      "useContext"
+    ],
+    "answer": "b",
+    "explanation": "useEffect gestiona efectos secundarios como la obtención de datos, las suscripciones y las manipulaciones del DOM."
+  },
+  {
+    "id": 35,
+    "category": "Hooks",
+    "question": "¿Qué hook se usa para las referencias?",
+    "options": [
+      "useRef",
+      "useState",
+      "useEffect",
+      "useMemo"
+    ],
+    "answer": "a",
+    "explanation": "useRef crea referencias mutables que persisten entre renderizados."
+  },
+  {
+    "id": 36,
+    "category": "Hooks",
+    "question": "¿Qué hook se usa para la memoización?",
+    "options": [
+      "useMemo",
+      "useReducer",
+      "useEffect",
+      "useRef"
+    ],
+    "answer": "a",
+    "explanation": "useMemo guarda en caché el resultado de un cálculo para evitar recálculos innecesarios."
+  },
+  {
+    "id": 37,
+    "category": "Hooks",
+    "question": "¿Qué hook se usa para el contexto?",
+    "options": [
+      "useContext",
+      "useRef",
+      "useMemo",
+      "useEffect"
+    ],
+    "answer": "a",
+    "explanation": "useContext permite que los componentes funcionales consuman valores de un React Context."
+  },
+  {
+    "id": 38,
+    "category": "Hooks",
+    "question": "¿Qué hook se usa para los reducers?",
+    "options": [
+      "useReducer",
+      "useContext",
+      "useEffect",
+      "useRef"
+    ],
+    "answer": "a",
+    "explanation": "useReducer es una alternativa a useState para lógica de state compleja."
+  },
+  {
+    "id": 39,
+    "category": "Hooks",
+    "question": "¿Qué reglas deben seguir los hooks?",
+    "options": [
+      "Llamar a los hooks solo en el nivel superior de los componentes funcionales.",
+      "Llamar a los hooks solo dentro de componentes de React o de hooks personalizados.",
+      "No llamar nunca a los hooks dentro de bucles o condiciones.",
+      "Todas las anteriores."
+    ],
+    "answer": "d",
+    "explanation": "Los hooks tienen reglas estrictas para garantizar un orden de ejecución consistente."
+  },
+  {
+    "id": 40,
+    "category": "Hooks",
+    "question": "¿Se pueden usar hooks en componentes de clase?",
+    "options": [
+      "Sí",
+      "No",
+      "Solo con plugins",
+      "Solo en Next.js"
+    ],
+    "answer": "b",
+    "explanation": "Los hooks están diseñados solo para componentes funcionales."
+  },
+  {
+    "id": 41,
+    "category": "React avanzado",
+    "question": "¿Qué es React Context?",
+    "options": [
+      "Una base de datos.",
+      "Una forma de compartir datos entre componentes sin prop drilling.",
+      "Un método del ciclo de vida.",
+      "Una clase de CSS."
+    ],
+    "answer": "b",
+    "explanation": "Context permite pasar datos de forma global sin prop drilling."
+  },
+  {
+    "id": 42,
+    "category": "React avanzado",
+    "question": "¿Qué es Redux?",
+    "options": [
+      "Una biblioteca de CSS.",
+      "Una biblioteca de gestión del state que se usa a menudo con React.",
+      "Un hook del ciclo de vida.",
+      "Un sistema de enrutamiento."
+    ],
+    "answer": "b",
+    "explanation": "Redux es un contenedor de state predecible que se usa a menudo para el state global en React."
+  },
+  {
+    "id": 43,
+    "category": "React avanzado",
+    "question": "¿Qué son los React Fragments?",
+    "options": [
+      "Una forma de agrupar elementos sin nodos extra en el DOM.",
+      "Un hook de state.",
+      "Un método del ciclo de vida.",
+      "Un framework de CSS."
+    ],
+    "answer": "a",
+    "explanation": "Los fragments permiten agrupar hijos sin añadir elementos <div> extra."
+  },
+  {
+    "id": 44,
+    "category": "React avanzado",
+    "question": "¿Qué son los componentes de orden superior (HOC)?",
+    "options": [
+      "Componentes envueltos con CSS.",
+      "Funciones que reciben un componente y devuelven un componente nuevo.",
+      "Acciones de Redux.",
+      "Consultas a la base de datos."
+    ],
+    "answer": "b",
+    "explanation": "Los HOC añaden funcionalidad adicional a componentes ya existentes."
+  },
+  {
+    "id": 45,
+    "category": "React avanzado",
+    "question": "¿Para qué se usa React Router?",
+    "options": [
+      "Para dar estilo a los componentes.",
+      "Para gestionar la navegación en aplicaciones de una sola página.",
+      "Para obtener datos de APIs.",
+      "Para conexiones a bases de datos."
+    ],
+    "answer": "b",
+    "explanation": "React Router gestiona la navegación sin recargar la página."
+  },
+  {
+    "id": 46,
+    "category": "React avanzado",
+    "question": "¿Qué son los componentes controlados?",
+    "options": [
+      "Componentes controlados por CSS.",
+      "Componentes de formulario cuyos valores los controla el state de React.",
+      "Componentes que vienen de Redux.",
+      "Componentes dirigidos por la base de datos."
+    ],
+    "answer": "b",
+    "explanation": "Los componentes controlados guardan los valores de entrada en el state, de modo que los controla React."
+  },
+  {
+    "id": 47,
+    "category": "React avanzado",
+    "question": "¿Qué son los componentes no controlados?",
+    "options": [
+      "Componentes que no se usan en producción.",
+      "Elementos de formulario que gestionan su propio state de forma interna.",
+      "Componentes de Redux.",
+      "Componentes sin state."
+    ],
+    "answer": "b",
+    "explanation": "Los componentes no controlados gestionan su propio state a través del DOM, no de React."
+  },
+  {
+    "id": 48,
+    "category": "React avanzado",
+    "question": "¿Qué es la reconciliación de React?",
+    "options": [
+      "Fusionar bases de datos.",
+      "El proceso de actualizar el DOM comparando el DOM virtual y el DOM real.",
+      "Un método del ciclo de vida.",
+      "Una actualización de CSS."
+    ],
+    "answer": "b",
+    "explanation": "La reconciliación es el algoritmo de diffing de React que actualiza solo los elementos que cambiaron."
+  },
+  {
+    "id": 49,
+    "category": "React avanzado",
+    "question": "¿Qué es React Fiber?",
+    "options": [
+      "Un framework de CSS.",
+      "El nuevo algoritmo de reconciliación de React, introducido en React 16.",
+      "Una base de datos.",
+      "Un método del ciclo de vida."
+    ],
+    "answer": "b",
+    "explanation": "Fiber es el nuevo algoritmo central introducido en React 16 para gestionar el renderizado de forma más eficiente."
+  },
+  {
+    "id": 50,
+    "category": "React avanzado",
+    "question": "¿Qué es el code splitting en React?",
+    "options": [
+      "Dividir archivos CSS.",
+      "Dividir el código en bundles más pequeños para mejorar el rendimiento.",
+      "Dividir consultas a la base de datos.",
+      "Dividir el ciclo de vida."
+    ],
+    "answer": "b",
+    "explanation": "El code splitting optimiza la carga entregando solo el código necesario para una ruta o un componente concretos."
+  },
+  {
+    "id": 51,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Cómo se prueban los componentes de React?",
+    "options": [
+      "Con Jest y React Testing Library.",
+      "Con consultas SQL.",
+      "Solo con NodeJS.",
+      "Solo con inspección manual."
+    ],
+    "answer": "a",
+    "explanation": "Jest y React Testing Library son herramientas de pruebas muy usadas para React."
+  },
+  {
+    "id": 52,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Qué es el shallow rendering?",
+    "options": [
+      "Renderizar todo el árbol de componentes.",
+      "Renderizar un componente sin sus componentes hijos.",
+      "Renderizar la base de datos.",
+      "Renderizar CSS."
+    ],
+    "answer": "b",
+    "explanation": "El shallow rendering prueba un componente de forma aislada e ignora a sus hijos."
+  },
+  {
+    "id": 53,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Qué es React.StrictMode?",
+    "options": [
+      "Una herramienta de depuración para resaltar problemas potenciales.",
+      "Una biblioteca de CSS.",
+      "Un método del ciclo de vida.",
+      "Un hook de state."
+    ],
+    "answer": "a",
+    "explanation": "StrictMode ayuda a detectar métodos del ciclo de vida inseguros y problemas potenciales."
+  },
+  {
+    "id": 54,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Qué es la carga diferida (lazy loading) en React?",
+    "options": [
+      "Cargar los datos lentamente.",
+      "Cargar los componentes solo cuando se necesitan.",
+      "Cargar el state de Redux.",
+      "Cargar CSS."
+    ],
+    "answer": "b",
+    "explanation": "La carga diferida mejora el rendimiento al cargar los componentes solo cuando hacen falta."
+  },
+  {
+    "id": 55,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Qué es la memoización en React?",
+    "options": [
+      "Guardar valores de CSS.",
+      "Optimizar el rendimiento guardando en caché los resultados de las funciones.",
+      "La gestión del state de Redux.",
+      "La optimización del ciclo de vida."
+    ],
+    "answer": "b",
+    "explanation": "La memoización evita re-renderizados innecesarios al guardar en caché cálculos o componentes."
+  },
+  {
+    "id": 56,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Qué es React.memo?",
+    "options": [
+      "Un hook.",
+      "Un componente de orden superior que memoiza componentes funcionales.",
+      "Un método del ciclo de vida.",
+      "Una acción de Redux."
+    ],
+    "answer": "b",
+    "explanation": "React.memo optimiza los componentes funcionales y los vuelve a renderizar solo si cambian las props."
+  },
+  {
+    "id": 57,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Para qué se usa useCallback?",
+    "options": [
+      "Para memoizar funciones.",
+      "Para memoizar valores.",
+      "Para manejar refs.",
+      "Para acciones de Redux."
+    ],
+    "answer": "a",
+    "explanation": "useCallback memoiza funciones callback para evitar que se vuelvan a crear sin necesidad."
+  },
+  {
+    "id": 58,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Para qué se usa useMemo?",
+    "options": [
+      "Para memoizar valores de cálculos costosos.",
+      "Para memoizar funciones.",
+      "Para acciones de Redux.",
+      "Para hooks del ciclo de vida."
+    ],
+    "answer": "a",
+    "explanation": "useMemo guarda en caché valores calculados y los recalcula solo cuando cambian las dependencias."
+  },
+  {
+    "id": 59,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Qué es el renderizado del lado del servidor (SSR) en React?",
+    "options": [
+      "Renderizar componentes en la base de datos.",
+      "Renderizar componentes en el servidor antes de enviar el HTML al navegador.",
+      "Renderizar solo en el cliente.",
+      "Renderizar CSS en el backend."
+    ],
+    "answer": "b",
+    "explanation": "El SSR mejora el rendimiento y el SEO al pre-renderizar los componentes de React en el servidor."
+  },
+  {
+    "id": 60,
+    "category": "Pruebas y rendimiento",
+    "question": "¿Qué es la hidratación en React?",
+    "options": [
+      "Añadir agua a los servidores.",
+      "Adjuntar los escuchadores de eventos de React al HTML renderizado en el servidor.",
+      "Añadir CSS a los componentes.",
+      "Cargar el state de Redux."
+    ],
+    "answer": "b",
+    "explanation": "La hidratación adjunta el sistema de eventos de React al HTML renderizado por SSR y lo vuelve interactivo."
+  },
+  {
+    "id": 61,
+    "category": "React 18 y concurrencia",
+    "question": "¿Qué es el batching automático en React 18?",
+    "options": [
+      "Combinar varios archivos CSS en uno.",
+      "Agrupar varias actualizaciones de state a través de límites asíncronos en un solo renderizado.",
+      "Empaquetar el código para producción.",
+      "Fusionar props y state de forma automática."
+    ],
+    "answer": "b",
+    "explanation": "React 18 agrupa automáticamente las actualizaciones de state dentro de timeouts, promesas y manejadores de eventos nativos, lo que reduce re-renderizados innecesarios."
+  },
+  {
+    "id": 62,
+    "category": "React 18 y concurrencia",
+    "question": "¿Qué hace useTransition?",
+    "options": [
+      "Crea una transición CSS nueva.",
+      "Marca una actualización de state como no urgente para mantener la interfaz con capacidad de respuesta.",
+      "Retrasa el montaje del componente.",
+      "Fuerza el renderizado síncrono."
+    ],
+    "answer": "b",
+    "explanation": "useTransition permite marcar actualizaciones como transiciones, de modo que las actualizaciones urgentes (como escribir) siguen respondiendo mientras las actualizaciones de interfaz no urgentes pueden aplazarse."
+  },
+  {
+    "id": 63,
+    "category": "React 18 y concurrencia",
+    "question": "¿Cuándo usarías useDeferredValue?",
+    "options": [
+      "Para memoizar referencias a funciones.",
+      "Para aplazar el re-renderizado de un valor costoso hasta que terminen las actualizaciones principales.",
+      "Para obtener datos al montar.",
+      "Para crear refs de nodos del DOM."
+    ],
+    "answer": "b",
+    "explanation": "useDeferredValue permite mostrar el valor anterior mientras se aplazan recálculos costosos, lo que mejora el rendimiento percibido durante una entrada rápida."
+  },
+  {
+    "id": 64,
+    "category": "Renderizado",
+    "question": "¿Cuáles son las dos fases del renderizado de React?",
+    "options": [
+      "Build y Deploy.",
+      "Render (reconciliación) y Commit.",
+      "Solo Mount y Unmount.",
+      "Fetch y Display."
+    ],
+    "answer": "b",
+    "explanation": "React primero renderiza para calcular los cambios (fase de render) y después aplica esos cambios al DOM (fase de commit)."
+  },
+  {
+    "id": 65,
+    "category": "Gestión del estado",
+    "question": "¿Por qué las actualizaciones de state deben ser inmutables en React?",
+    "options": [
+      "Para habilitar la recolección de basura automática.",
+      "Para que React pueda detectar cambios mediante la igualdad de referencias y optimizar los re-renderizados.",
+      "Porque JavaScript prohíbe la mutación.",
+      "Para que el código sea más corto."
+    ],
+    "answer": "b",
+    "explanation": "La inmutabilidad garantiza referencias nuevas cuando hay cambios, lo que permite a React y a la memoización detectar las actualizaciones de forma eficiente."
+  },
+  {
+    "id": 66,
+    "category": "Gestión del estado",
+    "question": "¿Cuándo debes usar la forma funcional del actualizador de setState/useState?",
+    "options": [
+      "Cuando el siguiente state depende del state anterior.",
+      "Cuando se actualizan las props.",
+      "Cuando se usa Context.",
+      "Cuando se renderizan portales."
+    ],
+    "answer": "a",
+    "explanation": "Usa setState(prev => next) para evitar closures obsoletos al calcular el siguiente state a partir del anterior."
+  },
+  {
+    "id": 67,
+    "category": "Keys y listas",
+    "question": "¿Por qué son importantes las keys en las listas?",
+    "options": [
+      "Dan estilo a los elementos de la lista.",
+      "Ayudan a React a identificar qué elementos cambiaron, se añadieron o se eliminaron.",
+      "Aportan seguridad.",
+      "Ordenan la lista de forma automática."
+    ],
+    "answer": "b",
+    "explanation": "Unas keys estables y únicas permiten una reconciliación eficiente y evitan que el DOM se reutilice de forma incorrecta."
+  },
+  {
+    "id": 68,
+    "category": "Keys y listas",
+    "question": "¿Por qué se desaconseja usar el índice del array como key?",
+    "options": [
+      "Lanza un error en tiempo de ejecución.",
+      "Aumenta el tamaño del bundle.",
+      "Puede provocar inconsistencias en la interfaz cuando cambia el orden de la lista o se insertan o eliminan elementos.",
+      "Desactiva la memoización."
+    ],
+    "answer": "c",
+    "explanation": "Las keys basadas en el índice no identifican de forma única los elementos entre operaciones, y eso lleva a asociar el state de forma incorrecta después de reordenar."
+  },
+  {
+    "id": 69,
+    "category": "Efectos",
+    "question": "¿Cuál es la diferencia entre useEffect y useLayoutEffect?",
+    "options": [
+      "Son idénticos.",
+      "useLayoutEffect se ejecuta de forma síncrona después de las mutaciones del DOM; useEffect se ejecuta de forma asíncrona después del pintado.",
+      "useEffect se ejecuta antes del render; useLayoutEffect se ejecuta después del desmontaje.",
+      "useLayoutEffect es solo para componentes de clase."
+    ],
+    "answer": "b",
+    "explanation": "useLayoutEffect se dispara antes de que el navegador pinte, y es útil para medir o ajustar el layout; useEffect se ejecuta después del pintado y no bloquea."
+  },
+  {
+    "id": 70,
+    "category": "Efectos",
+    "question": "¿Cómo se hace la limpieza en useEffect?",
+    "options": [
+      "Llamando a cleanup() después de setState.",
+      "Devolviendo una función desde el efecto que React llama al desmontar o antes de volver a ejecutar el efecto.",
+      "Usando try/catch.",
+      "Con la API React.Cleanup."
+    ],
+    "answer": "b",
+    "explanation": "Los efectos pueden devolver una función de limpieza para cancelar suscripciones, cancelar temporizadores o revertir cambios en el DOM."
+  },
+  {
+    "id": 71,
+    "category": "Refs y DOM",
+    "question": "¿Para qué sirve useRef?",
+    "options": [
+      "Para crear state global.",
+      "Para guardar un valor mutable que persiste entre renderizados sin provocar nuevos renderizados.",
+      "Para obtener datos.",
+      "Para memoizar cálculos."
+    ],
+    "answer": "b",
+    "explanation": "useRef guarda un valor mutable en .current (como nodos del DOM o variables de instancia) que no provoca un renderizado cuando cambia."
+  },
+  {
+    "id": 72,
+    "category": "Refs y DOM",
+    "question": "¿Qué permite forwardRef?",
+    "options": [
+      "El renderizado del lado del servidor.",
+      "Pasar refs a través de un componente hasta su hijo.",
+      "La carga diferida.",
+      "La comprobación de tipos de las props."
+    ],
+    "answer": "b",
+    "explanation": "React.forwardRef permite que los componentes expongan la ref de un hijo a los padres, y es útil para enfocar inputs y para APIs imperativas."
+  },
+  {
+    "id": 73,
+    "category": "Refs y DOM",
+    "question": "¿Cuándo usarías useImperativeHandle?",
+    "options": [
+      "Para optimizar reducers.",
+      "Para personalizar el valor de instancia que se expone a las refs del padre.",
+      "Para crear proveedores de contexto.",
+      "Para agrupar actualizaciones de state."
+    ],
+    "answer": "b",
+    "explanation": "useImperativeHandle, junto con forwardRef, permite que un componente controle qué métodos o valores son accesibles a través de su ref."
+  },
+  {
+    "id": 74,
+    "category": "Manejo de errores",
+    "question": "¿Qué es un Error Boundary en React?",
+    "options": [
+      "Una regla de CSS.",
+      "Un componente que captura errores de JavaScript en su árbol de hijos durante el render y el commit.",
+      "Un middleware de Redux.",
+      "Un guardián de rutas."
+    ],
+    "answer": "b",
+    "explanation": "Los Error Boundaries (componentes de clase que implementan componentDidCatch o getDerivedStateFromError) evitan que toda la aplicación se caiga."
+  },
+  {
+    "id": 75,
+    "category": "Portales",
+    "question": "¿Para qué se usan los React Portals?",
+    "options": [
+      "Para optimizar imágenes.",
+      "Para renderizar hijos en un nodo del DOM fuera de la jerarquía DOM del padre.",
+      "Para gestionar el state de forma global.",
+      "Para obtener datos más rápido."
+    ],
+    "answer": "b",
+    "explanation": "Los portales permiten renderizar modales, tooltips y elementos similares en nodos del DOM separados, y al mismo tiempo conservan el contexto del árbol de React y los eventos."
+  },
+  {
+    "id": 76,
+    "category": "Context",
+    "question": "¿Cómo puede Context afectar de forma negativa al rendimiento?",
+    "options": [
+      "Desactiva el SSR.",
+      "Cualquier cambio del valor del contexto vuelve a renderizar todos los componentes que lo consumen, salvo que se memoicen o se divida el contexto.",
+      "Rompe las keys de las listas.",
+      "Duplica el state."
+    ],
+    "answer": "b",
+    "explanation": "Como todos los consumidores se suscriben al mismo contexto, las actualizaciones se propagan de forma amplia; se mitiga con memoización o dividiendo el contexto."
+  },
+  {
+    "id": 77,
+    "category": "Memoización",
+    "question": "¿Qué evita useMemo?",
+    "options": [
+      "Las peticiones de red.",
+      "El recálculo de valores costosos cuando las dependencias no han cambiado.",
+      "Las actualizaciones del DOM.",
+      "Las actualizaciones de state."
+    ],
+    "answer": "b",
+    "explanation": "useMemo guarda en caché los resultados calculados y los vuelve a calcular solo cuando cambia su array de dependencias."
+  },
+  {
+    "id": 78,
+    "category": "Memoización",
+    "question": "¿Cuándo es más efectivo React.memo?",
+    "options": [
+      "Cuando las props cambian en cada renderizado.",
+      "Cuando las props son estables y el componente es puro, lo que evita re-renderizados innecesarios.",
+      "Solo para componentes de clase.",
+      "Solo cuando se usa Redux."
+    ],
+    "answer": "b",
+    "explanation": "React.memo funciona mejor con componentes puros que reciben las mismas props con frecuencia; omite el renderizado si las props son iguales en una comparación superficial."
+  },
+  {
+    "id": 79,
+    "category": "Obtención de datos y Suspense",
+    "question": "¿Qué aporta Suspense para la obtención de datos?",
+    "options": [
+      "Endpoints REST automáticos.",
+      "Una forma declarativa de mostrar una interfaz de respaldo mientras se cargan los datos.",
+      "Conexiones WebSocket.",
+      "Transiciones CSS."
+    ],
+    "answer": "b",
+    "explanation": "Suspense coordina la obtención asíncrona de datos con límites de respaldo para una experiencia de carga más fluida."
+  },
+  {
+    "id": 80,
+    "category": "Obtención de datos y Suspense",
+    "question": "¿Qué es un límite de Suspense?",
+    "options": [
+      "Un guardián de rutas.",
+      "Un componente que envuelve a sus hijos y muestra un respaldo mientras los descendientes están 'suspendidos'.",
+      "Una utilidad de pruebas.",
+      "Un contenedor de CSS."
+    ],
+    "answer": "b",
+    "explanation": "<Suspense fallback={...}> muestra contenido de respaldo hasta que los hijos se resuelven (por ejemplo, datos o componentes lazy)."
+  },
+  {
+    "id": 81,
+    "category": "SSR",
+    "question": "¿Qué es el SSR en streaming en React?",
+    "options": [
+      "Enviar solo imágenes como streams.",
+      "Enviar HTML al cliente de forma incremental a medida que se genera, lo que mejora el TTFB.",
+      "Hacer streaming de CSS.",
+      "Una función de base de datos."
+    ],
+    "answer": "b",
+    "explanation": "El SSR en streaming permite que el servidor envíe fragmentos de HTML de forma progresiva, de modo que el cliente puede empezar a renderizar antes."
+  },
+  {
+    "id": 82,
+    "category": "APIs",
+    "question": "¿Qué sustituyó a ReactDOM.render en React 18?",
+    "options": [
+      "renderRoot.",
+      "createRoot y root.render.",
+      "Solo hydrateRoot.",
+      "useRender."
+    ],
+    "answer": "b",
+    "explanation": "React 18 introdujo la API de raíz: const root = createRoot(container); root.render(<App />)."
+  },
+  {
+    "id": 83,
+    "category": "Strict Mode",
+    "question": "¿Qué comportamiento especial ocurre con StrictMode en desarrollo?",
+    "options": [
+      "Se omiten los componentes.",
+      "Las funciones de configuración de los efectos pueden ejecutarse dos veces para ayudar a detectar efectos secundarios.",
+      "Las props se congelan.",
+      "Se eliminan todos los console.log."
+    ],
+    "answer": "b",
+    "explanation": "StrictMode invoca a propósito dos veces ciertos métodos del ciclo de vida y efectos en desarrollo para sacar a la luz efectos secundarios inesperados."
+  },
+  {
+    "id": 84,
+    "category": "Formularios",
+    "question": "¿Qué es un input controlado?",
+    "options": [
+      "Un input gestionado solo por el DOM.",
+      "Un input cuyo valor lo dirige el state de React mediante la prop value y el manejador onChange.",
+      "Un input controlado por CSS.",
+      "Un input almacenado solo en localStorage."
+    ],
+    "answer": "b",
+    "explanation": "Los inputs controlados reflejan el state; las actualizaciones vienen de los manejadores onChange que actualizan el state, y después value refleja ese state."
+  },
+  {
+    "id": 85,
+    "category": "Formularios",
+    "question": "¿Cómo se evita perder la posición del cursor en los inputs controlados?",
+    "options": [
+      "Usando alertas.",
+      "Evitando re-renderizados innecesarios y asegurando que el valor cambie solo cuando haga falta (por ejemplo, con debounce o memoización).",
+      "Usando el índice del array como key.",
+      "Desactivando StrictMode."
+    ],
+    "answer": "b",
+    "explanation": "Los re-renderizados frecuentes o recrear los nodos del input pueden reiniciar la posición del cursor; mantén las keys estables y evita actualizaciones innecesarias."
+  },
+  {
+    "id": 86,
+    "category": "Eventos",
+    "question": "¿Qué son los Synthetic Events en React?",
+    "options": [
+      "Eventos nativos del navegador sin envoltorios.",
+      "Un envoltorio multi-navegador alrededor de los eventos nativos que ofrece una interfaz consistente.",
+      "Solo eventos del servidor.",
+      "Solo eventos de WebSocket."
+    ],
+    "answer": "b",
+    "explanation": "React normaliza los eventos en un SyntheticEvent para que se comporten de forma consistente entre navegadores."
+  },
+  {
+    "id": 87,
+    "category": "Optimización",
+    "question": "¿Cuál es el propósito principal de dividir los componentes?",
+    "options": [
+      "Aumentar el número de archivos.",
+      "Mejorar la legibilidad y la reutilización, y permitir re-renderizados selectivos.",
+      "Habilitar los CSS modules.",
+      "Reducir el tamaño del bundle únicamente."
+    ],
+    "answer": "b",
+    "explanation": "Los componentes más pequeños son más fáciles de entender y de optimizar; solo se vuelven a renderizar los subárboles afectados."
+  },
+  {
+    "id": 88,
+    "category": "Props y children",
+    "question": "¿Qué es la prop children?",
+    "options": [
+      "Una prop integrada que representa los elementos anidados dentro de un componente.",
+      "Un slot especial de CSS.",
+      "Una función de Redux.",
+      "Una API del DOM."
+    ],
+    "answer": "a",
+    "explanation": "children contiene el JSX que se pasa entre las etiquetas de apertura y de cierre de un componente."
+  },
+  {
+    "id": 89,
+    "category": "Hooks personalizados",
+    "question": "¿Qué es un hook personalizado?",
+    "options": [
+      "Un método de clase.",
+      "Una función que empieza por use y encapsula lógica con state reutilizable.",
+      "Un ayudante de CSS.",
+      "Un módulo de Node.js."
+    ],
+    "answer": "b",
+    "explanation": "Los hooks personalizados permiten compartir lógica entre componentes componiendo otros hooks."
+  },
+  {
+    "id": 90,
+    "category": "Hooks personalizados",
+    "question": "¿Cuál es una regla clave al escribir hooks personalizados?",
+    "options": [
+      "Deben llamar a los hooks de forma condicional.",
+      "Deben empezar con el prefijo 'use' y seguir las Rules of Hooks.",
+      "Deben devolver JSX.",
+      "Deben ser clases."
+    ],
+    "answer": "b",
+    "explanation": "Empezar por 'use' permite que las reglas del linter exijan un uso correcto; los hooks personalizados pueden llamar a otros hooks, pero deben mantener estable el orden de las llamadas."
+  },
+  {
+    "id": 91,
+    "category": "TypeScript",
+    "question": "¿Cómo se tipan las props de un componente de React en TypeScript?",
+    "options": [
+      "Usando solo PropTypes.",
+      "Definiendo una interfaz o un tipo Props y anotando el parámetro de props del componente.",
+      "Tipando solo el state.",
+      "No hace falta tipar."
+    ],
+    "answer": "b",
+    "explanation": "Define interface Props { ... } y usa function Comp(props: Props) { ... } o React.FC<Props>."
+  },
+  {
+    "id": 92,
+    "category": "TypeScript",
+    "question": "¿Cuál es el tipo de la prop children en TypeScript?",
+    "options": [
+      "Solo string.",
+      "ReactNode.",
+      "HTMLElement.",
+      "Solo any."
+    ],
+    "answer": "b",
+    "explanation": "children se tipa habitualmente como React.ReactNode para aceptar una amplia gama de valores renderizables."
+  },
+  {
+    "id": 93,
+    "category": "Rendimiento",
+    "question": "¿Qué provoca un re-renderizado en React?",
+    "options": [
+      "Llamar a console.log.",
+      "Cambios en el state, las props o el contexto.",
+      "Que terminen las peticiones de red.",
+      "Las animaciones CSS."
+    ],
+    "answer": "b",
+    "explanation": "React vuelve a renderizar un componente cuando cambian su state, sus props o los valores de contexto que consume."
+  },
+  {
+    "id": 94,
+    "category": "Rendimiento",
+    "question": "¿Qué es el prop drilling?",
+    "options": [
+      "Pasar props en profundidad a través de muchos niveles de componentes.",
+      "Obtener las props desde el servidor.",
+      "Hacer agujeros en el código.",
+      "Una técnica de pruebas."
+    ],
+    "answer": "a",
+    "explanation": "El prop drilling consiste en pasar datos a través de componentes intermedios que no los necesitan; Context o la composición pueden reducirlo."
+  },
+  {
+    "id": 95,
+    "category": "Enrutamiento",
+    "question": "¿Por qué React Router usa enrutamiento del lado del cliente?",
+    "options": [
+      "Para desactivar el SEO.",
+      "Para navegar sin recargas completas de página, conservar el state y mejorar la experiencia de usuario.",
+      "Para forzar solo el renderizado en el servidor.",
+      "Porque los enlaces HTML están en desuso."
+    ],
+    "answer": "b",
+    "explanation": "Los enrutadores del lado del cliente interceptan los eventos de navegación y actualizan el historial y la interfaz sin recargar la página."
+  },
+  {
+    "id": 96,
+    "category": "Build y code splitting",
+    "question": "¿Cómo se carga de forma diferida un componente en React?",
+    "options": [
+      "Con require().",
+      "Usando React.lazy(() => import('...')) con Suspense.",
+      "Añadiendo defer a las etiquetas script.",
+      "Usando setTimeout."
+    ],
+    "answer": "b",
+    "explanation": "React.lazy carga componentes bajo demanda y debe envolverse en un límite de Suspense para mostrar la interfaz de respaldo."
+  },
+  {
+    "id": 97,
+    "category": "Pruebas",
+    "question": "¿Qué se debe probar en los componentes de React?",
+    "options": [
+      "Solo los detalles de implementación.",
+      "El comportamiento observable por el usuario y las consultas accesibles (getByRole, etc.).",
+      "Las variables privadas.",
+      "La salida de DevTools."
+    ],
+    "answer": "b",
+    "explanation": "React Testing Library recomienda probar los componentes como interactúan los usuarios, centrándose en el comportamiento y la accesibilidad."
+  },
+  {
+    "id": 98,
+    "category": "Accesibilidad",
+    "question": "¿Cómo se puede mejorar la accesibilidad en las aplicaciones de React?",
+    "options": [
+      "Evitando el HTML semántico.",
+      "Usando elementos semánticos, atributos ARIA cuando hagan falta, etiquetas adecuadas y navegación por teclado.",
+      "Usando solo divs.",
+      "Desactivando la navegación con tabulador."
+    ],
+    "answer": "b",
+    "explanation": "Las aplicaciones accesibles usan HTML semántico, controles etiquetados y roles correctos, y se aseguran de que todo se pueda alcanzar con el teclado."
+  },
+  {
+    "id": 99,
+    "category": "Buenas prácticas",
+    "question": "¿Dónde debería ocurrir, en general, la obtención de datos en React?",
+    "options": [
+      "En archivos de utilidades al azar.",
+      "Dentro de efectos o manejadores de eventos en los componentes, o dentro de hooks personalizados.",
+      "En archivos CSS.",
+      "Solo en index.html."
+    ],
+    "answer": "b",
+    "explanation": "Obtén los datos dentro de los componentes (useEffect) o de hooks personalizados ligados al ciclo de vida del componente y a los eventos de la interfaz."
+  },
+  {
+    "id": 100,
+    "category": "Buenas prácticas",
+    "question": "¿Para qué sirve el array de dependencias en hooks como useEffect?",
+    "options": [
+      "Para dar estilo a los componentes.",
+      "Para controlar cuándo el efecto, o el valor o la función memoizados, deben volver a ejecutarse según los cambios de las dependencias.",
+      "Para habilitar el SSR.",
+      "Para crear contextos."
+    ],
+    "answer": "b",
+    "explanation": "Las dependencias determinan cuándo React debe volver a ejecutar un efecto, recalcular un valor memoizado o recrear un callback."
+  },
+  {
+    "id": 101,
+    "category": "Hooks",
+    "question": "¿Qué ocurre si omites por completo el array de dependencias en useEffect?",
+    "options": [
+      "El efecto se ejecuta solo una vez después del montaje.",
+      "El efecto se ejecuta después de cada renderizado.",
+      "El efecto no se ejecuta nunca.",
+      "React lanza un error en tiempo de compilación."
+    ],
+    "answer": "b",
+    "explanation": "Sin un array de dependencias, useEffect se ejecuta después de cada pintado o renderizado. Un array vacío [] se ejecuta una vez después del montaje; una lista de dependencias se vuelve a ejecutar cuando esos valores cambian."
+  },
+  {
+    "id": 102,
+    "category": "Hooks",
+    "question": "¿Cuándo conviene preferir useLayoutEffect frente a useEffect?",
+    "options": [
+      "Para toda la obtención de datos, con el fin de bloquear la interfaz a propósito.",
+      "Cuando debes medir o mutar el DOM antes de que el navegador pinte, para evitar un parpadeo visual.",
+      "Solo en componentes de clase.",
+      "Nunca; useLayoutEffect está en desuso."
+    ],
+    "answer": "b",
+    "explanation": "useLayoutEffect se dispara de forma síncrona después de las mutaciones del DOM pero antes del pintado, lo que es útil para mediciones de layout y ajustes del DOM que de otro modo parpadearían."
+  },
+  {
+    "id": 103,
+    "category": "Hooks",
+    "question": "¿Cuál es un fallo habitual de closure obsoleto con useEffect y setInterval?",
+    "options": [
+      "El callback del intervalo siempre ve el state más reciente de forma automática.",
+      "El callback puede capturar state o props desactualizados, salvo que las dependencias, las actualizaciones funcionales o las refs mantengan los valores al día.",
+      "setInterval no se puede usar dentro de hooks en absoluto.",
+      "Los closures obsoletos solo ocurren con useMemo."
+    ],
+    "answer": "b",
+    "explanation": "Los closures capturan los valores del renderizado que los creó. Para intervalos y suscripciones, usa setState funcional, incluye las dependencias correctas o guarda los valores más recientes en una ref."
+  },
+  {
+    "id": 104,
+    "category": "Hooks",
+    "question": "¿Cómo se compara useReducer con useState para lógica de state compleja?",
+    "options": [
+      "useReducer es solo para aplicaciones de Redux Toolkit.",
+      "useReducer centraliza las transiciones mediante un reducer (acción → siguiente state), y escala mejor para actualizaciones de varios pasos o interdependientes.",
+      "useState no puede guardar objetos ni arrays.",
+      "useReducer evita por completo los re-renderizados."
+    ],
+    "answer": "b",
+    "explanation": "useReducer es ideal cuando el siguiente state depende del anterior de formas no triviales, o cuando muchas actualizaciones relacionadas deben expresarse como acciones discretas."
+  },
+  {
+    "id": 105,
+    "category": "Hooks",
+    "question": "¿Qué resuelve normalmente useImperativeHandle cuando se combina con forwardRef?",
+    "options": [
+      "Sustituye todas las props por APIs imperativas.",
+      "Personaliza el valor de instancia que se expone a un padre mediante una ref (por ejemplo, focus() o scrollTo()) en lugar del nodo DOM en bruto.",
+      "Desactiva el DOM virtual de React.",
+      "Es obligatorio en todo hook personalizado."
+    ],
+    "answer": "b",
+    "explanation": "useImperativeHandle permite que un hijo defina una API imperativa limitada en una ref reenviada, encapsula los detalles internos del DOM y aun así permite el control del padre cuando hace falta."
+  },
+  {
+    "id": 106,
+    "category": "Redux",
+    "question": "En Redux clásico, ¿qué no debe hacer nunca un reducer puro?",
+    "options": [
+      "Devolver un objeto de state nuevo a partir de la acción.",
+      "Mutar el state existente, realizar efectos secundarios o llamar a APIs no deterministas.",
+      "Gestionar tipos de acción desconocidos devolviendo el state anterior.",
+      "Ser una función plana de JavaScript."
+    ],
+    "answer": "b",
+    "explanation": "Los reducers deben ser puros: ante el mismo state y la misma acción devuelven el mismo state siguiente, sin mutar los argumentos ni disparar efectos secundarios (eso corresponde al middleware, a los thunks o a las sagas)."
+  },
+  {
+    "id": 107,
+    "category": "Redux",
+    "question": "¿Cuál es el papel principal del middleware de Redux, como redux-thunk?",
+    "options": [
+      "Sustituir los reducers por componentes de clase.",
+      "Interceptar las acciones despachadas para poder ejecutar lógica asíncrona, registro u otros efectos secundarios antes de que lleguen a los reducers.",
+      "Dar estilo a los componentes conectados.",
+      "Generar hooks de React de forma automática."
+    ],
+    "answer": "b",
+    "explanation": "El middleware se sitúa entre dispatch y el reducer. El middleware de thunk permite despachar funciones que pueden hacer trabajo asíncrono y después despachar acciones planas."
+  },
+  {
+    "id": 108,
+    "category": "Redux",
+    "question": "En React-Redux, ¿por qué conviene preferir useSelector con una igualdad cuidadosa en lugar de leer todo el store?",
+    "options": [
+      "Porque los componentes deben re-renderizarse en cada cambio del store de todos modos.",
+      "Seleccionar solo los fragmentos necesarios reduce los re-renderizados; devolver referencias a objetos nuevos cada vez puede provocar actualizaciones innecesarias.",
+      "useSelector no puede suscribirse al store.",
+      "Todo el store está siempre congelado y no se puede leer."
+    ],
+    "answer": "b",
+    "explanation": "useSelector vuelve a renderizar cuando el valor seleccionado cambia por referencia (o por una igualdad personalizada). Los selectores estrechos y los datos derivados memoizados mantienen eficientes las interfaces conectadas."
+  },
+  {
+    "id": 109,
+    "category": "Redux",
+    "question": "¿Qué problema aborda sobre todo createSlice de Redux Toolkit?",
+    "options": [
+      "Elimina la necesidad de un único store.",
+      "Reduce el código repetitivo generando action creators y reducers juntos, y permite actualizaciones 'mutables' mediante Immer por debajo.",
+      "Sustituye React por una capa de interfaz solo de Redux.",
+      "Obliga a que todo el state viva en el state local del componente."
+    ],
+    "answer": "b",
+    "explanation": "createSlice define el nombre, el state inicial y los reducers en un solo lugar; RTK usa Immer para que puedas escribir una lógica de actualización más simple y aun así producir state inmutable."
+  },
+  {
+    "id": 110,
+    "category": "Redux",
+    "question": "¿Cuándo es mejor guardar el state en el state local de React o en Context en lugar de Redux?",
+    "options": [
+      "Nunca; todo el state de la interfaz debe vivir en Redux.",
+      "Para asuntos locales de la interfaz (entradas de formulario, interruptores abierto/cerrado) que no se comparten de forma amplia ni se necesitan en muchos componentes distantes.",
+      "Solo cuando se usan componentes de clase.",
+      "Solo durante el renderizado del lado del servidor."
+    ],
+    "answer": "b",
+    "explanation": "Redux destaca para el state de aplicación compartido y transversal. El state de interfaz efímero o acotado a un componente suele ser más simple y más eficiente como state local o como un Context limitado."
+  },
+  {
+    "id": 111,
+    "category": "Hooks",
+    "question": "¿Cuál es la diferencia principal entre useLayoutEffect y useEffect respecto a las fases de render y de pintado?",
+    "options": [
+      "useEffect bloquea el pintado visual del navegador, mientras que useLayoutEffect se ejecuta de forma asíncrona después del pintado.",
+      "useLayoutEffect se dispara de forma síncrona después de todas las mutaciones del DOM pero antes de que el navegador pinte, mientras que useEffect se dispara de forma asíncrona después del pintado.",
+      "useLayoutEffect solo se puede usar en componentes de clase.",
+      "No hay diferencia funcional; son alias el uno del otro."
+    ],
+    "answer": "b",
+    "explanation": "useLayoutEffect se ejecuta de forma síncrona antes de que el navegador pinte la pantalla, por lo que sirve para leer el layout del DOM y hacer ajustes síncronos que eviten parpadeos visuales. useEffect se aplaza para ejecutarse después del pintado y mantener la aplicación con capacidad de respuesta."
+  },
+  {
+    "id": 112,
+    "category": "Hooks",
+    "question": "Si pasas un array de dependencias vacío [] a un hook useEffect, pero dentro haces referencia a una prop sin incluirla en las dependencias, ¿cómo se llama este problema?",
+    "options": [
+      "Bucle infinito de re-renderizado",
+      "Fuga de memoria",
+      "Closure obsoleto (o prop/state obsoleto)",
+      "Interbloqueo"
+    ],
+    "answer": "c",
+    "explanation": "Cuando omites una dependencia del array de dependencias, el closure del efecto solo captura el valor de esa prop del renderizado inicial. Las actualizaciones posteriores de esa prop no serán visibles dentro del efecto, y eso provoca problemas de closure obsoleto."
+  },
+  {
+    "id": 113,
+    "category": "Hooks",
+    "question": "¿Cómo gestiona el hook useTransition de React las actualizaciones de renderizado?",
+    "options": [
+      "Fuerza a que toda la aplicación se vuelva a renderizar de forma síncrona.",
+      "Permite marcar actualizaciones como transiciones, que no bloquean y pueden ser interrumpidas por actualizaciones más urgentes (como escribir).",
+      "Es un hook que se usa solo para animar transiciones CSS.",
+      "Suspende de forma permanente el renderizado de todos los componentes en segundo plano."
+    ],
+    "answer": "b",
+    "explanation": "useTransition es una función concurrente que permite marcar actualizaciones de state como actualizaciones de transición que no bloquean. Las actualizaciones urgentes (como la entrada de teclado) pueden interrumpirlas y mantienen la interfaz muy receptiva."
+  },
+  {
+    "id": 114,
+    "category": "Hooks",
+    "question": "¿Por qué debes evitar llamar a los Hooks dentro de condicionales, bucles o funciones anidadas?",
+    "options": [
+      "Porque los Hooks son funciones asíncronas que devuelven promesas.",
+      "Porque React se basa en el orden de llamada de los Hooks entre renderizados para asociar correctamente el state a cada instancia de Hook.",
+      "Porque viola el modo estricto de JavaScript.",
+      "Porque los bucles en React están en desuso."
+    ],
+    "answer": "b",
+    "explanation": "React asocia el state de cada hook con su orden de llamada. Si un hook se llama de forma condicional, la secuencia de hooks cambia en los renderizados siguientes, lo que provoca un desajuste del state y errores en tiempo de ejecución."
+  },
+  {
+    "id": 115,
+    "category": "Hooks",
+    "question": "¿Cuál es el caso de uso principal del hook useSyncExternalStore, introducido en React 18?",
+    "options": [
+      "Ejecutar peticiones fetch externas en una secuencia sincronizada.",
+      "Suscribirse a stores externos (como Redux o un state global personalizado) de una forma compatible con las funciones de renderizado concurrente de React y que evita el 'tearing'.",
+      "Sincronizar localStorage entre distintas pestañas del navegador de forma automática.",
+      "Sustituir por completo los hooks estándar useState y useReducer."
+    ],
+    "answer": "b",
+    "explanation": "useSyncExternalStore se recomienda para suscribirse a stores de state externos. Garantiza actualizaciones síncronas y evita el 'tearing' (cuando distintas partes de la interfaz muestran valores distintos para el mismo state) durante el renderizado concurrente."
+  },
+  {
+    "id": 116,
+    "category": "Redux",
+    "question": "¿Cuál es el papel de los 'selectors' en una arquitectura Redux, y por qué se recomiendan?",
+    "options": [
+      "Sirven para seleccionar qué reducers se combinan en el reducer raíz.",
+      "Encapsulan la estructura del state y calculan datos derivados del store, lo que permite que los componentes sigan siendo independientes de la forma exacta del state.",
+      "Son elementos HTML que se usan para renderizar menús desplegables a partir del state de Redux.",
+      "Son funciones de middleware que filtran las acciones antes de que lleguen al reducer."
+    ],
+    "answer": "b",
+    "explanation": "Los selectors actúan como una interfaz de consulta al store de Redux. Abstraen la forma del state, pueden hacer memoización para optimizar el rendimiento (por ejemplo, con Reselect) y evitan cálculos de state duplicados en varios componentes."
+  },
+  {
+    "id": 117,
+    "category": "Redux",
+    "question": "¿Cómo gestiona createAsyncThunk de Redux Toolkit las acciones y las transiciones de state durante operaciones asíncronas?",
+    "options": [
+      "Muta automáticamente el state del store sin invocar ningún reducer.",
+      "Genera una única acción que gestiona toda la petición a la API de forma síncrona.",
+      "Genera action creators que despachan acciones 'pending', 'fulfilled' y 'rejected' según el ciclo de vida de la promesa devuelta.",
+      "Sustituye el store de Redux por una suscripción externa a WebSocket."
+    ],
+    "answer": "c",
+    "explanation": "createAsyncThunk acepta una cadena de tipo de acción y una función creadora de payload que devuelve una promesa. Despacha automáticamente los tipos de acción pending, fulfilled y rejected, que se pueden manejar en extraReducers."
+  },
+  {
+    "id": 118,
+    "category": "Redux",
+    "question": "¿Para qué sirve la cadena de middleware en Redux, y qué ocurre cuando se llama a next(action) dentro de un middleware personalizado?",
+    "options": [
+      "Detiene la acción para que no se procese más.",
+      "Pasa la acción al siguiente middleware de la cadena o, si no quedan más middlewares, al reducer.",
+      "Provoca una recarga completa de la página para sincronizar el state.",
+      "Restablece el store de Redux a su state inicial."
+    ],
+    "answer": "b",
+    "explanation": "En el middleware de Redux, llamar a next(action) pasa la acción al siguiente paso de la cadena de middleware. Si es el último middleware, despacha la acción directamente a los reducers del store."
+  },
+  {
+    "id": 119,
+    "category": "Redux",
+    "question": "En una aplicación React-Redux, ¿cuál es el comportamiento por defecto de un componente conectado mediante useSelector cuando se despacha una acción?",
+    "options": [
+      "El componente siempre se vuelve a renderizar, haya cambiado o no el state seleccionado.",
+      "El componente se vuelve a renderizar solo si cambia la referencia del fragmento de state seleccionado (usando igualdad estricta === por defecto).",
+      "El componente se vuelve a renderizar solo si todo el store de Redux se vacía por completo.",
+      "El componente nunca se vuelve a renderizar salvo que se dispare manualmente con useForceUpdate."
+    ],
+    "answer": "b",
+    "explanation": "useSelector se suscribe al store de Redux y ejecuta tu función selector cada vez que se despacha una acción. Provoca un re-renderizado solo si el valor devuelto difiere del anterior (con la comprobación de igualdad por referencia ===)."
+  },
+  {
+    "id": 120,
+    "category": "Redux",
+    "question": "¿Cuál es la diferencia clave entre Redux Thunk y Redux Saga al gestionar efectos secundarios?",
+    "options": [
+      "Thunk solo admite actualizaciones de state síncronas, mientras que Saga solo admite WebSockets asíncronos.",
+      "Thunk usa funciones planas que pueden hacer trabajo asíncrono y despachar acciones, mientras que Saga usa funciones generadoras de ES6 para expresar flujos asíncronos complejos de una forma muy testeable y declarativa.",
+      "Thunk necesita una base de datos de backend para ejecutarse, mientras que Saga se ejecuta por completo en el almacenamiento del navegador.",
+      "Thunk está integrado en React, mientras que Saga es una biblioteca de Python."
+    ],
+    "answer": "b",
+    "explanation": "Redux Thunk permite escribir action creators que devuelven funciones (thunks) para un control asíncrono sencillo. Redux Saga usa generadores y 'effects' (como call, put y takeEvery) para gestionar efectos secundarios complejos y concurrentes de forma declarativa, y hace mucho más fácil probar la lógica asíncrona."
+  }
+]
